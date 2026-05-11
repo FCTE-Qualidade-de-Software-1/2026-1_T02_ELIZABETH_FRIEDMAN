@@ -14,9 +14,17 @@ Nesta avaliação, vamos analisar apenas as características de Confiabilidade e
 
 ## 4. Adaptação ao Modelo
 
+O modelo ISO/IEC 25010 foi adaptado para priorizar os aspectos mais críticos ao propósito desta avaliação: garantir a **confiabilidade** do sistema AGIO e a **completude/adequação de suas funcionalidades essenciais**.
+
+A seleção das características foi guiada pelo cenário de uso do AGIO, um sistema web de inventário utilizado para gerenciar itens, usuários e registros em banco de dados, considerando a necessidade de assegurar que o sistema opere de forma previsível, estável e correta durante o uso.
+
 ### 4.1 Confiabilidade
 
+Refere-se à capacidade do sistema AGIO de executar suas operações fundamentais (login, CRUD de itens, exportação CSV, controle de acesso, persistência de dados) sem apresentar falhas, interrupções inesperadas ou inconsistências nos dados.
+
 ### 4.2 Funcionalidade
+
+Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades previstas, incluindo autenticação, gerenciamento de inventário, controle de acesso e exportação de dados.
 
 ## 5. Referências Bibliográficas
 
