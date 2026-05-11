@@ -13,6 +13,6 @@ Nos arquivos desta fase, são abordados:
 
 ## **Histórico de Versão**
 
-| ID | Descrição | Autor | Revisor | Data |
+| ID | Descrição | Autor | Data |Revisor | Data |
 |:--:|:---------|:------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | | 11/05/2026 |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 | |  |
