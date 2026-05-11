@@ -1,0 +1,1 @@
+# Introdução à Fase 1 da Avaliação de Qualidade do GIMP

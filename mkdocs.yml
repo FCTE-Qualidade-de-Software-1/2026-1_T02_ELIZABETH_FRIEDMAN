@@ -44,4 +44,5 @@ markdown_extensions:
   - tables
 
 nav:
-  - Home: index.md
+  - Início: index.md
+  - Fase 1: fase1/fase1.md
