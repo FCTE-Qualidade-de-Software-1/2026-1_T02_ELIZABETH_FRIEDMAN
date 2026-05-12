@@ -2,63 +2,71 @@ repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_ELIZABETH_F
 repo_name: 2026-1_T02_ELIZABETH_FRIEDMAN
 site_name: Elizabeth Friedman- Qualidade de Software (2026.1)
 
-theme:
-  name: material
-  font:
-    text: Roboto
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - navigation.footer
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
-  language: pt
 
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Dark mode
-      primary: blue
-      accent: light blue
-      background: "#f5f7fa"
-      text: "#22272e"
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Light mode
-      primary: blue grey
-      accent: cyan
-      background: "#22272e"
-      text: "#f5f7fa"
+theme:
+ name: material
+ font:
+   text: Roboto
+ features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.top
+  - navigation.footer
+  - toc.follow
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.annotation
+  - content.code.copy
+ language: pt
+
+
+ palette:
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch
+      name: Dark mode
+    primary: green
+    accent: green
+    background: "#f5f7fa"
+    text: "#22272e"
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Light mode
+    primary: light green
+    accent: light green
+    background: "#22272e"
+    text: "#f5f7fa"
+
 
 markdown_extensions:
-  - attr_list
-  - tables
+ - attr_list
+ - tables
+
 
 nav:
-  - Início: index.md
-  - Fase 1:
-    - Introdução: fase1/fase1.md
-    - Propósito da Avaliação: fase1/1-proposito.md
-    - Requisitantes e Partes Interessadas: fase1/2-requistantes.md
-    - Descrição do Produto : fase1/3-descricao.md
-    - Justificativas: fase1/4-justificativa.md
-    - Modelo de Qualidade e Escopo: fase1/5-modelo.md
-    - Tabela de Contribuição: fase1/6-tabela_de_contribuicao.md
+ - Início: index.md
+ - Fase 1:
+   - Introdução: fase1/fase1.md
+   - Propósito da Avaliação: fase1/1-proposito.md
+   - Requisitantes e Partes Interessadas: fase1/2-requistantes.md
+   - Descrição do Produto : fase1/3-descricao.md
+   - Justificativas: fase1/4-justificativa.md
+   - Modelo de Qualidade e Escopo: fase1/5-modelo.md
+   - Tabela de Contribuição: fase1/6-tabela_de_contribuicao.md
 
-  - Fase 2:
-    - Introdução: fase2/fase2.md
 
-  - Fase 3:
-    - Introdução: fase3/fase3.md
+ - Fase 2:
+   - Introdução: fase2/fase2.md
 
-  - Fase 4:
-    - Introdução: fase4/fase4.md
+
+ - Fase 3:
+   - Introdução: fase3/fase3.md
+
+
+ - Fase 4:
+   - Introdução: fase4/fase4.md
+
