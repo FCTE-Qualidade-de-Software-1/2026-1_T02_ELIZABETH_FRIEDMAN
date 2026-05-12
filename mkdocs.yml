@@ -27,16 +27,16 @@ theme:
     toggle:
       icon: material/weather-night
       name: Modo Claro
-    primary: light green
-    accent: light green
+    primary: red-pink
+    accent: red-pink
     background: "#f5f7fa"
     text: "#22272e"
   - scheme: slate
     toggle:
       icon: material/weather-sunny
       name: Modo Escuro
-    primary: light green
-    accent: light green
+    primary: red-pink
+    accent: red-pink
     background: "#22272e"
     text: "#f5f7fa"
 
