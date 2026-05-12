@@ -1,6 +1,5 @@
-repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_ELIZABETH_FRIEDMAN
-repo_name: 2026-1_T02_ELIZABETH_FRIEDMAN
 site_name: Elizabeth Friedman- Qualidade de Software (2026.1)
+site_url: https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/
 
 
 theme:
@@ -26,16 +25,16 @@ theme:
  palette:
   - scheme: default
     toggle:
-      icon: material/toggle-switch
-      name: Dark mode
-    primary: green
-    accent: green
+      icon: material/weather-night
+      name: Modo Claro
+    primary: light green
+    accent: light green
     background: "#f5f7fa"
     text: "#22272e"
   - scheme: slate
     toggle:
-      icon: material/toggle-switch-off-outline
-      name: Light mode
+      icon: material/weather-sunny
+      name: Modo Escuro
     primary: light green
     accent: light green
     background: "#22272e"
