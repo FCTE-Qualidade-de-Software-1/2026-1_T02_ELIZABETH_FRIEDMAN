@@ -129,9 +129,5 @@ Friedman morreu em 1980, e documentos desclassificados em 2008 finalmente revela
 
 </div>
 
-
-</div>
-
-
-Referências Bibliográficas
+## Referências Bibliográficas
 > WomensHistory.org. Elizebeth Smith Friedman – Biography. Disponível em: [Elizabeth Smith Friedman](https://www.womenshistory.org/education-resources/biographies/elizebeth-smith-friedman). Acesso em: 11 mai. 2026.
