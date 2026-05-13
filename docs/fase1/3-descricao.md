@@ -46,18 +46,17 @@ Abaixo, são apresentadas as principais ODS (Objetivos de Desenvolvimento Susten
 
 > Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos.
 
-A Aplicação de Gestão de Inventário Otimizada (AGIO), por ser um software web open source, contribui diretamente para o ODS 8 ao oferecer uma solução gratuita, acessível e eficiente para o gerenciamento de inventários em pequenas e médias empresas. Ferramentas desse tipo costumam exigir softwares pagos ou processos manuais que aumentam custos e reduzem produtividade.
+A Aplicação de Gestão de Inventário Otimizada (AGIO), por ser um software web open source, contribui diretamente para o **ODS 8 ao oferecer uma solução gratuita, acessível e eficiente para o gerenciamento de inventários em pequenas e médias empresas**. Ferramentas desse tipo costumam exigir softwares pagos ou processos manuais que aumentam custos e reduzem produtividade.
 
-Com o AGIO, as organizações conseguem otimizar processos internos, reduzir erros, melhorar o controle de estoque e ampliar sua capacidade de planejamento, fortalecendo suas atividades econômicas. Além disso, por ser um projeto desenvolvido em ambiente acadêmico e de código aberto, o sistema promove o desenvolvimento de competências técnicas e oportunidades de aprendizado para estudantes e colaboradores.
+Com o AGIO, as organizações poderiam otimizar processos internos, reduzir erros e melhorar a organização de estoques, favorecendo um ambiente de trabalho mais estruturado e produtivo. Além disso, por ser desenvolvido em ambiente acadêmico e ter código aberto, o projeto amplia oportunidades de aprendizado técnico para estudantes e colaboradores, fortalecendo habilidades relacionadas à tecnologia.
 
 ### ODS 9 — Indústria, Inovação e Infraestrutura
 
 > Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação.
 
-O AGIO contribui diretamente para o ODS 9 ao promover a modernização e digitalização de processos de infraestrutura dentro de empresas e instituições. Por meio de uma solução web estruturada, segura e baseada em boas práticas de engenharia de software, o sistema incentiva pequenas e médias organizações a adotarem tecnologias mais resilientes e eficientes.
+O AGIO contribui diretamente para o **ODS 9 ao promover a modernização e digitalização de processos de infraestrutura dentro de empresas e instituições**. Por meio de uma solução web estruturada, segura e baseada em boas práticas de engenharia de software, o sistema incentiva pequenas e médias organizações a adotarem tecnologias mais resilientes e eficientes.
 
-Por ser open source, o AGIO estimula a inovação colaborativa: desenvolvedores podem estudar, modificar e ampliar suas funcionalidades, criando melhorias e adaptações para diferentes cenários. Essa abordagem fortalece uma industrialização mais inteligente e sustentável, além de tornar o acesso a ferramentas de gestão mais inclusivo.
-
+Por ser open source, o AGIO promove inovação colaborativa: qualquer desenvolvedor pode estudar o código, adaptá-lo ou criar melhorias conforme diferentes contextos. Isso contribui para uma cultura de inovação mais aberta, sustentável e inclusiva, ampliando o acesso a tecnologias que fortalecem processos produtivos.
 ## Referências Bibliográficas
 
 > ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 8: Trabalho decente e crescimento econômico. Disponível em: https://brasil.un.org/pt-br/sdgs/8. Acesso em: 13 mai. 2025.
