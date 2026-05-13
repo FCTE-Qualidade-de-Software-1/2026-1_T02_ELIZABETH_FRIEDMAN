@@ -1,15 +1,15 @@
 # Fase 1 - Justificativas
 
-## 1 Introdução
+## Introdução
 
 O presente documento visa expor as razões e os propósitos que orientam a avaliação de qualidade do sistema Ágio — uma aplicação web de código aberto criada por alunos da Universidade de Brasília (UnB) no âmbito da disciplina de Métodos de Desenvolvimento de Software. A análise aqui proposta adota como referência conceitual as características de qualidade de produto estabelecidas pela norma ISO/IEC 25010, priorizando os aspectos de maior relevância para a confiabilidade operacional e a completude funcional do sistema dentro do seu cenário de utilização.
 
 
-## 2 Justificativa da avaliação
+## Justificativa da avaliação
 
 A realização desta avaliação de qualidade se fundamenta na relevância prática que o Ágio possui no contexto de gestão de inventários, bem como nos riscos operacionais detectados ao longo da análise preliminar do sistema. O Ágio executa operações de natureza sensível — como autenticação de usuários, manipulação de registros em banco de dados e exportação de dados em formato CSV —, e eventuais falhas nessas operações podem provocar inconsistências no inventário e afetar de forma direta as decisões de seus usuários em ambientes corporativos de pequeno e médio porte.
 
-### 2.1 Riscos identificados
+### Riscos identificados
 
 Durante a análise preliminar do sistema, foram identificados os seguintes riscos operacionais que motivam esta avaliação:
 
@@ -18,7 +18,7 @@ Durante a análise preliminar do sistema, foram identificados os seguintes risco
 - **Tratamento insuficiente de entradas inválidas**: a ausência de validação adequada pode expor o sistema a comportamentos inesperados diante de dados malformados ou tentativas de acesso indevido;
 - **Risco de inconsistência nos dados exportados**: falhas nas funcionalidades de exportação CSV podem gerar relatórios incorretos, comprometendo decisões gerenciais baseadas nesses dados.
 
-### 2.2 Motivações
+### Motivações
 
 Considerando esse panorama, a avaliação se volta para duas características de qualidade essenciais previstas na norma ISO/IEC 25010, selecionadas com o intuito de abordar os pontos de risco mais significativos do sistema.
 
@@ -26,7 +26,7 @@ A **Confiabilidade** se estabelece como o eixo prioritário desta avaliação, c
 
 A **Funcionalidade** se justifica pela necessidade de confirmar se o Ágio realmente disponibiliza o conjunto de operações a que se propõe e se essas operações produzem resultados corretos. A avaliação se concentra na **Adequação Funcional**, analisando se o sistema oferece e executa de maneira correta suas funcionalidades centrais: autenticação de usuários, operações de criação, leitura, atualização e exclusão de itens do inventário (CRUD), controle de acesso por perfis de usuário e exportação dos dados em formato CSV. Complementarmente, avalia-se a **Acurácia Funcional**, verificando se cada funcionalidade implementada produz resultados precisos e consistentes com o comportamento esperado — por exemplo, se os dados exibidos após uma edição refletem corretamente as alterações realizadas e se os arquivos CSV exportados reproduzem fielmente o conteúdo do banco de dados. A combinação dessas duas subcaracterísticas permite não apenas verificar a existência das funções, mas também validar a precisão dos seus resultados, garantindo uma análise funcional mais completa. A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação exige comparação detalhada com requisitos formais, normas e documentação específica, sendo mais adequada para uma fase posterior.
 
-## 3 Objetivo da avaliação
+## Objetivo da avaliação
 
 A partir da justificativa exposta, definem-se os seguintes objetivos específicos e práticos para esta avaliação:
 
@@ -40,7 +40,7 @@ A partir da justificativa exposta, definem-se os seguintes objetivos específico
 
 A descrição detalhada das subcaracterísticas adotadas está disponível na seção de [Modelo de Qualidade e Escopo](5-modelo.md).
 
-## 4 Referência bibliográfica
+## Referência bibliográfica
 
 > ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). Acesso em: 11 mai. 2026.
 
