@@ -38,9 +38,40 @@ O AGIO foi desenvolvido com foco em:
 
 Este projeto é distribuído como software **Open Source**, permitindo estudo, modificação e colaboração pela comunidade.
 
+## ODS Relacionadas
+
+Abaixo, são apresentadas as principais ODS (Objetivos de Desenvolvimento Sustentável) que se relacionam ao AGIO.
+
+### ODS 8 — Trabalho Decente e Crescimento Econômico
+
+> Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos.
+
+A Aplicação de Gestão de Inventário Otimizada (AGIO), por ser um software web open source, contribui diretamente para o ODS 8 ao oferecer uma solução gratuita, acessível e eficiente para o gerenciamento de inventários em pequenas e médias empresas. Ferramentas desse tipo costumam exigir softwares pagos ou processos manuais que aumentam custos e reduzem produtividade.
+
+Com o AGIO, as organizações conseguem otimizar processos internos, reduzir erros, melhorar o controle de estoque e ampliar sua capacidade de planejamento, fortalecendo suas atividades econômicas. Além disso, por ser um projeto desenvolvido em ambiente acadêmico e de código aberto, o sistema promove o desenvolvimento de competências técnicas e oportunidades de aprendizado para estudantes e colaboradores.
+
+### ODS 9 — Indústria, Inovação e Infraestrutura
+
+> Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação.
+
+O AGIO contribui diretamente para o ODS 9 ao promover a modernização e digitalização de processos de infraestrutura dentro de empresas e instituições. Por meio de uma solução web estruturada, segura e baseada em boas práticas de engenharia de software, o sistema incentiva pequenas e médias organizações a adotarem tecnologias mais resilientes e eficientes.
+
+Por ser open source, o AGIO estimula a inovação colaborativa: desenvolvedores podem estudar, modificar e ampliar suas funcionalidades, criando melhorias e adaptações para diferentes cenários. Essa abordagem fortalece uma industrialização mais inteligente e sustentável, além de tornar o acesso a ferramentas de gestão mais inclusivo.
+
+## Referências Bibliográficas
+
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 8: Trabalho decente e crescimento econômico. Disponível em: https://brasil.un.org/pt-br/sdgs/8. Acesso em: 13 mai. 2025.
+>
+> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). ODS 8: Trabalho decente e crescimento econômico. Disponível em: https://www.ipea.gov.br/ods/ods8.html. Acesso em: 13 mai. 2025.
+> 
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 9: Indústria, inovação e infraestrutura. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 13 mai. 2025.  
+> 
+> INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). ODS 9: Indústria, inovação e infraestrutura. Disponível em: https://www.ipea.gov.br/ods/ods9.html. Acesso em: 13 mai. 2025.
+
 ## **Histórico de Versão**
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
 | 01 | Criação da Página | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 | [João Igor](https://github.com/JoaoPC10)| 12/05/2026  |
-| 02 | Criação do documento |[João Igor](https://github.com/JoaoPC10)| 12/05/2026 | |  |
+| 02 | Criação do documento |[João Igor](https://github.com/JoaoPC10)| 12/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 13/05/2026 |
+| 03 | Adição das ODS relacionadas | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 13/05/2026 |  | |
