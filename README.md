@@ -2,6 +2,8 @@
 
 ## Sobre o Projeto
 
+Este repositório compõe o trabalho final da disciplina **Qualidade de Software do semestre 2026.1**, ministrada pela professora Cristiane Soares Ramos na Universidade de Brasília (UnB – FCTE). O objetivo é avaliar aspectos de qualidade do [**projeto Agio**](https://github.com/unb-mds/2024-2-Agio), desenvolvido na disciplina Métodos de Desenvolvimento de Software sob orientação da professora Carla Silva Rocha Aguiar. A partir dessa análise, busca-se propor melhorias fundamentadas em métricas, testes, inspeções e outras práticas de garantia de qualidade de software.
+
 ## Integrantes
 
 <table align="center">
