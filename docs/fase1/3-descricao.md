@@ -1,6 +1,6 @@
 # Fase 1 - Descrição do Produto
 
-# Aplicação de Gestão de Inventário Otimizada (AGIO)
+## Aplicação de Gestão de Inventário Otimizada (AGIO)
 
 ![GIF do Funcionamento do AGIO](../imagens/fase1/app_summary.gif)
 

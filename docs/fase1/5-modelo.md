@@ -1,17 +1,17 @@
 # Fase 1 - Modelo de Qualidade e Escopo
 
-## 1. Introdução
+## Introdução
 
 O objetivo desta etapa é apresentar o modelo de qualidade **ISO/IEC 25010**, destacando as duas características escolhidas pelo grupo: Confiabilidade e Funcionalidade. A partir delas, buscamos definir o que será analisado e até que ponto essa análise irá aprofundar cada característica.
 
-## 2. Diagrama
+## Diagrama
 
 O diagrama abaixo apresenta o **modelo ISO/IEC 25010** com as características selecionadas para a Fase 1, bem como as respectivas subcaracterísticas escolhidas.
 
 ![diagrama](../imagens/fase1/diagrama.png)
 > Para a Fase 1, o diagrama apresenta as características priorizadas com base no modelo central (ISO/IEC 25010), assim como as respectivas subcaracterísticas.
 
-## 3. Escopo
+## Escopo
 
 Nesta avaliação, analisaremos apenas as características de **Confiabilidade e Funcionalidade**, conforme definidas pela ISO/IEC 25010. As demais características do modelo, embora relevantes, não farão parte do escopo desta fase.
 
@@ -19,13 +19,13 @@ Além disso, nem todas as subcaracterísticas associadas a essas característica
 
 Dessa forma, definiu-se por um escopo reduzido, visando **garantir uma avaliação mais aprofundada e metodologicamente consistente**. A inclusão de um número muito grande de características e subcaracterísticas poderia comprometer a profundidade da investigação, enquanto concentrar a análise em pontos específicos permite trabalhar com maior detalhamento e clareza.
 
-## 4. Adaptação ao Modelo
+## Adaptação ao Modelo
 
 O modelo ISO/IEC 25010 foi adaptado para priorizar os aspectos mais críticos ao propósito desta avaliação: garantir a **confiabilidade** do sistema AGIO e a **adequação e completude de suas funcionalidades essenciais**.
 
 A seleção das características considerou o cenário de uso do AGIO, um sistema web de inventário utilizado para gerenciar itens, usuários e registros em banco de dados, levando em conta a necessidade de assegurar que o sistema opere de forma previsível, estável e correta durante o uso.
 
-### 4.1 Confiabilidade
+### Confiabilidade
 
 Refere-se à capacidade do sistema AGIO de executar suas operações fundamentais (login, CRUD de itens, exportação CSV, controle de acesso, persistência de dados) sem apresentar falhas, interrupções inesperadas ou inconsistências nos dados.
 
@@ -42,7 +42,7 @@ Para o escopo do projeto, selecionamos apenas as subcaracterísticas **Maturidad
 
 As demais subcaracterísticas, **Recuperabilidade e Disponibilidade** não foram avaliadas nesta fase porque o ambiente analisado (instância atual do AGIO) apresenta **erro 500: INTERNAL_SERVER_ERROR** persistente, impedindo medições contínuas de uptime, comportamento após falhas e mecanismos de recuperação. Embora essas características possam ser medidas em um ambiente local, optamos por não adicioná-las ao escopo da Fase 1.
 
-### 4.2 Funcionalidade
+### Funcionalidade
 
 Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades previstas, incluindo autenticação, gerenciamento de inventário, controle de acesso e exportação de dados.
 
@@ -58,7 +58,7 @@ Para o escopo do projeto, selecionamos as subcaracterísticas **Adequação Func
 
 A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação exige comparação detalhada com requisitos formais, normas e documentação específica. Como o foco atual está em analisar o comportamento real do sistema e a qualidade funcional observável, a verificação de conformidade documental foi adiada para uma fase posterior, quando existir maior estabilidade e clareza dos requisitos.
 
-## 5. Referências Bibliográficas
+## Referências Bibliográficas
 
 > ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). Acesso em: 11 mai. 2026.
 
