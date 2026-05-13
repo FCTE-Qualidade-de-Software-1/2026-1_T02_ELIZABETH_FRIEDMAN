@@ -10,7 +10,7 @@ Nos arquivos desta fase, são abordados:
 - A **justificativa da avaliação**, destacando a relevância do sistema para gestão de inventários e os principais riscos, motivações e metas da análise — [Justificativas](4-justificativa.md);
 - O modelo de qualidade ISO/IEC 25010, destacando as **características escolhidas para análise** — [Modelo de Qualidade e Escopo](5-modelo.md);
 - A **tabela de contribuição dos membros da equipe**, mostrando como cada integrante participou da Fase 1 — [Tabela de contribuição](6-tabela_de_contribuicao.md).
-- A declaração do uso de **ferramentas de Inteligência Artificial** — [Uso de Ferramentas de IA](fase1/7-uso_de_IA.md).
+- A declaração do uso de **ferramentas de Inteligência Artificial** — [Uso de Ferramentas de IA](7-uso_de_IA.md).
 
 ## **Histórico de Versão**
 
