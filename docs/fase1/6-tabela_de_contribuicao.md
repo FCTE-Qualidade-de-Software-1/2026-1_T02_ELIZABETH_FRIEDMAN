@@ -1,5 +1,7 @@
 # Fase 1 - Tabela de Contribuição
 
+A tabela abaixo apresenta os nomes dos integrantes do grupo, a descrição das atividades realizadas e a porcentagem de contribuição na Fase 1.
+
 # Tabela de Contribuição
 
 | Nome                                    | Descrição                                      | Porcentagem |

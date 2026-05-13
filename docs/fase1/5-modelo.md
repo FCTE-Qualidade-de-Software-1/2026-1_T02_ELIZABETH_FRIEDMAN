@@ -60,7 +60,7 @@ A subcaracterística **Conformidade Funcional** não foi incluída nesta fase po
 
 ## 5. Referências Bibliográficas
 
-ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). Acesso em: 11 mai. 2026.
+> ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). Acesso em: 11 mai. 2026.
 
 ## **Histórico de Versão**
 

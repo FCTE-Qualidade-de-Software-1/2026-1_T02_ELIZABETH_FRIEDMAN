@@ -2,6 +2,10 @@
 
 # Aplicação de Gestão de Inventário Otimizada (AGIO)
 
+![GIF do Funcionamento do AGIO](../imagens/fase1/app_summary.gif)
+
+> Esse GIF foi obtido no [repositório do AGIO](https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/assets/app_summary.gif?utm_source=chatgpt.com).
+
 ## Sobre o Projeto
 
 A **Aplicação de Gestão de Inventário Otimizada (AGIO)** é um sistema web *Open Source* desenvolvido por estudantes da Universidade de Brasília (UnB) para a disciplina de **Métodos de Desenvolvimento de Software**.
