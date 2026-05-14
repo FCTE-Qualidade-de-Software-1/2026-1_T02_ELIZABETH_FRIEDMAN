@@ -20,5 +20,5 @@ ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: ISO/
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 |  |  |
-| 02 | Adição dos requisitantes e partes interessadas | [Vitor Bessa](https://github.com/Bessazs) | 13/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 | [Vitor Bessa](https://github.com/Bessazs) | 13/05/2026 |
+| 02 | Adição dos requisitantes e partes interessadas | [Vitor Bessa](https://github.com/Bessazs) | 13/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 13/05/2026 |
