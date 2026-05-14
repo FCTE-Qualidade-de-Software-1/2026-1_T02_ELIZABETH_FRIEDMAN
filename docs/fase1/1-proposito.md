@@ -53,13 +53,13 @@ Com maior controle sobre os itens disponíveis, torna-se possível melhorar o pl
 
 ## Referências Bibliográficas
 
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 4: Educação de qualidade. Disponível em: https://brasil.un.org/pt-br/sdgs/4. Acesso em: 13 mai. 2025.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 4: Educação de qualidade. Disponível em: https://brasil.un.org/pt-br/sdgs/4 . Acesso em: 13 mai. 2025.
 > 
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 8: Trabalho decente e crescimento econômico. Disponível em: https://brasil.un.org/pt-br/sdgs/8. Acesso em: 13 mai. 2025.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 8: Trabalho decente e crescimento econômico. Disponível em: https://brasil.un.org/pt-br/sdgs/8 . Acesso em: 13 mai. 2025.
 >
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 9: Indústria, inovação e infraestrutura. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 13 mai. 2025.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 9: Indústria, inovação e infraestrutura. Disponível em: https://brasil.un.org/pt-br/sdgs/9 . Acesso em: 13 mai. 2025.
 > 
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 12: Consumo e produção responsáveis. Disponível em: https://brasil.un.org/pt-br/sdgs/12. Acesso em: 13 mai. 2025. 
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivo de Desenvolvimento Sustentável 12: Consumo e produção responsáveis. Disponível em: https://brasil.un.org/pt-br/sdgs/12 . Acesso em: 13 mai. 2025. 
 
 ## **Histórico de Versão**
 
