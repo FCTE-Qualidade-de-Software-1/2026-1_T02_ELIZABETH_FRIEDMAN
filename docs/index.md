@@ -13,7 +13,7 @@ Este repositório compõe o trabalho final da disciplina **Qualidade de Software
 ![Elizabeth Friedman](./imagens/ELIZABETH_FRIEDMAN.png)
 
 
-Elizebeth Smith Friedman foi uma das pioneiras da criptografia nos Estados Unidos, reconhecida como a primeira grande criptanalista do país. Nascida em 1892, começou estudando literatura e Shakespeare, mas sua carreira mudou quando passou a trabalhar no laboratório privado de George Fabyan, onde aprendeu técnicas de decifração e conheceu seu futuro marido e parceiro profissional, William Friedman.
+Elizabeth  Smith Friedman foi uma das pioneiras da criptografia nos Estados Unidos, reconhecida como a primeira grande criptanalista do país. Nascida em 1892, começou estudando literatura e Shakespeare, mas sua carreira mudou quando passou a trabalhar no laboratório privado de George Fabyan, onde aprendeu técnicas de decifração e conheceu seu futuro marido e parceiro profissional, William Friedman.
 
 
 Durante a Primeira Guerra Mundial, ela se destacou ao treinar a primeira geração de decodificadores da Marinha. Na década de 1920, tornou-se figura central no combate ao contrabando durante a Lei Seca, decifrando sozinha milhares de mensagens de organizações criminosas e ajudando em condenações importantes, como as que atingiram a rede de Al Capone.
@@ -130,4 +130,4 @@ Friedman morreu em 1980, e documentos desclassificados em 2008 finalmente revela
 </div>
 
 ## Referências Bibliográficas
-> WomensHistory.org. Elizebeth Smith Friedman – Biography. Disponível em: [Elizabeth Smith Friedman](https://www.womenshistory.org/education-resources/biographies/elizebeth-smith-friedman). Acesso em: 11 mai. 2026.
+> WomensHistory.org. Elizabeth  Smith Friedman – Biography. Disponível em: [Elizabeth Smith Friedman](https://www.womenshistory.org/education-resources/biographies/Elizabeth -smith-friedman). Acesso em: 11 mai. 2026.
