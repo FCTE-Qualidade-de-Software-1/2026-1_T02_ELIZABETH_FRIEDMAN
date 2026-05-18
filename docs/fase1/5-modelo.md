@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O objetivo desta etapa é apresentar o modelo de qualidade **ISO/IEC 25010**, destacando as duas características escolhidas pelo grupo: Confiabilidade e Funcionalidade. A partir delas, buscamos definir o que será analisado e até que ponto essa análise irá aprofundar cada característica.
+O objetivo desta etapa é apresentar o modelo de qualidade **ISO/IEC 25010**, destacando as duas características escolhidas pelo grupo: **Confiabilidade e Adequação Funcional**. A partir delas, buscamos definir o que será analisado e até que ponto essa análise irá aprofundar cada característica.
 
 ## Diagrama
 
@@ -13,7 +13,7 @@ O diagrama abaixo apresenta o **modelo ISO/IEC 25010** com as características s
 
 ## Escopo
 
-Nesta avaliação, analisaremos apenas as características de **Confiabilidade e Funcionalidade**, conforme definidas pela ISO/IEC 25010. As demais características do modelo, embora relevantes, não farão parte do escopo desta fase.
+Nesta avaliação, analisaremos apenas as características de **Confiabilidade e Adequação Funcional**, conforme definidas pela ISO/IEC 25010. As demais características do modelo, embora relevantes, não farão parte do escopo desta fase.
 
 Além disso, nem todas as subcaracterísticas associadas a essas características foram selecionadas. Optou-se por incluir apenas aquelas mais adequadas ao contexto do projeto e mais relevantes para a análise pretendida.
 
@@ -21,7 +21,7 @@ Dessa forma, definiu-se por um escopo reduzido, visando **garantir uma avaliaç�
 
 ## Adaptação ao Modelo
 
-O modelo ISO/IEC 25010 foi adaptado para priorizar os aspectos mais críticos ao propósito desta avaliação: garantir a **confiabilidade** do sistema AGIO e a **adequação e completude de suas funcionalidades essenciais**.
+O modelo ISO/IEC 25010 foi adaptado para priorizar os aspectos mais críticos ao propósito desta avaliação: garantir a **confiabilidade** do sistema AGIO e a **completude e corretude de suas funcionalidades essenciais**.
 
 A seleção das características considerou o cenário de uso do AGIO, um sistema web de inventário utilizado para gerenciar itens, usuários e registros em banco de dados, levando em conta a necessidade de assegurar que o sistema opere de forma previsível, estável e correta durante o uso.
 
@@ -34,7 +34,7 @@ Refere-se à capacidade do sistema AGIO de executar suas operações fundamentai
 |Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
 |**Maturidade**| Alto | Alto | Avalia a ocorrência de erros durante operações como login, edição, remoção de itens e consultas ao banco, pois falhas comprometem o fluxo do usuário e a estabilidade do inventário |
-|**Tolerância a Falhas**| Alto | Alto | Avalia como o AGIO reage a entradas inválidas, tentativas de acesso não autorizado ou inconsistências de dados |
+|**Tolerância a Falhas**| Alto | Alto | Avalia a capacidade do AGIO de continuar operando como esperado mesmo diante de erros, entradas inválidas, falhas de hardware e software ou tentativas de acesso inadequadas. |
 |**Disponibilidade**| Alto | Alto | Avalia a capacidade do sistema de permanecer operacional e acessível aos usuários |
 |**Recuperabilidade**| Médio | Alto | Avalia a capacidade de o sistema retornar ao funcionamento normal após falhas |
 
@@ -42,21 +42,21 @@ Para o escopo do projeto, selecionamos apenas as subcaracterísticas **Maturidad
 
 As demais subcaracterísticas, **Recuperabilidade e Disponibilidade** não foram avaliadas nesta fase porque o ambiente analisado (instância atual do AGIO) apresenta **erro 500: INTERNAL_SERVER_ERROR** persistente, impedindo medições contínuas de uptime, comportamento após falhas e mecanismos de recuperação. Embora essas características possam ser medidas em um ambiente local, optamos por não adicioná-las ao escopo da Fase 1.
 
-### Funcionalidade
+### Adequação Funcional
 
 Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades previstas, incluindo autenticação, gerenciamento de inventário, controle de acesso e exportação de dados.
 
-> A tabela a seguir apresenta a classificação das subcaracterísticas de Funcionalidade do modelo SQuaRE (ISO/IEC 25010), utilizando a matriz Impacto × Risco para apoiar a priorização.
+> A tabela a seguir apresenta a classificação das subcaracterísticas de Adequação Funcional do modelo SQuaRE (ISO/IEC 25010), utilizando a matriz Impacto × Risco para apoiar a priorização.
 
 |Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
-| **Adequação Funcional** | Alto | Alto | Avalia se o sistema entrega tudo o que promete: login, operações CRUD, visualização de itens e exportação de dados |
-| **Acurácia Funcional** | Alto | Médio | Avalia se cada funcionalidade é executada de forma correta e com resultados consistentes |
-| **Conformidade Funcional** | Médio | Médio | Avalia o alinhamento das funcionalidades com normas, requisitos formais e regras de negócio |
+| **Completude Funcional** | Alto | Alto | Avalia em que medida o conjunto de funções do sistema cobre todas as tarefas especificadas e os objetivos dos usuários. |
+| **Corretude Funcional** | Alto | Médio | Avalia se o sistema fornece resultados corretos, com o nível de precisão necessário para cada funcionalidade. |
+| **Conformidade Funcional** | Médio | Médio | Avalia em que medida as funcionalidades facilitam a realização das tarefas e objetivos especificados pelo usuário |
 
-Para o escopo do projeto, selecionamos as subcaracterísticas **Adequação Funcional e Acurácia Funcional**, pois ambas permitem avaliar não apenas se o AGIO disponibiliza as funcionalidades essenciais ao seu uso, mas também se essas funcionalidades produzem resultados corretos e consistentes. Dessa forma, o escopo combina a verificação da existência das funções com a validação da precisão dos resultados, garantindo uma análise funcional mais completa.
+Para o escopo do projeto, selecionamos as subcaracterísticas **Completude Funcional e Corretude Funcional**, pois ambas permitem avaliar não apenas se o AGIO disponibiliza as funcionalidades necessárias para cumprir as tarefas e objetivos especificados, mas também se essas funcionalidades produzem resultados corretos e com o grau de precisão adequado. Dessa forma, o escopo combina a verificação da cobertura das funções com a validade dos resultados, oferecendo uma análise funcional mais abrangente.
 
-A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação exige comparação detalhada com requisitos formais, normas e documentação específica. Como o foco atual está em analisar o comportamento real do sistema e a qualidade funcional observável, a verificação de conformidade documental foi adiada para uma fase posterior, quando existir maior estabilidade e clareza dos requisitos.
+A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação demanda analisar o quanto cada funcionalidade efetivamente facilita as tarefas do usuário, o que requer estudos de uso mais aprofundados, como testes de usabilidade ou observação direta de cenários reais. Como o foco atual está em avaliar o comportamento funcional observado e a correção dos resultados, a verificação da pertinência foi retirada do escopo de análise.
 
 ## Referências Bibliográficas
 
@@ -69,3 +69,5 @@ A subcaracterística **Conformidade Funcional** não foi incluída nesta fase po
 | 01 | Criação do documento e documentação da Introdução, Escopo e Referências Bibliográficas | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 11/05/2026 |
 | 02 | Documentação do Diagrama e da Adaptação do Modelo | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 11/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 12/05/2026 |
 | 03 | Atualização da documentação da Adaptação do Modelo | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 12/05/2026 | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 12/05/2026 |
+| 04 | Correção da característica de Adequação Funcional | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 18/05/2026 |  |  |
+
