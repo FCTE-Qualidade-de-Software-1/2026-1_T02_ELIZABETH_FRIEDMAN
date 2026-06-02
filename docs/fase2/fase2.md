@@ -18,7 +18,7 @@ De forma geral, a estrutura do GQM é dividida em três níveis distintos:
 
 <p align="center"><strong>Imagem 1: Imagem Ilustrativa do GQM</strong></p>
 
-![Diagrama GQP](./imagens/diagrama_GQM.png)
+![Diagrama GQP](../imagens/diagrama_GQM.png)
 
 <p align="center"><strong>Autor: Slides disponibilizados pela professora</strong></p>
 
