@@ -8,12 +8,16 @@ A metodologia adotada para esta Fase 1 segue uma abordagem qualitativa e descrit
 
 ## Papéis, Necessidades e Influência na Avaliação
 
+<p align="center"><strong>Tabela 1: Papéis, Necessidades e Influência na Avaliação</strong></p>
+
 | Papel / Stakeholder | Necessidades Principais | Influência na Avaliação |
 | :--- | :--- | :--- |
 | **Requisitante Principal: Equipe de Avaliação (Estudantes)** | Aplicar metodologias de avaliação de qualidade de software de forma prática e aprofundada, lidando com limitações de ambiente. | Direciona o escopo estritamente para subcaracterísticas observáveis (**Maturidade, Tolerância a Falhas, Adequação e Acurácia Funcional**). |
 | **Usuários Finais (Gestores)** | Um sistema previsível e correto para gerenciar o inventário, que salve dados com precisão (CSV, CRUD) e não apresente quebras inesperadas ou corrupção de informações. | Demandam alta **Acurácia Funcional** (exatidão dos dados) e **Maturidade** (ausência de falhas nas operações centrais). |
 | **Professora e Avaliadores** | Avaliar a capacidade da equipe de aplicar a norma ISO/IEC 25010 com rigor analítico. | Avaliam a consistência da justificativa metodológica para a escolha das características e a profundidade técnica da análise. |
 | **Comunidade Open Source** | Acesso a um sistema com bases funcionais sólidas e previsíveis, cujos erros e limitações estejam mapeados com clareza. | Fornece uma perspectiva externa focada no rastreio de exceções não tratadas (**Tolerância a Falhas**), influenciando a identificação do comportamento do sistema. |
+
+<p align="center"><em>Autor: Vitor Bessa</em></p>
 
 ## Referências Bibliográficas
 ISO. ISO/IEC 25010 — ISO 25000 Software and Data Quality. Disponível em: ISO/IEC 25010. Acesso em: 13 mai. 2026.

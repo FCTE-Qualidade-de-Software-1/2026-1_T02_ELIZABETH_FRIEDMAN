@@ -6,10 +6,14 @@ O objetivo desta etapa é apresentar o modelo de qualidade **ISO/IEC 25010**, de
 
 ## Diagrama
 
-O diagrama abaixo apresenta o **modelo ISO/IEC 25010** com as características selecionadas para a Fase 1, bem como as respectivas subcaracterísticas escolhidas.
+O diagrama abaixo apresenta o **modelo ISO/IEC 25010** com as características selecionadas para a Fase 1, bem como as respectivas subcaracterísticas.
+
+<p align="center"><strong>Imagem 1: Diagrama do modelo ISO/IEC 25010</strong></p>
+
 
 ![diagrama](../imagens/fase1/diagrama.png)
-> Para a Fase 1, o diagrama apresenta as características priorizadas com base no modelo central (ISO/IEC 25010), assim como as respectivas subcaracterísticas.
+
+<p align="center"><em>Autores: Arthur Guilherme e Tiago Lemes </em></p>
 
 ## Escopo
 
@@ -31,12 +35,17 @@ Refere-se à capacidade do sistema AGIO de executar suas operações fundamentai
 
 > A tabela a seguir apresenta a classificação das subcaracterísticas de Confiabilidade do modelo SQuaRE (ISO/IEC 25010), utilizando a matriz Impacto × Risco para apoiar a priorização.
 
+<p align="center"><strong>Tabela 1: Classificação das subcaracterísticas de Confiabilidade</strong></p>
+
+
 |Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
 |**Maturidade**| Alto | Alto | Avalia a ocorrência de erros durante operações como login, edição, remoção de itens e consultas ao banco, pois falhas comprometem o fluxo do usuário e a estabilidade do inventário |
 |**Tolerância a Falhas**| Alto | Alto | Avalia a capacidade do AGIO de continuar operando como esperado mesmo diante de erros, entradas inválidas, falhas de hardware e software ou tentativas de acesso inadequadas. |
 |**Disponibilidade**| Alto | Alto | Avalia a capacidade do sistema de permanecer operacional e acessível aos usuários |
 |**Recuperabilidade**| Médio | Alto | Avalia a capacidade de o sistema retornar ao funcionamento normal após falhas |
+
+<p align="center"><em>Autores: Arthur Guilherme e Tiago Lemes </em></p>
 
 Para o escopo do projeto, selecionamos apenas as subcaracterísticas **Maturidade e Tolerância a Falhas**, pois ambas representam os aspectos mais diretamente observáveis e críticos do comportamento do AGIO no estado atual. Essas subcaracterísticas permitem avaliar a frequência de falhas e a resposta do sistema a situações inesperadas, dois fatores essenciais para compreender a estabilidade operacional e a robustez mínima necessária para o uso cotidiano do inventário. Além disso, são elementos cuja análise não depende de monitoramento contínuo, podendo ser examinados mesmo diante das limitações técnicas apresentadas pelo ambiente.
 
@@ -48,11 +57,16 @@ Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades prevista
 
 > A tabela a seguir apresenta a classificação das subcaracterísticas de Adequação Funcional do modelo SQuaRE (ISO/IEC 25010), utilizando a matriz Impacto × Risco para apoiar a priorização.
 
+<p align="center"><strong>Tabela 2: Classificação das subcaracterísticas de Adequação Funcional</strong></p>
+
+
 |Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
 | **Completude Funcional** | Alto | Alto | Avalia em que medida o conjunto de funções do sistema cobre todas as tarefas especificadas e os objetivos dos usuários. |
 | **Corretude Funcional** | Alto | Médio | Avalia se o sistema fornece resultados corretos, com o nível de precisão necessário para cada funcionalidade. |
 | **Conformidade Funcional** | Médio | Médio | Avalia em que medida as funcionalidades facilitam a realização das tarefas e objetivos especificados pelo usuário |
+
+<p align="center"><em>Autores: Arthur Guilherme e Tiago Lemes </em></p>
 
 Para o escopo do projeto, selecionamos as subcaracterísticas **Completude Funcional e Corretude Funcional**, pois ambas permitem avaliar não apenas se o AGIO disponibiliza as funcionalidades necessárias para cumprir as tarefas e objetivos especificados, mas também se essas funcionalidades produzem resultados corretos e com o grau de precisão adequado. Dessa forma, o escopo combina a verificação da cobertura das funções com a validade dos resultados, oferecendo uma análise funcional mais abrangente.
 

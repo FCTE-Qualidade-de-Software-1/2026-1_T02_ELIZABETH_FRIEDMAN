@@ -2,9 +2,12 @@
 
 ## Aplicação de Gestão de Inventário Otimizada (AGIO)
 
+<p align="center"><strong>Imagem 1: Papéis, Necessidades e Influência na Avaliação</strong></p>
+
 ![GIF do Funcionamento do AGIO](../imagens/fase1/app_summary.gif)
 
-> Esse GIF foi obtido no [repositório do AGIO](https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/assets/app_summary.gif?utm_source=chatgpt.com).
+<p align="center"><em>Autor: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/assets/app_summary.gif?utm_source=chatgpt.com">Arepositório do AGIO</a></em></p>
+</em></p>
 
 ## Sobre o Projeto
 
