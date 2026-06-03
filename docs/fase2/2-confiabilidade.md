@@ -35,12 +35,15 @@ Esta hipótese será testada utilizando as seguintes métricas.
 #### Métrica 1.1: Taxa de Falhas Funcionais 
 
 > **Fórmula**
+> 
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
 > 
 > **Operações Consideradas**
+> 
 > - Serão consideradas as operações de Login, Cadastro de item, Edição de item, Remoção de item, Consulta de inventário e Exportação CSV
 >
 > **Interpretação**
+> 
 > - **Alta Maturidade (H1 Confirmada):** < 2%
 > - **Média Maturidade:** 2% – 5%
 > - **Baixa Maturidade (H1 Refutada :** > 5% 
@@ -48,12 +51,15 @@ Esta hipótese será testada utilizando as seguintes métricas.
 #### Métrica 1.2: Taxa de Operações Bem-Sucedidas 
 
 > **Fórmula**
+> 
 > - Taxa de Sucesso= (N° de operações concluídas com sucesso / N° total de operações) x 100
 > 
 > **Operações Consideradas**
+> 
 > - Assim como realizado na Métrica 1.1, serão consideradas as operações de Login, Cadastro de item, Edição de item, Remoção de item, Consulta de inventário e Exportação CSV
 >
 > **Interpretação**
+> 
 > - **Alta Maturidade (H1 Confirmada):** > 98%
 > - **Média Maturidade:** 90% – 98%
 > - **Baixa Maturidade (H1 Refutada :** < 90%
@@ -67,12 +73,15 @@ Esta hipótese será testada utilizando as seguintes métricas.
 #### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
 > **Fórmula**
+> 
 > - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
 > 
 > **Cenários avaliados**
+> 
 > - Serão considerados os cenários de campos obrigatórios vazios, dados fora do formato esperado, valores inválidos e dados duplicados. 
 >
 > **Interpretação**
+> 
 > - **Alta Tolerância a Falhas (H2  Confirmada):** > 95% 
 > - **Média Maturidade:** 80% – 95% 
 > - **Baixa Maturidade (H2  Refutada):** < 80%  
@@ -80,12 +89,15 @@ Esta hipótese será testada utilizando as seguintes métricas.
 #### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
 
 > **Fórmula**
+> 
 > - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
 > 
 > **Cenários avaliados**
+> 
 > - Serão considerados os cenários de acesso sem autenticação, acesso direto por URL protegida, tentativas de acesso com permissões insuficientes e sessão expirada. 
 >
 > **Interpretação**
+> 
 > - **Alta Tolerância a Falhas (H2  Confirmada):** > 95% 
 > - **Média Maturidade:** 80% – 95% 
 > - **Baixa Maturidade (H2  Refutada):** < 80%  
