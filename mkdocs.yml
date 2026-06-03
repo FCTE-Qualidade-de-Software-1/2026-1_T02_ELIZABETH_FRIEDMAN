@@ -1,7 +1,6 @@
 site_name: Elizabeth Friedman- Qualidade de Software (2026.1)
 site_url: https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/
 
-
 theme:
  name: material
  font:
@@ -20,7 +19,6 @@ theme:
   - content.code.annotation
   - content.code.copy
  language: pt
-
 
  palette:
   - scheme: default
@@ -42,9 +40,11 @@ theme:
 
 
 markdown_extensions:
- - attr_list
- - tables
-
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 2
 
 nav:
  - Início: index.md
