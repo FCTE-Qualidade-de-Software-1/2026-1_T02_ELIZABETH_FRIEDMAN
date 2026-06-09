@@ -186,16 +186,20 @@ Será considerado bloqueio correto quando:
 > - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
 
 **Ferramentas**
+
 - Interface Web do AGIO
-Navegador Web;
-Ferramentas de desenvolvedor do navegador (DevTools);
-Logs da aplicação;
-Logs do servidor.
-
-## Localização dos Dados de Avaliação
-
+- Navegador Web
+- Ferramentas de desenvolvedor do navegador (DevTools)
+- Logs da aplicação
+- Logs do servidor
 
 ## Referências Bibliográficas
+
+> ISO/IEC. ISO/IEC 25010:2011 – S**ystems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models**. Geneva: International Organization for Standardization, 2011.
+>
+> PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021.
+>
+> SOMMERVILLE, Ian. **Engenharia de software**. 10. ed. São Paulo: Pearson, 2019.
 
 ## Histórico de Versão
 
