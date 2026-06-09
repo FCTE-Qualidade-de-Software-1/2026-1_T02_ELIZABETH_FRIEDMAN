@@ -113,6 +113,14 @@ Os resultados obtidos a partir dessas métricas poderão indicar o nível de con
 
 ## Referências Bibliográficas
 
+> ISO/IEC. ISO/IEC 25010:2011 – **Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models**. Geneva: International Organization for Standardization, 2011.
+>
+> PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de Software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021.
+>
+> SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson, 2019.
+>
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. **The Goal Question Metric Approach**. Encyclopedia of Software Engineering. New York: Wiley, 1994.
+
 ## Histórico de Versão
 
 | ID | Descrição | Autor | Data | Revisor | Data |
