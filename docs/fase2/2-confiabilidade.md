@@ -102,6 +102,14 @@ Esta hipótese será testada utilizando as seguintes métricas.
 > - **Média Maturidade:** 80% – 95% 
 > - **Baixa Maturidade (H2  Refutada):** < 80%  
 
+## Modelo GQM
+
+<p align="center"><strong>Imagem 1: Modelo GQM de Confiabilidade</strong></p>
+
+![diagrama](../imagens/fase2/GQM_Confiabilidade.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes </em></p>
+
 
 ## Conclusão
 
