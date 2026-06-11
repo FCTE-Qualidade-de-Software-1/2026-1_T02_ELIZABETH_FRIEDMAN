@@ -111,6 +111,14 @@ Esta hipótese será testada utilizando a seguinte métrica.
 > - **Média Pertinência Funcional:** 70% – 90%
 > - **Baixa Pertinência Funcional (H3 Refutada):** < 70%
 
+## Modelo GQM
+
+<p align="center"><strong>Imagem 1: Modelo GQM de Adequação Funcional</strong></p>
+
+![Modelo GQM_Adequacao_Funcional](../imagens/fase2/GQM_Adequacao_Funcional.png)
+
+<p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Mirand </em></p>
+
 ## Conclusão
 
 A utilização do método GQM permitiu transformar o conceito abstrato de **Adequação Funcional** em um plano de avaliação objetivo para o AGIO. Considerando as funcionalidades descritas na documentação do projeto e os requisitos relacionados ao gerenciamento de inventário, foram selecionadas as subcaracterísticas **Completude Funcional**, **Correção Funcional** e **Pertinência Funcional**, por representarem os principais aspectos da característica segundo a ISO/IEC 25010.
@@ -121,10 +129,17 @@ Os resultados obtidos a partir dessas métricas poderão indicar o grau de adequ
 
 ## Referências Bibliográficas
 
-ISO/IEC. **ISO/IEC 25010:2011 – Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models**. Geneva: International Organization for Standardization, 2011.
+> ISO/IEC. **ISO/IEC 25010:2011 – Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models**. Geneva: International Organization for Standardization, 2011.
+>
+> PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de Software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021.
+>
+> SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson, 2019.
+>
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. **The Goal Question Metric Approach**. Encyclopedia of Software Engineering. New York: Wiley, 1994.
 
-PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de Software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021.
+## Histórico de Versão
 
-SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson, 2019.
-
-BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. **The Goal Question Metric Approach**. Encyclopedia of Software Engineering. New York: Wiley, 1994.
+| ID | Descrição | Autor | Data | Revisor | Data |
+|:--:|:---------|:------|:--------|:--------|:----:|
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  |  |
+| 02 | Documentação | | 08/06/2026 |  |  |
