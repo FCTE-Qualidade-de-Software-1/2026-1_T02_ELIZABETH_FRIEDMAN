@@ -1,4 +1,4 @@
-# Fase 3 - Adequação Funcional
+# Fase 2 - Adequação Funcional
 
 ## Introdução
 
