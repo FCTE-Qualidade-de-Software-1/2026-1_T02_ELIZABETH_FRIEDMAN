@@ -11,12 +11,15 @@ As medições foram obtidas através de scripts de testes das funcionalidades me
 
 ---
 
+## Métricas
+
 ### Métrica 1.1: Taxa de Falhas Funcionais
 
 Esta métrica contabiliza o número de falhas encontradas em relação ao número total de operações realizadas.
 
 **Fórmula:**
-$$\text{Taxa de Falhas} = \left( \frac{\text{Nº de falhas}}{\text{Nº total de operações}} \right) \times 100$$
+
+> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
 
 
 ### Métrica 1.2: Taxa de Operações Bem-Sucedidas
@@ -24,25 +27,57 @@ $$\text{Taxa de Falhas} = \left( \frac{\text{Nº de falhas}}{\text{Nº total de 
 Esta métrica contabiliza o número de operações concluídas com sucesso em relação ao número total de operações realizadas.
 
 **Fórmula:**
-$$\text{Taxa de Sucesso} = \left( \frac{\text{Nº de operações concluídas com sucesso}}{\text{Nº total de operações}} \right) \times 100$$
+
+> - Taxa de Sucesso = (N° de operações concluídas com sucesso / N° total de operações) x 100
 
 ### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
 Esta métrica contabiliza o número de operações bem-sucedidas no tratamento e rejeição controlada de dados de entrada incorretos.
 
 **Fórmula:**
-$$\text{Taxa de Tratamento} = \left( \frac{\text{Nº de entradas inválidas tratadas}}{\text{Nº total de entradas inválidas}} \right) \times 100$$
+
+> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
 
 ### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
 
 Esta métrica contabiliza a eficácia do sistema no bloqueio de tentativas de acesso não autorizadas ou maliciosas.
 
 **Fórmula:**
-$$\text{Taxa de Proteção} = \left( \frac{\text{Nº de tentativas bloqueadas}}{\text{Nº total de tentativas indevidas}} \right) \times 100$$
+
+> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
 
 ## Medição (Dados Coletados)
 
+Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas anteriormente. Para cada métrica, é demonstrado o cálculo realizado com base nos dados coletados durante a execução dos testes, bem como o valor final obtido.
+
+Além disso, cada resultado é relacionado ao respectivo critério de aceitação estabelecido pelo modelo GQM, servindo como base para a análise e o julgamento que serão realizados na seção seguinte.
+
+<p align="center"><strong>Tabela 1: Resultados Consolidados da Avaliação de Confiabilidade</strong></p>
+
+| Métrica | Subcaracterística | Fórmula | Cáculo | Critério de Aceitação (GQM) |
+|----------|------------------|----------|-------|-----------------------------|
+| M1.1 (Q1) Taxa de Falhas Funcionais | Maturidade | (Nº de falhas / Nº total de operações) × 100 | | < 2% |
+| M1.2 (Q1) Taxa de Operações Bem-Sucedidas | Maturidade | (Nº de operações concluídas com sucesso / Nº total de operações) × 100 | | > 98% |
+| M2.1 (Q2) Taxa de Tratamento de Entradas Inválidas | Tolerância a Falhas | (Nº de entradas inválidas tratadas / Nº total de entradas inválidas) × 100 | | > 95% |
+| M2.2 (Q2) Taxa de Proteção Contra Acesso Indevido | Tolerância a Falhas | (Nº de tentativas bloqueadas / Nº total de tentativas indevidas) × 100 | | > 95% |
+
+<p align="center"><em>Autor: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+
 ## Análise e Julgamento
+
+<p align="center"><strong>Tabela 2: Análise e Julgamento das Hipóteses</strong></p>
+
+| Métrica | Resultado Obtido | Critério de Aceitação (GQM)  | Julgamento |
+|----------|------------------|----------|-----------------------------|
+| M1.1 (Q1) Taxa de Falhas Funcionais | | < 2% | CONFIRMADA ou REFUTADA |
+| M1.2 (Q1) Taxa de Operações Bem-Sucedidas | | > 98% | CONFIRMADA ou REFUTADA |
+| M2.1 (Q2) Taxa de Tratamento de Entradas Inválidas |  | > 95% | CONFIRMADA ou REFUTADA |
+| M2.2 (Q2) Taxa de Proteção Contra Acesso Indevido |  | > 95% | CONFIRMADA ou REFUTADA |
+
+<p align="center"><em>Autor: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+## Conclusão
 
 ## Histórico de Versão
 
