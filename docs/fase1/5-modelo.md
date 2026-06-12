@@ -63,14 +63,14 @@ Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades prevista
 |Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
 | **Completude Funcional** | Alto | Alto | Avalia em que medida o conjunto de funções do sistema cobre todas as tarefas especificadas e os objetivos dos usuários. |
-| **Corretude Funcional** | Alto | Médio | Avalia se o sistema fornece resultados corretos, com o nível de precisão necessário para cada funcionalidade. |
-| **Conformidade Funcional** | Médio | Médio | Avalia em que medida as funcionalidades facilitam a realização das tarefas e objetivos especificados pelo usuário |
+| **Correção Funcional** | Alto | Médio | Avalia se o sistema fornece resultados corretos, com o nível de precisão necessário para cada funcionalidade. |
+| **Pertinência Funcional** | Médio | Médio | Avalia se as funcionalidades implementadas são pertinentes para facilitar a realização das tarefas e objetivos especificados pelo usuário. |
 
 <p align="center"><em>Autores: Arthur Guilherme e Tiago Lemes </em></p>
 
-Para o escopo do projeto, selecionamos as subcaracterísticas **Completude Funcional e Corretude Funcional**, pois ambas permitem avaliar não apenas se o AGIO disponibiliza as funcionalidades necessárias para cumprir as tarefas e objetivos especificados, mas também se essas funcionalidades produzem resultados corretos e com o grau de precisão adequado. Dessa forma, o escopo combina a verificação da cobertura das funções com a validade dos resultados, oferecendo uma análise funcional mais abrangente.
+Para o escopo do projeto, selecionamos as subcaracterísticas **Completude Funcional, Correção Funcional e Pertinência Funcional**. As duas primeiras permitem avaliar não apenas se o AGIO disponibiliza as funcionalidades necessárias para cumprir as tarefas e objetivos especificados, mas também se essas funcionalidades produzem resultados corretos e com o grau de precisão adequado. A terceira subcaracterística permite analisar em que medida as funcionalidades implementadas são pertinentes aos objetivos principais do sistema de gestão de inventários.
 
-A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação demanda analisar o quanto cada funcionalidade efetivamente facilita as tarefas do usuário, o que requer estudos de uso mais aprofundados, como testes de usabilidade ou observação direta de cenários reais. Como o foco atual está em avaliar o comportamento funcional observado e a correção dos resultados, a verificação da pertinência foi retirada do escopo de análise.
+Dessa forma, o escopo combina a verificação da cobertura das funções e a validade dos resultados com a garantia de que as funções oferecidas não fogem do escopo desejado do produto, oferecendo uma análise funcional mais abrangente e totalmente alinhada ao planejamento da equipe para as fases seguintes da avaliação.
 
 ## Referências Bibliográficas
 

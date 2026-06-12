@@ -5,7 +5,7 @@ Esta seção reúne os documentos que servem de base para a **Fase 1 da avaliaç
 Nos arquivos desta fase, são abordados:
 
 - O **propósito da avaliação** e como os resultados serão utilizados — [Propósito da Avaliação](1-proposito.md);
-- Quem são os **requisitantes** e demais partes interessadas — [Requisitantes e Partes Interessada](2-requistantes.md);
+- Quem são os **requisitantes** e demais partes interessadas — [Requisitantes e Partes Interessadas](2-requisitantes.md);
 - Uma **apresentação do Ágio**, incluindo suas principais funções e seu papel no contexto acadêmico — [Descrição do Produto](3-descricao.md);
 - A **justificativa da avaliação**, destacando a relevância do sistema para gestão de inventários e os principais riscos, motivações e metas da análise — [Justificativas](4-justificativa.md);
 - O modelo de qualidade ISO/IEC 25010, destacando as **características escolhidas para análise** — [Modelo de Qualidade e Escopo](5-modelo.md);

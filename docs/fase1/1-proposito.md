@@ -41,7 +41,8 @@ Para a característica de Confiabilidade, foram selecionadas as seguintes subcar
 Para a característica de Adequação Funcional, foram selecionadas as seguintes subcaracterísticas:
 
 - **Completude Funcional**
-- **Corretude Funcional**
+- **Correção Funcional**
+- **Pertinência Funcional**
 
 ---
 
