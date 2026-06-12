@@ -10,7 +10,7 @@ Serão executados cenários normais de uso e cenários com entradas inválidas e
 
 ## Métricas a Serem Implementadas
 
-Com base no planejamento realizado ma [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/), serão coletados dados para as seguintes métricas:
+Com base no planejamento realizado na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/), serão coletados dados para as seguintes métricas:
 
 **Maturidade**
 
@@ -20,7 +20,18 @@ Com base no planejamento realizado ma [Fase 2](https://fcte-qualidade-de-softwar
 **Tolerância a Falhas**
 
 - **Métrica 2.1:** Taxa de Tratamento de Entradas Inválidas
-- **Métrica 2.2:** Taxa de Continuidade Operacional após Erros
+- **Métrica 2.2:** Taxa de Proteção Contra Acesso Indevido
+
+### Critérios de Avaliação
+
+| Métrica | Critério Desejado (Alta Maturidade/Tolerância) |
+|----------|----------|
+| Métrica 1.1: Taxa de Falhas Funcionais | < 2% |
+| Métrica 1.2: Taxa de Operações Bem-Sucedidas | > 98% |
+| Métrica 2.1: Taxa de Tratamento de Entradas Inválidas | > 95% |
+| Métrica 2.2: Taxa de Proteção Contra Acesso Indevido | > 95% |
+
+Os resultados obtidos serão utilizados para verificar o nível de confiabilidade do sistema e sua estabilidade operacional.
 
 ## Ferramentas e Métodos de Coleta
 
@@ -38,7 +49,7 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
   - Armazenamento X
 - **Pré-requisitos:**
   - Ambiente local do AGIO configurado e funcional
-  = Banco de dados inicializado
+  - Banco de dados inicializado
   - Usuário administrador cadastrado
   - Inventário contendo registros para teste
 
@@ -72,9 +83,14 @@ Serão consideradas falhas:
 - Comportamentos incorretos
 - Operações que não produzem o resultado esperado
 
-**Fórmula**
+**Fórmula:**
 
-> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
+$$ TF = \frac{NF}{TO} \times 100 $$
+
+Onde:
+
+- **NF** = Quantidade de falhas observadas;
+- **TO** = Quantidade total de operações realizadas.
 
 **Ferramentas**
 
@@ -100,7 +116,7 @@ Executar o mesmo conjunto de operações da Métrica 1.1:
 Registrar:
 
 - Quantidade total de operações executadas;
-- Quantidade de operações concluídas sem ffalhas.
+- Quantidade de operações concluídas sem falhas.
 
 Serão consideradas falhas:
 
@@ -110,9 +126,14 @@ Serão consideradas falhas:
 - Comportamentos incorretos
 - Operações que não produzem o resultado esperado
 
-**Fórmula**
+**Fórmula:**
 
-> - Taxa de Sucesso= (N° de operações concluídas com sucesso / N° total de operações) x 100
+$$ TS = \frac{OS}{TO} \times 100 $$
+
+Onde:
+
+- **OS** = Quantidade de operações concluídas com sucesso;
+- **TO** = Quantidade total de operações executadas.
 
 **Ferramentas**
 
@@ -145,9 +166,14 @@ Será considerado tratamento correto quando:
 - O sistema impedir a operação
 - Não ocorrer travamento ou erro interno
 
-**Fórmula**
+**Fórmula:**
 
-> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
+$$ TT = \frac{EI_{tratadas}}{EI_{total}} \times 100 $$
+
+Onde:
+
+- **EI_{tratadas}** = Quantidade de entradas inválidas tratadas corretamente;
+- **EI_{total}** = Quantidade total de entradas inválidas submetidas.
 
 **Ferramentas**
 
@@ -181,9 +207,14 @@ Será considerado bloqueio correto quando:
 - A operação solicitada não for executada
 - Não ocorrer erro interno ou exposição indevida de informações
 
-**Fórmula**
+**Fórmula:**
 
-> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
+$$ TP = \frac{TB}{TI} \times 100 $$
+
+Onde:
+
+- **TB** = Quantidade de tentativas bloqueadas corretamente;
+- **TI** = Quantidade total de tentativas de acesso indevido realizadas.
 
 **Ferramentas**
 
