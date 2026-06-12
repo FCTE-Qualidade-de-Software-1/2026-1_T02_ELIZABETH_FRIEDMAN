@@ -85,12 +85,7 @@ Serão consideradas falhas:
 
 **Fórmula:**
 
-$$ TF = \frac{NF}{TO} \times 100 $$
-
-Onde:
-
-- **NF** = Quantidade de falhas observadas;
-- **TO** = Quantidade total de operações realizadas.
+> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
 
 **Ferramentas**
 
@@ -128,12 +123,7 @@ Serão consideradas falhas:
 
 **Fórmula:**
 
-$$ TS = \frac{OS}{TO} \times 100 $$
-
-Onde:
-
-- **OS** = Quantidade de operações concluídas com sucesso;
-- **TO** = Quantidade total de operações executadas.
+> - Taxa de Sucesso= (N° de operações concluídas com sucesso / N° total de operações) x 100
 
 **Ferramentas**
 
@@ -168,12 +158,7 @@ Será considerado tratamento correto quando:
 
 **Fórmula:**
 
-$$ TT = \frac{EI_{tratadas}}{EI_{total}} \times 100 $$
-
-Onde:
-
-- **EI_{tratadas}** = Quantidade de entradas inválidas tratadas corretamente;
-- **EI_{total}** = Quantidade total de entradas inválidas submetidas.
+> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
 
 **Ferramentas**
 
@@ -209,12 +194,7 @@ Será considerado bloqueio correto quando:
 
 **Fórmula:**
 
-$$ TP = \frac{TB}{TI} \times 100 $$
-
-Onde:
-
-- **TB** = Quantidade de tentativas bloqueadas corretamente;
-- **TI** = Quantidade total de tentativas de acesso indevido realizadas.
+> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
 
 **Ferramentas**
 
