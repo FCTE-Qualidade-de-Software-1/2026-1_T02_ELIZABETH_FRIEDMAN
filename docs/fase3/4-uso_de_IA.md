@@ -18,4 +18,4 @@ Além disso, removemos quaisquer ícones, emojis ou figuras geradas por IA dos r
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026  |

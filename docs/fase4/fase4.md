@@ -52,4 +52,4 @@ Ao longo dos arquivos trabalhados nessa fase, são abordados:
  
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 09/06/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 09/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026  |

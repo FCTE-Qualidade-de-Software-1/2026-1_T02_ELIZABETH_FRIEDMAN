@@ -133,5 +133,5 @@ Os resultados obtidos a partir dessas métricas poderão indicar o nível de con
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  |  |
-| 02 | Documentação inicial das questões e métricas | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 03/06/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
+| 02 | Documentação inicial das questões e métricas | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 03/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |

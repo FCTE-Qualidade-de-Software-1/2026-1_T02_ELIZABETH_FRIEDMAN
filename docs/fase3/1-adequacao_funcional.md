@@ -132,5 +132,5 @@ SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson, 2019.
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  |  |
-| 02 | Elaboração da Fase 3 - Adequação Funcional | [Letícia Monteiro](https://github.com/LeticiaMonteiroo) | 08/06/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
+| 02 | Elaboração da Fase 3 - Adequação Funcional | [Letícia Monteiro](https://github.com/LeticiaMonteiroo) | 08/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026  |

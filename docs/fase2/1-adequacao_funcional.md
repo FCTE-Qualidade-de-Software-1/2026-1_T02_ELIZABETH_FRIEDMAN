@@ -117,7 +117,7 @@ Esta hipótese será testada utilizando a seguinte métrica.
 
 ![Modelo GQM_Adequacao_Funcional](../imagens/fase2/GQM_Adequacao_Funcional.png)
 
-<p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Mirand </em></p>
+<p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Miranda </em></p>
 
 ## Conclusão
 
@@ -141,5 +141,5 @@ Os resultados obtidos a partir dessas métricas poderão indicar o grau de adequ
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  |  |
-| 02 | Documentação | | 08/06/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |  [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
+| 02 | Documentação | [Letícia Monteiro](https://github.com/LeticiaMonteiroo) | 08/06/2026 | [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
