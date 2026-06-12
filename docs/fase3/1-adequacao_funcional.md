@@ -24,7 +24,7 @@ Avalia a proporção de funcionalidades implementadas em relação ao conjunto d
 
 **Fórmula:**
 
-$$ CF = \frac{FI}{FE} \times 100 $$
+> - CF = (FI/FE) x 100
 
 Onde:
 
@@ -37,7 +37,7 @@ Avalia a proporção de funcionalidades que executam corretamente suas operaçõ
 
 **Fórmula:**
 
-$$ COR = \frac{FC}{FV} \times 100 $$
+> - COR = (FC/FV) x 100
 
 Onde:
 
@@ -50,7 +50,7 @@ Avalia a proporção de funcionalidades que contribuem diretamente para os objet
 
 **Fórmula:**
 
-$$ PF = \frac{FP}{FT} \times 100 $$
+> - PF = (FP/FT) x 100
 
 Onde:
 
