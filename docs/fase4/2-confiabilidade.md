@@ -69,13 +69,14 @@ Abaixo oque foi observado:
 
 Executando a fórmula:
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-> -  (10 / 10) x 100 = 100%
+> -  (60 / 60) x 100 = 100%
 
 ### Métrica 1.2: Taxa de Operações Bem-Sucedidas
 
 Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
 
 Abaixo oque foi observado:
+
 | Acão| Descrição | Quantidade | Observações| 
 |:--:|:---------|:------|:--------|
 | Login | | 10| Executou perfeitamente a ação de login| 
@@ -88,25 +89,28 @@ Abaixo oque foi observado:
 Execuatndo a fórmula:
 > - Taxa de Sucesso = (N° de operações concluídas com sucesso / N° total de operações) x 100
 
-> - (10 / 10) x 100 = 100%
+> - (60 / 60) x 100 = 100%
 
 ### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
 Foram realizados testes de consistência e robustez no sistema, focados na identificação de comportamentos inesperados. As operações validaram o comportamento da aplicação diante de: Campos Obrigatórios Vazios, Dados fora do Formato Esperado, Valores Inválidos, Dados Duplicados e Caracteres Inválidos.
 
 Abaixo oque foi observado:
+
 | Acão| Descrição | Quantidade | Observações| 
 |:--:|:---------|:------|:--------|
-| Campo Obrigatório Vazio | | 10| | 
-| Dados fora do Formato Esperado |  |  10|  |  
-| EValores Inválidos |  | 10 | |  
-| Dados Duplicados |  | 10 |  |  
-| Caracteres Inválidos |  | 10 |  |  
+| Campo Obrigatório Vazio | | 10| Em todas as situações, os campos considerados obrigatórios emitiram um aviso para seu preenchimento | 
+| Dados fora do Formato Esperado |  |  10|  Em situações de preenchimento, de informações númericas, com os dados fora do esperado, o campo emitiu um alerta como: ``Preencha com um número``  |  
+| Valores Inválidos |  | 10 |  Em situações de preenchimento, do campo de "Preço", com os valores inválidos, o campo aceitou sem demais reclamações, como preços negativos|  
+| Dados Duplicados |  | 10 | Em situações de preenchimento das informações, com os dados duplicados, o campo emitiu um alerta dizendo: ``Erro ao adicionar produto: {"product_name":["product table with this product name already exists."]}``|  
+| Caracteres Inválidos |  | 10 | Em todas as situações, de preenchimento com texto contendo Caracteres Inválidos, o campo aceitou em todas elas|  
 
 ![Tabela Cadastrada no Inventário](../imagens/fase4/tabelaTeste.png) 
 
 
 > - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
+
+> -  (30 / 50) x 100 = 60%
 
 ### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
 
