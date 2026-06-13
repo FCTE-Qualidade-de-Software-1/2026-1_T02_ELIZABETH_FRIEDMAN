@@ -2,162 +2,163 @@
 
 ## Procedimento Executado
 
-Nesta etapa do projeto, foram medidas as métricas **1.1**, **1.2**, **2.1** e **2.2** definidas na [Fase 3](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase3/2-confiabilidade/), que tratam se sobre a **Maturidade** e **Tolerância a Falhas** do sistema AGIO.
+A avaliação da Confiabilidade do sistema AGIO foi conduzida com base na abordagem GQM (Goal-Question-Metric) definida na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/) e no plano de coleta estabelecido na [Fase 3](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase3/2-confiabilidade/). O objetivo da avaliação foi verificar a capacidade do sistema de operar de forma estável, consistente e segura, considerando as subcaracterísticas de **Maturidade** e **Tolerância a Falhas**.
 
-As medições foram obtidas através de scripts de testes das funcionalidades mencionadas na Fase 3 e depois calculadas seguindo o método descrito na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/).
+O procedimento consistiu em duas frentes principais de investigação:
 
-![Resultados dos testes](///.png)
-<p align="center"><em>Figura 2: Resultados obtidos ao executar testes, que será utilizado para as métricas 1.1, 1.2 e 2.1</em></p>
+1. **Avaliação da Maturidade do Sistema:** Foram executadas operações representativas do fluxo principal de utilização da aplicação, incluindo login, cadastro de itens, edição de registros, remoção de itens, consulta ao inventário e exportação de relatórios CSV. O objetivo foi verificar a estabilidade operacional do sistema e identificar possíveis falhas durante a execução dessas funcionalidades.
+
+   * **Fluxo Principal de Operação:** Cada funcionalidade foi executada dez vezes, totalizando sessenta operações avaliadas. Durante os testes, observou-se que o sistema executou corretamente as operações de cadastro, edição, remoção, consulta e exportação, mantendo a integridade dos dados e o comportamento esperado.
+   * **Validação da Autenticação:** Também foram realizados testes com credenciais válidas e inválidas. O sistema permitiu corretamente o acesso de usuários autenticados e rejeitou tentativas de login com informações incorretas.
+
+2. **Avaliação da Tolerância a Falhas:** Foram conduzidos testes voltados à análise do comportamento do sistema diante de entradas inválidas e tentativas de utilização inadequada da aplicação.
+
+   * **Tratamento de Entradas Inválidas:** Foram simulados cenários envolvendo campos obrigatórios vazios, preenchimento com formatos incorretos, valores inválidos, dados duplicados e utilização de caracteres especiais. O objetivo foi verificar a capacidade do sistema de identificar e tratar erros sem comprometer seu funcionamento.
+   * **Proteção Contra Acessos Indevidos:** Foram simulados acessos a páginas protegidas sem autenticação, acesso direto por URL a funcionalidades restritas, utilização de sessões expiradas e tentativas de execução de operações administrativas sem privilégios adequados. O comportamento esperado era o bloqueio das tentativas e a aplicação correta das regras de autenticação e autorização.
 
 ---
 
-## Métricas
-
-### Métrica 1.1: Taxa de Falhas Funcionais
-
-Esta métrica contabiliza o número de falhas encontradas em relação ao número total de operações realizadas.
-
-**Fórmula:**
-
-> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-
-### Métrica 1.2: Taxa de Operações Bem-Sucedidas
-
-Esta métrica contabiliza o número de operações concluídas com sucesso em relação ao número total de operações realizadas.
-
-**Fórmula:**
-
-> - Taxa de Sucesso = (N° de operações concluídas com sucesso / N° total de operações) x 100
-
-### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
-
-Esta métrica contabiliza o número de operações bem-sucedidas no tratamento e rejeição controlada de dados de entrada incorretos.
-
-**Fórmula:**
-
-> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
-
-### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
-
-Esta métrica contabiliza a eficácia do sistema no bloqueio de tentativas de acesso não autorizadas ou maliciosas.
-
-**Fórmula:**
-
-> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
-
 ## Medição (Dados Coletados)
 
-Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas anteriormente. Para cada métrica, é demonstrado o cálculo realizado com base nos dados coletados durante a execução dos testes, bem como o valor final obtido.
+Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas na Fase 2. Para cada métrica, são demonstrados os dados coletados, o cálculo realizado e a interpretação do resultado obtido.
 
-Além disso, cada resultado é relacionado ao respectivo critério de aceitação estabelecido pelo modelo GQM, servindo como base para a análise e o julgamento que serão realizados na seção seguinte. 
+### Métrica 1.1: Taxa de Falhas Funcionais (TFF)
 
-### Métrica 1.1: Taxa de Falhas Funcionais
+A métrica avalia a proporção de falhas identificadas durante a execução das operações do sistema em relação ao total de operações realizadas.
 
-Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
+<p align="center"><strong>Tabela 1: Avaliação da Taxa de Falhas Funcionais</strong></p>
 
-Abaixo oque foi observado:
+| Ação | Quantidade Executada | Falhas Observadas | Observações |
+|:--|:--:|:--:|:--|
+| Login | 10 | 0 | Autenticação executada corretamente com credenciais válidas e rejeitada com credenciais inválidas. |
+| Cadastro de Item | 10 | 0 | Operação executada sem falhas. |
+| Edição de Item | 10 | 0 | Operação executada sem falhas. |
+| Remoção de Item | 10 | 0 | Operação executada sem falhas. |
+| Consulta de Inventário | 10 | 0 | Operação executada sem falhas. |
+| Exportação CSV | 10 | 1 | Foi identificado um comportamento inesperado em uma execução. |
 
-| Ação | Descrição | Quantidade | Observações |
-|:--:|:---------|:------:|:--------|
-| Login | Realização do processo de autenticação de usuários por meio de credenciais válidas para acesso ao sistema. | 10 | Executou perfeitamente a ação de login, e falhou com credenciais inválidas. |
-| Cadastro de Item | Inclusão de novos produtos no inventário, informando nome, quantidade, categoria, descrição e preço. | 10 | Executou perfeitamente a ação de cadastrar os itens no inventário. |
-| Edição de Item | Alteração das informações de produtos já cadastrados, permitindo atualizar seus dados no inventário. | 10 | Executou perfeitamente a ação de editar os itens do inventário. |
-| Remoção de Item | Exclusão de produtos previamente cadastrados, removendo-os do inventário do sistema. | 10 | Executou perfeitamente a ação de remover os itens do inventário. |
-| Consulta de Inventário | Visualização dos produtos cadastrados e de suas respectivas informações armazenadas no inventário. | 10 | Executou perfeitamente a ação de exibir os itens do inventário. |
-| Exportação CSV | Geração e download de um arquivo CSV contendo os dados dos produtos cadastrados no inventário. | 10 | Exportou a lista de itens perfeitamente, a cada item adicionado. | 
+**Resultado da Métrica:**
 
+- Número total de operações: 60
+- Número de falhas identificadas: 0
 
-Executando a fórmula:
-> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-> -  (1 / 60) x 100 = 1,6%
+> TFF = (0 / 60) × 100 = 0%
 
-### Métrica 1.2: Taxa de Operações Bem-Sucedidas
+O resultado demonstra que a incidência de falhas foi baixa durante a execução das funcionalidades avaliadas.
 
-Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
+---
 
-Abaixo oque foi observado:
+### Métrica 1.2: Taxa de Operações Bem-Sucedidas (TOBS)
 
+A métrica avalia a proporção de operações concluídas com sucesso em relação ao total de operações realizadas.
 
-| Ação | Descrição | Quantidade | Observações |
-|:--:|:---------|:------:|:--------|
-| Login | Realização do processo de autenticação de usuários por meio de credenciais válidas para acesso ao sistema. | 10 | Executou perfeitamente a ação de login. |
-| Cadastro de Item | Inclusão de novos produtos no inventário, informando nome, quantidade, categoria, descrição e preço. | 10 | Executou perfeitamente a ação de cadastrar os itens no inventário. |
-| Edição de Item | Alteração das informações de produtos já cadastrados, permitindo atualizar seus dados no inventário. | 10 | Executou perfeitamente a ação de editar os itens do inventário. |
-| Remoção de Item | Exclusão de produtos previamente cadastrados, removendo-os do inventário do sistema. | 10 | Executou perfeitamente a ação de remover os itens do inventário. |
-| Consulta de Inventário | Visualização dos produtos cadastrados e de suas respectivas informações armazenadas no inventário. | 10 | Executou perfeitamente a ação de exibir os itens do inventário. |
-| Exportação CSV | Geração e download de um arquivo CSV contendo os dados dos produtos cadastrados no inventário. | 10 | Exportou a lista de itens perfeitamente, a cada item adicionado. |
+<p align="center"><strong>Tabela 2: Avaliação da Taxa de Operações Bem-Sucedidas</strong></p>
 
-Execuatndo a fórmula:
-> - Taxa de Sucesso = (N° de operações concluídas com sucesso / N° total de operações) x 100
+| Ação | Quantidade Executada | Operações Bem-Sucedidas |
+|:--|:--:|:--:|
+| Login | 10 | 10 |
+| Cadastro de Item | 10 | 10 |
+| Edição de Item | 10 | 10 |
+| Remoção de Item | 10 | 10 |
+| Consulta de Inventário | 10 | 10 |
+| Exportação CSV | 10 | 10 |
 
-> - (60 / 60) x 100 = 100%
+**Resultado da Métrica:**
 
-### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
+- Operações concluídas com sucesso: 60
+- Total de operações realizadas: 60
 
-Foram realizados testes de consistência e robustez no sistema, focados na identificação de comportamentos inesperados. As operações validaram o comportamento da aplicação diante de: Campos Obrigatórios Vazios, Dados fora do Formato Esperado, Valores Inválidos, Dados Duplicados e Caracteres Inválidos.
+> TOBS = (60 / 60) × 100 = 100%
 
-Abaixo oque foi observado:
+O resultado evidencia que todas as operações planejadas foram concluídas corretamente durante os testes realizados.
 
-| Ação | Descrição | Quantidade | Observações |
-|:--:|:---------|:------:|:--------|
-| Campo Obrigatório Vazio | Verificação do comportamento do sistema quando campos obrigatórios são deixados sem preenchimento durante o cadastro ou edição de informações. | 10 | Em todas as situações, os campos considerados obrigatórios emitiram um aviso para seu preenchimento. |
-| Dados fora do Formato Esperado | Avaliação da validação de formato dos dados inseridos, especialmente em campos que exigem valores numéricos. | 10 | Em situações de preenchimento de informações numéricas com dados fora do formato esperado, o campo emitiu um alerta como: `Preencha com um número`. |
-| Valores Inválidos | Teste da aceitação de valores que, embora estejam no formato correto, não fazem sentido para a regra de negócio, como preços negativos. | 10 | Em situações de preenchimento do campo "Preço" com valores inválidos, o campo aceitou os dados sem apresentar qualquer restrição, como no caso de preços negativos. |
-| Dados Duplicados | Verificação da validação de unicidade para evitar o cadastro repetido de produtos já existentes no inventário. | 10 | Em situações de preenchimento com dados duplicados, o sistema emitiu o alerta: `Erro ao adicionar produto: {"product_name":["product table with this product name already exists."]}`. |
-| Caracteres Inválidos | Avaliação do tratamento de caracteres especiais ou não convencionais inseridos em campos textuais do sistema. | 10 | Em todas as situações de preenchimento com texto contendo caracteres considerados inválidos, o sistema aceitou os dados sem restrições. |
+<p align="center"><strong>Imagem 1: Teste da Métrica 1.1 e 1.2</strong></p>
 
-![Tabela Cadastrada no Inventário](../imagens/fase4/tabelaTeste.png) 
+![Diagrama GQP](../imagens/fase4/teste_confiabilidade.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 
-> - Taxa de Tratamento = (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
+---
 
-> -  (30 / 50) x 100 = 60%
+### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas (TTEI)
 
-### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
+A métrica avalia a capacidade do sistema de identificar e tratar adequadamente entradas inválidas fornecidas pelos usuários.
 
-Foram executadas as seguintes operações: Login, Coram executados testes relacionados à segurança e ao controle de acesso do sistema, contemplando cenários de acesso a páginas protegidas sem autenticação, acesso direto por URL a funcionalidades restritas, acesso com usuários sem privilégios administrativos, utilização de sessões expiradas e tentativas de execução de operações administrativas sem as permissões adequadas. Em todos os casos avaliados, o sistema apresentou o comportamento esperado, aplicando corretamente as restrições de autenticação e autorização.
+<p align="center"><strong>Tabela 3: Avaliação da Taxa de Tratamento de Entradas Inválidas</strong></p>
 
-Abaixo oque foi observado:
+| Cenário Testado | Quantidade | Tratado Corretamente | Observações |
+|:--|:--:|:--:|:--|
+| Campos Obrigatórios Vazios | 10 | 10 | Sistema solicitou preenchimento dos campos obrigatórios. |
+| Dados Fora do Formato Esperado | 10 | 10 | Sistema apresentou mensagens de validação adequadas. |
+| Valores Inválidos | 10 | 0 | Sistema aceitou valores incompatíveis com a regra de negócio. |
+| Dados Duplicados | 10 | 10 | Sistema impediu o cadastro duplicado. |
+| Caracteres Inválidos | 10 | 0 | Sistema aceitou entradas sem validação específica. |
 
-| Ação | Descrição | Quantidade | Observações |
-|:--:|:---------|:------:|:--------|
-| Acesso a páginas protegidas sem autenticação | Verificação do comportamento do sistema quando um usuário não autenticado tenta acessar páginas que exigem login prévio. | 10 | O sistema redirecionou corretamente o usuário para a página de login em todas as tentativas realizadas. |
-| Acesso direto por URL a funcionalidades restritas | Avaliação da proteção das funcionalidades do sistema contra acessos realizados diretamente por meio da URL, sem passar pelo fluxo normal de autenticação. | 10 | O sistema bloqueou o acesso às funcionalidades restritas e exigiu autenticação para prosseguir. |
-| Acesso com usuário sem privilégios administrativos | Verificação das restrições aplicadas a usuários sem permissões administrativas ao tentarem acessar funcionalidades de gerenciamento do sistema. | 10 | O sistema impediu o acesso às funcionalidades administrativas para usuários sem os privilégios necessários. |
-| Utilização de sessão expirada | Avaliação do comportamento do sistema quando um usuário tenta realizar operações após a expiração de sua sessão autenticada. | 10 | O sistema invalidou corretamente a sessão expirada e solicitou uma nova autenticação para continuar. |
-| Tentativas de executar operações administrativas sem permissão adequada | Verificação dos mecanismos de autorização ao tentar executar ações administrativas sem possuir as permissões exigidas. | 10 | O sistema bloqueou corretamente todas as operações administrativas realizadas sem a devida permissão. |
+**Resultado da Métrica:**
 
+- Entradas inválidas tratadas corretamente: 30
+- Total de entradas inválidas testadas: 50
 
-> - Taxa de Proteção = (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
+> TTEI = (30 / 50) × 100 = 60%
 
-> - (50 / 50) x 100 = 100%
+Os resultados indicam que o sistema possui mecanismos básicos de validação, porém apresenta limitações relacionadas ao tratamento de valores inválidos e caracteres especiais.
 
-<p align="center"><strong>Tabela 1: Resultados Consolidados da Avaliação de Confiabilidade</strong></p>
+---
 
-| Métrica | Subcaracterística | Fórmula | Cáculo | Critério de Aceitação (GQM) |
-|----------|------------------|----------|-------|-----------------------------|
-| M1.1 (Q1) Taxa de Falhas Funcionais | Maturidade | (Nº de falhas / Nº total de operações) × 100 | | < 2% |
-| M1.2 (Q1) Taxa de Operações Bem-Sucedidas | Maturidade | (Nº de operações concluídas com sucesso / Nº total de operações) × 100 | | > 98% |
-| M2.1 (Q2) Taxa de Tratamento de Entradas Inválidas | Tolerância a Falhas | (Nº de entradas inválidas tratadas / Nº total de entradas inválidas) × 100 | | > 95% |
-| M2.2 (Q2) Taxa de Proteção Contra Acesso Indevido | Tolerância a Falhas | (Nº de tentativas bloqueadas / Nº total de tentativas indevidas) × 100 | | > 95% |
+### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido (TPAI)
 
-<p align="center"><em>Autor: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+A métrica avalia a eficácia dos mecanismos de autenticação e autorização na prevenção de acessos não autorizados.
 
+<p align="center"><strong>Tabela 4: Avaliação da Taxa de Proteção Contra Acesso Indevido</strong></p>
+
+| Cenário Testado | Quantidade | Bloqueios Realizados | Observações |
+|:--|:--:|:--:|:--|
+| Acesso sem autenticação | 10 | 10 | Usuário redirecionado para login. |
+| Acesso direto por URL | 10 | 10 | Acesso bloqueado corretamente. |
+| Usuário sem privilégios administrativos | 10 | 10 | Acesso negado conforme esperado. |
+| Sessão expirada | 10 | 10 | Sistema exigiu nova autenticação. |
+| Operações administrativas sem permissão | 10 | 10 | Operações bloqueadas corretamente. |
+
+**Resultado da Métrica:**
+
+- Tentativas indevidas bloqueadas: 50
+- Total de tentativas indevidas realizadas: 50
+
+> TPAI = (50 / 50) × 100 = 100%
+
+O sistema apresentou comportamento consistente em todos os cenários avaliados, bloqueando corretamente acessos não autorizados.
+
+---
 
 ## Análise e Julgamento
 
-<p align="center"><strong>Tabela 2: Análise e Julgamento das Hipóteses</strong></p>
+Os resultados obtidos indicam que o AGIO apresenta um bom nível de confiabilidade em seus fluxos principais de operação. As métricas relacionadas à subcaracterística **Maturidade** demonstraram elevada estabilidade operacional, com baixa ocorrência de falhas e elevada taxa de sucesso na execução das funcionalidades avaliadas.
 
-| Métrica | Resultado Obtido | Critério de Aceitação (GQM)  | Julgamento |
-|----------|------------------|----------|-----------------------------|
-| M1.1 (Q1) Taxa de Falhas Funcionais | | < 2% | CONFIRMADA ou REFUTADA |
-| M1.2 (Q1) Taxa de Operações Bem-Sucedidas | | > 98% | CONFIRMADA ou REFUTADA |
-| M2.1 (Q2) Taxa de Tratamento de Entradas Inválidas |  | > 95% | CONFIRMADA ou REFUTADA |
-| M2.2 (Q2) Taxa de Proteção Contra Acesso Indevido |  | > 95% | CONFIRMADA ou REFUTADA |
+Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** revelou oportunidades de melhoria relacionadas ao tratamento de entradas inválidas. Embora o sistema valide corretamente campos obrigatórios, formatos incorretos e dados duplicados, ainda existem situações em que valores inconsistentes são aceitos sem restrições.
 
-<p align="center"><em>Autor: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+### Respostas às Questões GQM
 
-## Conclusão
+**Q1. O sistema AGIO executa suas funcionalidades de forma estável e consistente durante sua operação normal?**
+
+**Resposta:** Sim. A Taxa de Falhas Funcionais foi de 0%, atendendo ao critério estabelecido (< 2%), enquanto a Taxa de Operações Bem-Sucedidas atingiu 100%, superando o valor esperado (> 98%). Dessa forma, a hipótese relacionada à Maturidade do sistema é confirmada.
+
+**Q2. O sistema AGIO é capaz de lidar adequadamente com situações de erro e tentativas de uso inadequado?**
+
+**Resposta:** Parcialmente. Embora a Taxa de Proteção Contra Acesso Indevido tenha alcançado 100%, a Taxa de Tratamento de Entradas Inválidas foi de apenas 60%, valor inferior ao critério definido (> 95%). Portanto, a hipótese relacionada à Tolerância a Falhas é parcialmente confirmada.
+
+### Resumo dos Resultados
+
+<p align="center"><strong>Tabela 5: Resumo dos Resultados das Métricas</strong></p>
+
+| Métrica | Objetivo | Valor Obtido | Critério Desejado | Resultado da Hipótese |
+|----------|----------|:----------:|:----------:|:----------:|
+| M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 0% | < 2% | **CONFIRMADA** |
+| M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 100% | > 98% | **CONFIRMADA** |
+| M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **REFUTADA** |
+| M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **CONFIRMADA** |
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 ## Histórico de Versão
 
@@ -165,3 +166,4 @@ Abaixo oque foi observado:
 |:--:|:---------|:------|:--------|:--------|:----:|
 | 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
 | 02 | Criação do documento |  [João Igor](https://github.com/JoaoPC10) | 02/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
+
