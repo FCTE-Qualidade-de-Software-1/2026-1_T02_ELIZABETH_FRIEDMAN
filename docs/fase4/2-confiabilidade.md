@@ -59,7 +59,7 @@ Abaixo oque foi observado:
 | Acão| Descrição | Quantidade | Observações| 
 |:--:|:---------|:------|:--------|
 | Login | | 10| Executou perfeitamente a ação de login| 
-| Cadastro de Item |  |  10| Executou a ação de cadastrar os itens no inventário, porém cadastrou produtos com nomes inválidos, com somente caracteres especiais, emojis e preços negativos, por exemplo |  
+| Cadastro de Item |  |  10| Executou perfeitamente a ação de cadastrar os itens no inventário |  
 | Edição de Item |  | 10 | Executou perfeitamente a ação de editar os itens do inventário |  
 | Remoção de Item |  | 10 |Executou perfeitamente a ação de remover os itens do inventário  |  
 | Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
@@ -69,13 +69,34 @@ Abaixo oque foi observado:
 
 Executando a fórmula:
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-> -  (5 / 10) x 100 = 50%
+> -  (10 / 10) x 100 = 100%
+
+### Métrica 1.2: Taxa de Operações Bem-Sucedidas
+
+Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
+
+Abaixo oque foi observado:
+| Acão| Descrição | Quantidade | Observações| 
+|:--:|:---------|:------|:--------|
+| Login | | 10| Executou perfeitamente a ação de login| 
+| Cadastro de Item |  |  10| Executou perfeitamente a ação de cadastrar os itens no inventário |  
+| Edição de Item |  | 10 | Executou perfeitamente a ação de editar os itens do inventário |  
+| Remoção de Item |  | 10 |Executou perfeitamente a ação de remover os itens do inventário  |  
+| Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
+| Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado| 
+
+Execuatndo a fórmula:
+> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
+
+> - (0 / 10) x 100 = 
 
 ### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
-### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
+> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
 
 ### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
+
+> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
 
 <p align="center"><strong>Tabela 1: Resultados Consolidados da Avaliação de Confiabilidade</strong></p>
 
