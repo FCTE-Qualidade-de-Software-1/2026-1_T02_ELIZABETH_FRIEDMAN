@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O presente documento visa expor as razões e os propósitos que orientam a avaliação de qualidade do sistema Ágio — uma aplicação web de código aberto criada por alunos da Universidade de Brasília (UnB) no âmbito da disciplina de Métodos de Desenvolvimento de Software. A análise aqui proposta adota como referência conceitual as características de qualidade de produto estabelecidas pela norma ISO/IEC 25010, priorizando os aspectos de maior relevância para a confiabilidade operacional e a completude funcional do sistema dentro do seu cenário de utilização.
+O presente documento visa expor as razões e os propósitos que orientam a avaliação de qualidade do sistema Ágio. A análise aqui proposta adota como referência conceitual as características de qualidade de produto estabelecidas pela norma ISO/IEC 25010, priorizando os aspectos de maior relevância para a confiabilidade operacional e a completude funcional do sistema dentro do seu cenário de utilização.
 
 
 ## Justificativa da avaliação
@@ -13,8 +13,6 @@ A realização desta avaliação de qualidade se fundamenta na relevância prát
 
 Durante a análise preliminar do sistema, foram identificados os seguintes riscos operacionais que motivam esta avaliação:
 
-- **Instabilidade do ambiente de produção**: a instância atual do AGIO apresenta **erro 500 (INTERNAL_SERVER_ERROR)** persistente, impedindo o acesso regular ao sistema e sugerindo fragilidades na infraestrutura ou no código de back-end;
-- **Falhas em operações críticas**: erros durante login, edição e exclusão de itens podem provocar perda ou corrupção de dados no inventário;
 - **Tratamento insuficiente de entradas inválidas**: a ausência de validação adequada pode expor o sistema a comportamentos inesperados diante de dados malformados ou tentativas de acesso indevido;
 - **Risco de inconsistência nos dados exportados**: falhas nas funcionalidades de exportação CSV podem gerar relatórios incorretos, comprometendo decisões gerenciais baseadas nesses dados.
 
@@ -22,19 +20,19 @@ Durante a análise preliminar do sistema, foram identificados os seguintes risco
 
 Considerando esse panorama, a avaliação se volta para duas características de qualidade essenciais previstas na norma ISO/IEC 25010, selecionadas com o intuito de abordar os pontos de risco mais significativos do sistema.
 
-A **Confiabilidade** se estabelece como o eixo prioritário desta avaliação, com o propósito de converter os sinais de instabilidade observados em dados objetivos e quantificáveis. A análise se debruça sobre a **Maturidade** do sistema, examinando a incidência de falhas em operações essenciais — como login, edição, exclusão de itens e consultas ao banco de dados — já que erros nessas rotinas prejudicam a experiência do usuário e desestabilizam o inventário. De forma complementar, investiga-se a **Tolerância a Falhas**, observando como o Ágio se comporta frente a entradas inválidas, tentativas de acesso indevido e inconsistências nos dados fornecidos, de modo a garantir que o sistema ofereça respostas controladas e seguras, sem interromper o serviço de maneira abrupta. As subcaracterísticas Recuperabilidade e Disponibilidade foram deixadas fora do escopo, uma vez que não é possível avaliá-las de forma adequada dada a atual indisponibilidade do sistema em ambiente de produção.
+A Confiabilidade se estabelece como o eixo prioritário desta avaliação, com o propósito de converter os sinais de instabilidade observados em dados objetivos e quantificáveis. A análise se debruça sobre a Maturidade do sistema, examinando a incidência de falhas em operações essenciais já que erros nessas rotinas prejudicam a experiência do usuário e desestabilizam o inventário. De forma complementar, investiga-se a Tolerância a Falhas, observando como o Ágio se comporta frente a entradas inválidas, tentativas de acesso indevido e inconsistências nos dados fornecidos, de modo a garantir que o sistema ofereça respostas controladas e seguras, sem interromper o serviço de maneira abrupta. As subcaracterísticas Recuperabilidade e Disponibilidade foram deixadas fora do escopo, uma vez que não é possível avaliá-las de forma adequada dada a atual indisponibilidade do sistema em ambiente de produção.
 
-A **Funcionalidade** se justifica pela necessidade de confirmar se o Ágio realmente disponibiliza o conjunto de operações a que se propõe e se essas operações produzem resultados corretos. A avaliação se concentra na **Adequação Funcional**, analisando se o sistema oferece e executa de maneira correta suas funcionalidades centrais: autenticação de usuários, operações de criação, leitura, atualização e exclusão de itens do inventário (CRUD), controle de acesso por perfis de usuário e exportação dos dados em formato CSV. Complementarmente, avalia-se a **Acurácia Funcional**, verificando se cada funcionalidade implementada produz resultados precisos e consistentes com o comportamento esperado — por exemplo, se os dados exibidos após uma edição refletem corretamente as alterações realizadas e se os arquivos CSV exportados reproduzem fielmente o conteúdo do banco de dados. A combinação dessas duas subcaracterísticas permite não apenas verificar a existência das funções, mas também validar a precisão dos seus resultados, garantindo uma análise funcional mais completa. A subcaracterística **Conformidade Funcional** não foi incluída nesta fase porque sua avaliação exige comparação detalhada com requisitos formais, normas e documentação específica, sendo mais adequada para uma fase posterior.
+A Adequação Funcional se justifica pela necessidade de confirmar se o Ágio realmente disponibiliza o conjunto de operações a que se propõe e se essas operações produzem resultados corretos. A avaliação analisando se o sistema oferece e executa de maneira correta suas funcionalidades centrais: autenticação de usuários, operações de criação, leitura, atualização e exclusão de itens do inventário (CRUD), controle de acesso por perfis de usuário e exportação dos dados em formato CSV. Complementarmente, avalia-se a Acurácia Funcional, verificando se cada funcionalidade implementada produz resultados precisos e consistentes com o comportamento esperado. A combinação dessas duas subcaracterísticas permite não apenas verificar a existência das funções, mas também validar a precisão dos seus resultados, garantindo uma análise funcional mais completa. A subcaracterística Conformidade Funcional não foi incluída nesta fase porque sua avaliação exige comparação detalhada com requisitos formais, normas e documentação específica, sendo mais adequada para uma fase posterior.
 
 ## Objetivo da avaliação
 
 A partir da justificativa exposta, definem-se os seguintes objetivos específicos e práticos para esta avaliação:
 
-- **Maturidade**: conduzir testes por meio da submissão do sistema a um conjunto de operações habituais — login com credenciais válidas e inválidas, criação, edição e exclusão de itens, consultas ao banco de dados e exportação em CSV — com o propósito de documentar, categorizar e mensurar a frequência das falhas encontradas.
+- **Maturidade**: conduzir testes por meio da submissão do sistema a um conjunto de operações habituais com o propósito de documentar, categorizar e mensurar a frequência das falhas encontradas.
 
 - **Tolerância a Falhas**: avaliar o comportamento do sistema quando confrontado com entradas inesperadas, dados malformados e tentativas de acesso indevido, de forma a verificar se as respostas do sistema são seguras e controladas, sem exposição de dados sensíveis nem interrupção abrupta do serviço.
 
-- **Adequação Funcional**: atestar se todas as funcionalidades descritas no repositório do projeto — gerenciamento de superusuários, controle de sessão, CRUD de inventário, visualização personalizada de itens e exportação em formato CSV — encontram-se implementadas e operam de acordo com o comportamento previsto.
+- **Adequação Funcional**: atestar se todas as funcionalidades descritas no repositório do projeto encontram-se implementadas e operam de acordo com o comportamento previsto.
 
 - **Acurácia Funcional**: verificar se os resultados produzidos por cada funcionalidade são precisos e consistentes, assegurando que operações como edição de itens, cálculos de quantidades e exportação de dados gerem saídas fiéis ao conteúdo real do sistema.
 
