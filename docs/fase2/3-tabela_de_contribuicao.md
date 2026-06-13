@@ -6,12 +6,12 @@ A tabela abaixo apresenta os nomes dos integrantes do grupo, a descrição das a
 
 | Nome                                    | Descrição                                      | Porcentagem |
 |----------------------------------------:|-----------------------------------------------|:-----------:|
-| Arthur Guilherme Aquino Santos          |                     | 16.66%         |
-| João Igor Pereira da Costa          |       | 16.66%         |
-| Letícia da Silva Monteiro               |                     | 16.66%         |
-| Tiago Lemes Teixeira        |      | 16.66%         |
-| Vitor Pereira Bessa                |    |     16.66%      |
-| Yzabella Miranda Pimenta              |                | 16.66%         |
+| Arthur Guilherme Aquino Santos          |           Participação no tópico de Confiabilidade          | 16.66%         |
+| João Igor Pereira da Costa         |           Participação no tópico de Confiabilidade          | 16.66%         |
+| Letícia da Silva Monteiro               |           Participação no tópico de Adequação Funcional       | 16.66%         |
+| Tiago Lemes Teixeira        |           Participação no tópico de Confiabilidade          | 16.66%         |
+| Vitor Pereira Bessa                |           Participação no tópico de Adequação Funcional          | 16.66%         |
+| Yzabella Miranda Pimenta             |           Participação no tópico de Adequação Funcional          | 16.66%         |
 | **Total**              |               | **100%**         |
 
 ---
