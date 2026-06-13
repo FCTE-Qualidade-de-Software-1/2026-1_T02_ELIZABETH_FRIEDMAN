@@ -21,6 +21,22 @@ Esta métrica contabiliza o número de falhas encontradas em relação ao númer
 
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
 
+Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
+
+Abaixo oque foi observado:
+| Acão| Descrição | Quantidade | Observações| 
+|:--:|:---------|:------|:--------|
+| Login | | 10| Executou perfeitamente a ação de login| 
+| Cadastro de Item |  |  10| Executou a ação de cadastrar os itens no inventário, porém cadastrou produtos com nomes inválidos, com somente caracteres especiais e emojis, por exemplo |  
+| Edição de Item |  | 10 | Executou perfeitamente a ação de editar os itens do inventário |  
+| Remoção de Item |  | 10 |Executou perfeitamente a ação de remover os itens do inventário  |  
+| Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
+| Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado|  
+
+Executando a fórmula:
+> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
+> -  (5 / 10) x 100 = 50%
+
 
 ### Métrica 1.2: Taxa de Operações Bem-Sucedidas
 
