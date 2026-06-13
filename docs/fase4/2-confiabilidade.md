@@ -56,6 +56,7 @@ Além disso, cada resultado é relacionado ao respectivo critério de aceitaçã
 Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
 
 Abaixo oque foi observado:
+
 | Acão| Descrição | Quantidade | Observações| 
 |:--:|:---------|:------|:--------|
 | Login | | 10| Executou perfeitamente a ação de login| 
@@ -65,7 +66,6 @@ Abaixo oque foi observado:
 | Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
 | Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado| 
 
-![Tabela Cadastrada no Inventário](../imagens/fase4/tabelaTeste.png) 
 
 Executando a fórmula:
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
@@ -86,11 +86,25 @@ Abaixo oque foi observado:
 | Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado| 
 
 Execuatndo a fórmula:
-> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
+> - Taxa de Sucesso = (N° de operações concluídas com sucesso / N° total de operações) x 100
 
-> - (0 / 10) x 100 = 
+> - (10 / 10) x 100 = 100%
 
 ### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
+
+Foram realizados testes de consistência e robustez no sistema, focados na identificação de comportamentos inesperados. As operações validaram o comportamento da aplicação diante de: Campos Obrigatórios Vazios, Dados fora do Formato Esperado, Valores Inválidos, Dados Duplicados e Caracteres Inválidos.
+
+Abaixo oque foi observado:
+| Acão| Descrição | Quantidade | Observações| 
+|:--:|:---------|:------|:--------|
+| Campo Obrigatório Vazio | | 10| | 
+| Dados fora do Formato Esperado |  |  10|  |  
+| EValores Inválidos |  | 10 | |  
+| Dados Duplicados |  | 10 |  |  
+| Caracteres Inválidos |  | 10 |  |  
+
+![Tabela Cadastrada no Inventário](../imagens/fase4/tabelaTeste.png) 
+
 
 > - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
 
