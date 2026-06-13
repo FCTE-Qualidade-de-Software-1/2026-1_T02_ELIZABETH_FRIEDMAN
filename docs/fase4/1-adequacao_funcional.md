@@ -65,7 +65,7 @@ A métrica afere o quão completas estão as funções em relação à especific
 - **Funcionalidades Especificadas (FE):** 20
 - **Funcionalidades Implementadas (FI):** 8
 
-$$ CF = \frac{8}{20} \times 100 = 40\% $$
+> - CF = (8/20) x 100 = 40%
 
 ---
 
@@ -108,7 +108,7 @@ A partir desses experimentos controlados de uso normal e de segurança, elaborou
 - **Funcionalidades Verificadas (FV):** 8 (considerando as 8 implementadas)
 - **Funcionalidades Corretas (FC):** 7
 
-$$ COR = \frac{7}{8} \times 100 = 87.5\% $$
+> - COR = (7/8) x 100 = 87.5%
 
 ---
 
@@ -121,7 +121,7 @@ A métrica afere a proporção de funcionalidades que contribuem diretamente par
 - **Funcionalidades Totais (FT):** 20 (todas as funcionalidades listadas no Backlog são aderentes ao conceito de um software ERP de gestão de inventário).
 - **Funcionalidades Pertinentes (FP):** 20
 
-$$ PF = \frac{20}{20} \times 100 = 100\% $$
+$$ PF = (20/20) x 100 = 100%
 
 ## Análise e Julgamento
 
