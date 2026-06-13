@@ -77,7 +77,7 @@ Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de
 
 Abaixo oque foi observado:
 
-| Acão| Descrição | Quantidade | Observações| 
+
 | Ação | Descrição | Quantidade | Observações |
 |:--:|:---------|:------:|:--------|
 | Login | Realização do processo de autenticação de usuários por meio de credenciais válidas para acesso ao sistema. | 10 | Executou perfeitamente a ação de login. |
