@@ -2,18 +2,18 @@
 
 ## Procedimento Executado
 
-A avaliação da Adequação Funcional do sistema AGIO foi conduzida com base na abordagem GQM (Goal-Question-Metric) definida na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/1-adequacao_funcional/) e no plano de coleta estabelecido na [Fase 3](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase3/1-adequacao_funcional/). O procedimento consistiu em duas frentes principais de investigação:
+A avaliação da Adequação Funcional do sistema AGIO foi conduzida com base na abordagem GQM (Goal-Question-Metric) definida na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/1-adequacao_funcional/) e no plano de coleta estabelecido na [Fase 3](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase3/1-adequacao_funcional/). O procedimento consistiu em três frentes principais de investigação:
 
 1. **Análise Documental e do Repositório**: Foi realizada a análise de funcionalidades (mapeamento) a partir do documento de backlog presente no repositório do AGIO. Esta etapa teve como foco identificar todas as funcionalidades especificadas para o sistema. 
 
-2. **Inspeção e Verificação das Funcionalidades**: Consistiu na validação da aplicação e do código-fonte. A partir das imagens do backlog, extraímos e listamos na tabela abaixo todas as funcionalidades planejadas para o sistema. O intuito dessa etapa foi comprovar a existência dessas funções no sistema (Completude), o funcionamento adequado de suas operações sem erros de lógica (Correção) e a utilidade destas para o contexto do domínio do software (Pertinência).
+2. **Inspeção e Verificação das Funcionalidades**: Consistiu na validação da aplicação e do código-fonte. A partir das funcionalidades do backlog, foi extraído todas as funcionalidades planejadas para o sistema. O intuito dessa etapa foi comprovar a existência dessas funções no sistema, o funcionamento adequado de suas operações sem erros de lógica e a utilidade destas para o contexto do domínio do software.
 
 3. **Execução de Cenários de Teste (Simulação de Uso Real)**: Para avaliar a correção funcional de maneira prática e próxima à realidade, conduzimos testes simulando interações reais com o sistema. Desenhamos dois cenários principais:
    * **Perfil 1 - Administrador de Estoque (Fluxo Principal):** Simulamos a rotina de um funcionário que precisa gerenciar o armazém. O passo a passo envolveu acessar a página de login (`/login/`), inserir usuário e senha, e navegar até o inventário. Lá, simulamos o clique no botão negro "Adicionar Item", preenchendo o formulário do modal (nome, quantidade, categoria, descrição e preço) e salvando. Por fim, testamos a extração de relatórios clicando no ícone de download na tabela de produtos. A expectativa era que tudo ocorresse sem erros, fechando o modal, exibindo uma notificação de sucesso, atualizando a tabela na tela e baixando o arquivo `dashboard.csv` corretamente.
    * **No fluxo do Administrador (Convergente):** Tudo funcionou como esperado. O login processou os dados com sucesso. Ao adicionar o produto, a interface disparou um alerta nativo ("Produto adicionado com sucesso!") e, ao clicar em OK, o modal fechou e a página atualizou os dados em tempo real (via `location.reload()`). A exportação do CSV também ocorreu perfeitamente, gerando um arquivo legível no Excel/Calc.
    * **Perfil 2 - Usuário Não Autenticado (Teste de Invasão/Segurança):** Simulamos uma pessoa mal-intencionada tentando acessar os dados da empresa sem ter uma conta. O teste consistiu em abrir uma aba anônima e colar o link de download direto (`http://127.0.0.1:8000/dashboard/export/csv/`). O comportamento esperado era que o sistema bloqueasse imediatamente essa tentativa (erro 401/403) e forçasse o redirecionamento para a tela de login.
    **Análise e Comparação das Saídas (O que observamos na prática):**
-   * **No cenário de Segurança (Divergente e Crítico):** O sistema falhou ao validar a sessão. Ao tentar acessar a rota de exportação pela aba anônima, a aplicação não barrou a requisição. Em vez disso, abriu a interface do Django REST Framework (status 200 OK) e expôs abertamente todos os registros do banco de dados na tela (ex: `{"csv_data": "ID,Nome,Descrição,Preço\r\n..."}`). Isso resultou em uma quebra de sigilo da empresa, evidenciando a falta de proteção nas rotas da API.
+   * **No cenário de Segurança (Divergente e Crítico):** O sistema falhou ao validar a sessão. Ao tentar acessar a rota de exportação pela aba anônima, a aplicação não barrou a requisição. Em vez disso, abriu a interface do Django REST Framework (status 200 OK) e expôs abertamente todos os registros do banco de dados na tela (ex: `{"csv_data": "ID,Nome,Descrição,Preço\r\n..."}`). Isso resultou em uma quebra de sigilo da aplicação, evidenciando a falta de proteção nas rotas da API.
 
 
 ## Medição (Dados Coletados)
@@ -29,8 +29,8 @@ A métrica afere o quão completas estão as funções em relação à especific
     <thead>
       <tr>
         <th style="text-align: center;">ID</th>
-        <th style="text-align: left;">Funcionalidades Especificadas (Backlog)</th>
-        <th style="text-align: center;">Status no Código</th>
+        <th style="text-align: left;">Funcionalidades</th>
+        <th style="text-align: center;">Situação</th>
       </tr>
     </thead>
     <tbody>
@@ -71,7 +71,7 @@ $$ CF = \frac{8}{20} \times 100 = 40\% $$
 
 ### Métrica 2.1: Correção Funcional (COR)
 
-A avaliação da Correção Funcional exigiu a execução manual das principais operações do sistema (conforme os cenários práticos detalhados no **Procedimento Executado**) para comprovar que as funcionalidades operam livres de erros lógicos.
+A avaliação da Correção Funcional exigiu a execução manual das principais operações do sistema para comprovar que as funcionalidades operam livres de erros lógicos.
 
 A partir desses experimentos controlados de uso normal e de segurança, elaborou-se o quadro consolidado da Correção Funcional para as 8 funcionalidades efetivamente entregues no código:
 
@@ -124,6 +124,8 @@ A métrica afere a proporção de funcionalidades que contribuem diretamente par
 $$ PF = \frac{20}{20} \times 100 = 100\% $$
 
 ## Análise e Julgamento
+
+O AGIO se mostrou muito consistente ao demonstrar que a equipe compreendeu exatamente as necessidades de um controle de estoque. O grande viés que compromete a entrega, contudo, é a falta de funções essenciais do backlog e uma vulnerabilidade crítica de segurança na API, que permite o acesso aos dados sem autenticação. Diante desse cenário, o software ainda não tem condições de ir para produção, sendo indispensável que a equipe priorize a proteção dessas rotas e a entrega do fluxo de criação de contas antes do lançamento.
 
 ### Respostas às Questões GQM
 
