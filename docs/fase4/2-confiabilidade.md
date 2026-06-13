@@ -21,23 +21,6 @@ Esta métrica contabiliza o número de falhas encontradas em relação ao númer
 
 > - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
 
-Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
-
-Abaixo oque foi observado:
-| Acão| Descrição | Quantidade | Observações| 
-|:--:|:---------|:------|:--------|
-| Login | | 10| Executou perfeitamente a ação de login| 
-| Cadastro de Item |  |  10| Executou a ação de cadastrar os itens no inventário, porém cadastrou produtos com nomes inválidos, com somente caracteres especiais e emojis, por exemplo |  
-| Edição de Item |  | 10 | Executou perfeitamente a ação de editar os itens do inventário |  
-| Remoção de Item |  | 10 |Executou perfeitamente a ação de remover os itens do inventário  |  
-| Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
-| Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado|  
-
-Executando a fórmula:
-> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-> -  (5 / 10) x 100 = 50%
-
-
 ### Métrica 1.2: Taxa de Operações Bem-Sucedidas
 
 Esta métrica contabiliza o número de operações concluídas com sucesso em relação ao número total de operações realizadas.
@@ -66,7 +49,33 @@ Esta métrica contabiliza a eficácia do sistema no bloqueio de tentativas de ac
 
 Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas anteriormente. Para cada métrica, é demonstrado o cálculo realizado com base nos dados coletados durante a execução dos testes, bem como o valor final obtido.
 
-Além disso, cada resultado é relacionado ao respectivo critério de aceitação estabelecido pelo modelo GQM, servindo como base para a análise e o julgamento que serão realizados na seção seguinte.
+Além disso, cada resultado é relacionado ao respectivo critério de aceitação estabelecido pelo modelo GQM, servindo como base para a análise e o julgamento que serão realizados na seção seguinte. 
+
+### Métrica 1.1: Taxa de Falhas Funcionais
+
+Foram executadas as seguintes operações: Login, Cadastro de Itens, Edição de Itens, Remoção de Itens, Consulta do Inventário e Exportação CSV(a cada novo item adicionado);
+
+Abaixo oque foi observado:
+| Acão| Descrição | Quantidade | Observações| 
+|:--:|:---------|:------|:--------|
+| Login | | 10| Executou perfeitamente a ação de login| 
+| Cadastro de Item |  |  10| Executou a ação de cadastrar os itens no inventário, porém cadastrou produtos com nomes inválidos, com somente caracteres especiais, emojis e preços negativos, por exemplo |  
+| Edição de Item |  | 10 | Executou perfeitamente a ação de editar os itens do inventário |  
+| Remoção de Item |  | 10 |Executou perfeitamente a ação de remover os itens do inventário  |  
+| Consulta de Inventário |  | 10 | Executou perfeitamente a ação de exibir os itens do inventário |  
+| Exportação CSV |  | 10 |  Exportou a lista de itens perfeitamente, a cada item adicionado| 
+
+![Tabela Cadastrada no Inventário](../imagens/fase4/tabelaTeste.png) 
+
+Executando a fórmula:
+> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
+> -  (5 / 10) x 100 = 50%
+
+### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
+
+### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
+
+### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
 
 <p align="center"><strong>Tabela 1: Resultados Consolidados da Avaliação de Confiabilidade</strong></p>
 
