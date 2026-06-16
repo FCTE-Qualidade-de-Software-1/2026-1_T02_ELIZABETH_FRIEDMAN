@@ -89,17 +89,18 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
 
 ### Ambiente de Teste
 
-- **Sistema Operacional:** Ubuntu X.X LTS (ou distribuição Linux equivalente)
+- **Sistema Operacional:** Ubuntu 22.04 LTS (ou distribuição Linux equivalente)
 - **Aplicação Avaliada:** AGIO
 - **Banco de Dados:** PostgreSQL (conforme configuração do projeto)
-- **Navegador:** Google Chrome ou Mozilla Firefox
-- **Hardware Utilizado:**
+- **Navegador:** Brave
+
+### Hardware Utilizado
   
-  - *CPU:* X núcleos ou superior
-  - *Memória RAM:* X GB ou superior
-  - Armazenamento X
+- *CPU:* X núcleos ou superior
+- *Memória RAM:* 6 GB ou superior
+- Armazenamento X
     
-- **Pré-requisitos:**
+### Pré-requisitos:**
   
   - Ambiente local do AGIO configurado e funcional
   - Banco de dados inicializado
