@@ -20,7 +20,7 @@ Avalia a frequência de falhas observadas durante a execução das funcionalidad
 
 **Fórmula:**
 
-> - TF = (NF / NO) × 100
+> - TFF = (NF / NO) × 100
 
 Onde:
 
@@ -33,14 +33,14 @@ Avalia a proporção de operações concluídas corretamente em relação ao tot
 
 **Fórmula:**
 
-> - TS = (OS / NO) × 100
+> - TOBS = (OS / NO) × 100
 
 Onde:
 
 - **OS** = Número de operações concluídas com sucesso
 - **NO** = Número total de operações realizadas
 
-### M2.1 - Taxa de Operações Bem-Sucedidas
+### M2.1 - Taxa de Tratamento de Entradas Inválidas (TTEI)
 
 Avalia a capacidade do sistema de tratar adequadamente entradas incorretas sem comprometer sua execução.
 
@@ -53,7 +53,7 @@ Onde:
 - **ET** = Número de entradas inválidas tratadas corretamente
 - **EI** = Número total de entradas inválidas submetidas
 
-### M2.2 - Taxa de Proteção Contra Acesso Indevido
+### M2.2 - Taxa de Proteção Contra Acesso Indevido (TPAI)
 
 Avalia a capacidade do sistema de impedir acessos não autorizados a funcionalidades restritas.
 
