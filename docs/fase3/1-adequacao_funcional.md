@@ -18,7 +18,7 @@ No contexto da Aplicação de Gestão de Inventário Otimizada (AGIO), a avalia�
 
 A avaliação da Adequação Funcional será realizada considerando as três subcaracterísticas definidas pela ISO/IEC 25010.
 
-### M1 - Completude Funcional
+### M1 - Taxa de Completude Funcional
 
 Avalia a proporção de funcionalidades implementadas em relação ao conjunto de funcionalidades especificadas na documentação do projeto.
 
@@ -31,7 +31,7 @@ Onde:
 - **FI** = Quantidade de funcionalidades implementadas;
 - **FE** = Quantidade de funcionalidades especificadas.
 
-### M2 - Correção Funcional
+### M2 - Taxa de Correção Funcional
 
 Avalia a proporção de funcionalidades que executam corretamente suas operações durante a verificação do sistema.
 
@@ -44,7 +44,7 @@ Onde:
 - **FC** = Quantidade de funcionalidades funcionando corretamente;
 - **FV** = Quantidade de funcionalidades verificadas.
 
-### M3 - Pertinência Funcional
+### M3 - Taxa de Pertinência Funcional
 
 Avalia a proporção de funcionalidades que contribuem diretamente para os objetivos de gerenciamento de inventário propostos pelo sistema.
 
@@ -66,9 +66,9 @@ A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](
 
 | Métrica | Critério Desejado |
 |----------|----------|
-| M1 - Completude Funcional | ≥ 90% |
-| M2 - Correção Funcional | ≥ 95% |
-| M3 - Pertinência Funcional | ≥ 90% |
+| M1 - Taxa de Completude Funcional | ≥ 90% |
+| M2 - Taxa de Correção Funcional | ≥ 95% |
+| M3 - Taxa Pertinência Funcional | ≥ 90% |
 
 <p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Miranda</em></p>
 
