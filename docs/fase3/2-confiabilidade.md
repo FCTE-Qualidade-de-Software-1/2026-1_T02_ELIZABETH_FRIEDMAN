@@ -8,19 +8,63 @@ A avaliação será realizada em um ambiente local Linux, utilizando a aplicaç�
 
 Serão executados cenários normais de uso e cenários com entradas inválidas e comportamentos inesperados, permitindo medir a frequência de falhas e a capacidade do sistema de lidar adequadamente com situações adversas. Os resultados coletados serão utilizados para o cálculo das métricas definidas na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/), garantindo rastreabilidade e reprodutibilidade da avaliação.
 
+---
+
 ## Métricas a Serem Implementadas
 
-Com base no planejamento realizado na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/), serão coletados dados para as seguintes métricas:
+Com base no planejamento realizado na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/), serão coletados dados para as seguintes métricas.
 
-**Maturidade**
+### M1.1 - Taxa de Falhas Funcionais
 
-- **Métrica 1.1:** Taxa de Falhas Funcionais
-- **Métrica 1.2:** Taxa de Operações Bem-Sucedidas
+Avalia a frequência de falhas observadas durante a execução das funcionalidades principais do sistema.
 
-**Tolerância a Falhas**
+**Fórmula:**
 
-- **Métrica 2.1:** Taxa de Tratamento de Entradas Inválidas
-- **Métrica 2.2:** Taxa de Proteção Contra Acesso Indevido
+> - TF = (NF / NO) × 100
+
+Onde:
+
+- **NF** = Número de falhas observadas
+- **NO** = Número total de operações realizadas
+
+### M1.2 - Taxa de Operações Bem-Sucedidas
+
+Avalia a proporção de operações concluídas corretamente em relação ao total de operações executadas.
+
+**Fórmula:**
+
+> - TS = (OS / NO) × 100
+
+Onde:
+
+- **OS** = Número de operações concluídas com sucesso
+- **NO** = Número total de operações realizadas
+
+### M2.1 - Taxa de Operações Bem-Sucedidas
+
+Avalia a capacidade do sistema de tratar adequadamente entradas incorretas sem comprometer sua execução.
+
+**Fórmula:**
+
+> - TTEI = (ET / EI) × 100
+
+Onde:
+
+- **ET** = Número de entradas inválidas tratadas corretamente
+- **EI** = Número total de entradas inválidas submetidas
+
+### M2.2 - Taxa de Proteção Contra Acesso Indevido
+
+Avalia a capacidade do sistema de impedir acessos não autorizados a funcionalidades restritas.
+
+**Fórmula:**
+
+> - TPAI = (TB / TI) × 100
+
+Onde:
+
+- **TB** = Número de tentativas de acesso indevido bloqueadas
+- **TI** = Número total de tentativas de acesso indevido realizadas
 
 ### Critérios de Avaliação
 
@@ -30,12 +74,14 @@ A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](
 
 | Métrica | Critério Desejado (Alta Maturidade/Tolerância) |
 |----------|----------|
-| Métrica 1.1: Taxa de Falhas Funcionais | < 2% |
-| Métrica 1.2: Taxa de Operações Bem-Sucedidas | > 98% |
-| Métrica 2.1: Taxa de Tratamento de Entradas Inválidas | > 95% |
-| Métrica 2.2: Taxa de Proteção Contra Acesso Indevido | > 95% |
+| M1.1 - Taxa de Falhas Funcionais | < 2% |
+| M1.2 - Taxa de Operações Bem-Sucedidas | > 98% |
+| M2.1 - Taxa de Tratamento de Entradas Inválidas | > 95% |
+| M2.2 - Taxa de Proteção Contra Acesso Indevido | > 95% |
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+---
 
 ## Ferramentas e Métodos de Coleta
 
@@ -48,10 +94,13 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
 - **Banco de Dados:** PostgreSQL (conforme configuração do projeto)
 - **Navegador:** Google Chrome ou Mozilla Firefox
 - **Hardware Utilizado:**
+  
   - *CPU:* X núcleos ou superior
   - *Memória RAM:* X GB ou superior
   - Armazenamento X
+    
 - **Pré-requisitos:**
+  
   - Ambiente local do AGIO configurado e funcional
   - Banco de dados inicializado
   - Usuário administrador cadastrado
@@ -59,7 +108,7 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
 
 ### Instrumentos de Medição
 
-#### Métrica 1.1: Taxa de Falhas Funcionais
+#### M1.1 - Taxa de Falhas Funcionais
 
 Tem como objetivo medir a frequência de falhas durante a execução das funcionalidades principais do AGIO.
 
@@ -87,23 +136,17 @@ Serão consideradas falhas:
 - Comportamentos incorretos
 - Operações que não produzem o resultado esperado
 
-**Fórmula:**
-
-> - Taxa de Falhas = (N° de falhas / N° total de operações) x 100
-
 **Ferramentas**
 
 - Interface Web do AGIO
 - Logs da aplicação
 - Logs do terminal
 
-#### Métrica 1.2: Taxa de Operações Bem-Sucedidas
-
-Tem como objetivo avaliar o percentual de operações concluídas corretamente pelo sistema.
+#### M1.2 - Taxa de Operações Bem-Sucedidas
 
 **Método de Coleta**
 
-Executar o mesmo conjunto de operações da Métrica 1.1:
+Executar o mesmo conjunto de operações da M1.1:
 
 - Login
 - Cadastro de itens
@@ -125,19 +168,13 @@ Serão consideradas falhas:
 - Comportamentos incorretos
 - Operações que não produzem o resultado esperado
 
-**Fórmula:**
-
-> - Taxa de Sucesso= (N° de operações concluídas com sucesso / N° total de operações) x 100
-
 **Ferramentas**
 
 - Interface Web do AGIO
 - Logs da aplicação
 - Logs do terminal
 
-#### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
-
-Tem como objetivo avaliar a capacidade do AGIO de lidar adequadamente com entradas incorretas sem interromper sua execução.
+#### M2.1 - Taxa de Tratamento de Entradas Inválidas
 
 **Método de Coleta**
 
@@ -160,16 +197,12 @@ Será considerado tratamento correto quando:
 - O sistema impedir a operação
 - Não ocorrer travamento ou erro interno
 
-**Fórmula:**
-
-> - Taxa de Tratamento= (N° de entradas inválidas tratadas / N° total de entradas inválidas) x 100
-
 **Ferramentas**
 
 - Interface Web do AGIO
 - Logs da aplicação
 
-#### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
+#### M2.2 - Taxa de Proteção Contra Acesso Indevido
 
 Tem como objetivo avaliar a capacidade do AGIO de impedir acessos não autorizados e proteger funcionalidades restritas contra usuários sem as permissões adequadas.
 
@@ -196,10 +229,6 @@ Será considerado bloqueio correto quando:
 - A operação solicitada não for executada
 - Não ocorrer erro interno ou exposição indevida de informações
 
-**Fórmula:**
-
-> - Taxa de Proteção= (N° de tentativas bloqueadas / N° total de tentativas indevidas) x 100
-
 **Ferramentas**
 
 - Interface Web do AGIO
@@ -208,13 +237,19 @@ Será considerado bloqueio correto quando:
 - Logs da aplicação
 - Logs do servidor
 
+---
+
 ## Cronograma de Avaliação
+
+---
 
 ## Conclusão
 
 O planejamento apresentado nesta fase foi elaborado com base nas métricas, hipóteses e critérios de avaliação definidos na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Os cenários de teste, métodos de coleta e ferramentas selecionadas permitem a obtenção dos dados necessários para o cálculo das métricas de Taxa de Falhas Funcionais, Taxa de Operações Bem-Sucedidas, Taxa de Tratamento de Entradas Inválidas e Taxa de Proteção Contra Acesso Indevido.
 
 Dessa forma, a execução prevista nesta fase garante que os resultados obtidos posteriormente possam ser comparados diretamente aos critérios estabelecidos na Fase 2, assegurando a rastreabilidade e a consistência da avaliação da Confiabilidade do sistema AGIO.
+
+---
 
 ## Referências Bibliográficas
 
