@@ -96,9 +96,9 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
 
 ### Hardware Utilizado
   
-- *CPU:* X núcleos ou superior
-- *Memória RAM:* 6 GB ou superior
-- Armazenamento X
+- **CPU:** X núcleos ou superior
+- **Memória RAM:** 6 GB ou superior
+- **Armazenamento:** X GB ou superior
     
 ### Pré-requisitos:**
   
