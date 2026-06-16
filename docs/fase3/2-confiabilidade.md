@@ -24,6 +24,10 @@ Com base no planejamento realizado na [Fase 2](https://fcte-qualidade-de-softwar
 
 ### Critérios de Avaliação
 
+A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Os resultados obtidos serão utilizados para avaliar o nível de confiabilidade do sistema e sua estabilidade operacional.
+
+<p align="center"><strong>Tabela 1: Critérios de Aceitação</strong></p>
+
 | Métrica | Critério Desejado (Alta Maturidade/Tolerância) |
 |----------|----------|
 | Métrica 1.1: Taxa de Falhas Funcionais | < 2% |
@@ -31,7 +35,7 @@ Com base no planejamento realizado na [Fase 2](https://fcte-qualidade-de-softwar
 | Métrica 2.1: Taxa de Tratamento de Entradas Inválidas | > 95% |
 | Métrica 2.2: Taxa de Proteção Contra Acesso Indevido | > 95% |
 
-Os resultados obtidos serão utilizados para verificar o nível de confiabilidade do sistema e sua estabilidade operacional.
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 ## Ferramentas e Métodos de Coleta
 
@@ -203,6 +207,14 @@ Será considerado bloqueio correto quando:
 - Ferramentas de desenvolvedor do navegador (DevTools)
 - Logs da aplicação
 - Logs do servidor
+
+## Cronograma de Avaliação
+
+## Consistência com a Fase 2
+
+O planejamento apresentado nesta fase foi elaborado com base nas métricas, hipóteses e critérios de avaliação definidos na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Os cenários de teste, métodos de coleta e ferramentas selecionadas permitem a obtenção dos dados necessários para o cálculo das métricas de Taxa de Falhas Funcionais, Taxa de Operações Bem-Sucedidas, Taxa de Tratamento de Entradas Inválidas e Taxa de Proteção Contra Acesso Indevido.
+
+Dessa forma, a execução prevista nesta fase garante que os resultados obtidos posteriormente possam ser comparados diretamente aos critérios estabelecidos na Fase 2, assegurando a rastreabilidade e a consistência da avaliação da Confiabilidade do sistema AGIO.
 
 ## Referências Bibliográficas
 
