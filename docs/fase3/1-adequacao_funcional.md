@@ -66,9 +66,9 @@ A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](
 
 | Métrica | Critério Desejado |
 |----------|----------|
-| Métrica 1: Completude Funcional | ≥ 90% |
-| Métrica 2: Correção Funcional | ≥ 95% |
-| Métrica 3: Pertinência Funcional | ≥ 90% |
+| M1 - Completude Funcional | ≥ 90% |
+| M2 - Correção Funcional | ≥ 95% |
+| M3 - Pertinência Funcional | ≥ 90% |
 
 <p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Miranda</em></p>
 
@@ -121,7 +121,11 @@ Também serão utilizados dados obtidos diretamente do repositório GitHub do pr
 
 Essas informações servirão como evidências para apoiar a análise da completude, correção e pertinência funcional do sistema.
 
+---
+
 ## Cronograma de Avaliação
+
+---
 
 ### Conclusão
 
