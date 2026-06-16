@@ -37,6 +37,8 @@ A métrica avalia a proporção de falhas identificadas durante a execução das
 | Consulta de Inventário | 10 | 0 | Operação executada sem falhas. |
 | Exportação CSV | 10 | 1 | Foi identificado um comportamento inesperado em uma execução. |
 
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
 **Resultado da Métrica:**
 
 - Número total de operações: 60
@@ -62,6 +64,8 @@ A métrica avalia a proporção de operações concluídas com sucesso em relaç
 | Remoção de Item | 10 | 10 |
 | Consulta de Inventário | 10 | 10 |
 | Exportação CSV | 10 | 10 |
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 **Resultado da Métrica:**
 
@@ -95,6 +99,8 @@ A métrica avalia a capacidade do sistema de identificar e tratar adequadamente 
 | Dados Duplicados | 10 | 10 | Sistema impediu o cadastro duplicado. |
 | Caracteres Inválidos | 10 | 0 | Sistema aceitou entradas sem validação específica. |
 
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
 **Resultado da Métrica:**
 
 - Entradas inválidas tratadas corretamente: 30
@@ -119,6 +125,8 @@ A métrica avalia a eficácia dos mecanismos de autenticação e autorização n
 | Usuário sem privilégios administrativos | 10 | 10 | Acesso negado conforme esperado. |
 | Sessão expirada | 10 | 10 | Sistema exigiu nova autenticação. |
 | Operações administrativas sem permissão | 10 | 10 | Operações bloqueadas corretamente. |
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 **Resultado da Métrica:**
 
