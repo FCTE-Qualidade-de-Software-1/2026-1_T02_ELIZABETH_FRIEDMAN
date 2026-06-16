@@ -59,13 +59,18 @@ Onde:
 
 ### Critérios de Avaliação
 
+A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Os resultados obtidos serão utilizados para verificar o grau de aderência do AGIO aos requisitos funcionais definidos para o projeto.
+
+
+<p align="center"><strong>Tabela 1: Critérios de Aceitação</strong></p>
+
 | Métrica | Critério Desejado |
 |----------|----------|
-| Completude Funcional | ≥ 90% |
-| Correção Funcional | ≥ 95% |
-| Pertinência Funcional | ≥ 90% |
+| Métrica 1: Completude Funcional | ≥ 90% |
+| Métrica 2: Correção Funcional | ≥ 95% |
+| Métrica 3: Pertinência Funcional | ≥ 90% |
 
-Os resultados obtidos serão utilizados para verificar o grau de aderência do AGIO aos requisitos funcionais definidos para o projeto.
+<p align="center"><em>Autores: Letícia da Silva, Vitor Pereira e Yzabella Miranda</em></p>
 
 ---
 
@@ -115,6 +120,14 @@ Também serão utilizados dados obtidos diretamente do repositório GitHub do pr
 - Casos de teste automatizados existentes.
 
 Essas informações servirão como evidências para apoiar a análise da completude, correção e pertinência funcional do sistema.
+
+## Cronograma de Avaliação
+
+### Conclusão
+
+O planejamento apresentado nesta fase foi elaborado com base nas métricas, hipóteses e critérios de avaliação definidos na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Os métodos de coleta, as fontes de evidência e os procedimentos de inspeção selecionados permitem a obtenção dos dados necessários para o cálculo das métricas de **Completude Funcional, Correção Funcional e Pertinência Funcional**.
+
+Dessa forma, a execução prevista nesta fase garante que os resultados obtidos posteriormente possam ser comparados diretamente aos critérios estabelecidos na Fase 2, assegurando a rastreabilidade e a consistência da avaliação da Adequação Funcional do sistema AGIO.
 
 ---
 
