@@ -46,6 +46,6 @@ A descrição detalhada das subcaracterísticas adotadas está disponível na se
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
-| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 |  |  |
+| 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 |  [Yzabella Pimenta](https://github.com/redjsun) | 11/05/2026 |
 | 02 | Desenvolvimento do documento, com a criação dos tópicos de introdução, justificativa, objetivo, referência bibliográfica, histórico de versão e inserção das referências. | [Yzabella Pimenta](https://github.com/redjsun) | 12/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 12/05/2026 |
-| 03 | Revisão e ajuste do documento: correção ortográfica, padronização de numeração, inclusão de riscos identificados, adição de Acurácia Funcional ao escopo e preenchimento da referência bibliográfica. | [Yzabella Pimenta](https://github.com/redjsun) | 13/05/2026 |  |  |
+| 03 | Revisão e ajuste do documento: correção ortográfica, padronização de numeração, inclusão de riscos identificados, adição de Acurácia Funcional ao escopo e preenchimento da referência bibliográfica. | [Yzabella Pimenta](https://github.com/redjsun) | 13/05/2026 |  [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 13/05/2026 |
