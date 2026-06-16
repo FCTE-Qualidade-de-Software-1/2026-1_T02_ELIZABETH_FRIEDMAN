@@ -121,7 +121,9 @@ A métrica afere a proporção de funcionalidades que contribuem diretamente par
 - **Funcionalidades Totais (FT):** 20 (todas as funcionalidades listadas no Backlog são aderentes ao conceito de um software ERP de gestão de inventário).
 - **Funcionalidades Pertinentes (FP):** 20
 
-$$ PF = (20/20) x 100 = 100%
+>  - PF = (20/20) x 100 = 100%
+
+---
 
 ## Análise e Julgamento
 
