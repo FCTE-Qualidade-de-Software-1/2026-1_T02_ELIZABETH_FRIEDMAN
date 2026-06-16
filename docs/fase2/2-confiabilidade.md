@@ -22,7 +22,7 @@ Para realizar esta avaliação, foi utilizada a abordagem GQM (Goal-Question-Met
 | **Da perspectiva do** | Gestor de Inventário | 
 | **No contexto de** | Disciplina de Qualidade de Software | 
 
-<p align="center"><em>Autor: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 ## Questões e Métricas
 
