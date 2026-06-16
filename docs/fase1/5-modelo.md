@@ -83,5 +83,5 @@ Dessa forma, o escopo combina a verificação da cobertura das funções e a val
 | 01 | Criação do documento e documentação da Introdução, Escopo e Referências Bibliográficas | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 11/05/2026 | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 11/05/2026 |
 | 02 | Documentação do Diagrama e da Adaptação do Modelo | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 11/05/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 12/05/2026 |
 | 03 | Atualização da documentação da Adaptação do Modelo | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 12/05/2026 | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 12/05/2026 |
-| 04 | Correção da característica de Adequação Funcional | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 18/05/2026 |  |  |
+| 04 | Correção da característica de Adequação Funcional | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 18/05/2026 | [Arthur Guilherme](https://github.com/ArthurGuilher62) | 18/05/2026 |
 
