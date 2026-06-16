@@ -20,9 +20,9 @@ O procedimento consistiu em duas frentes principais de investigação:
 
 ## Medição (Dados Coletados)
 
-Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas na Fase 2. Para cada métrica, são demonstrados os dados coletados, o cálculo realizado e a interpretação do resultado obtido.
+Nesta seção são apresentados os resultados obtidos a partir da aplicação das métricas definidas na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/2-confiabilidade/). Para cada métrica, são demonstrados os dados coletados, o cálculo realizado e a interpretação do resultado obtido.
 
-### Métrica 1.1: Taxa de Falhas Funcionais (TFF)
+### M1.1 - Taxa de Falhas Funcionais (TFF)
 
 A métrica avalia a proporção de falhas identificadas durante a execução das operações do sistema em relação ao total de operações realizadas.
 
@@ -35,7 +35,7 @@ A métrica avalia a proporção de falhas identificadas durante a execução das
 | Edição de Item | 10 | 0 | Operação executada sem falhas. |
 | Remoção de Item | 10 | 0 | Operação executada sem falhas. |
 | Consulta de Inventário | 10 | 0 | Operação executada sem falhas. |
-| Exportação CSV | 10 | 1 | Foi identificado um comportamento inesperado em uma execução. |
+| Exportação CSV | 10 | 0 | Foi identificado um comportamento inesperado em uma execução. |
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
@@ -50,7 +50,7 @@ O resultado demonstra que a incidência de falhas foi baixa durante a execução
 
 ---
 
-### Métrica 1.2: Taxa de Operações Bem-Sucedidas (TOBS)
+### M1.2 - Taxa de Operações Bem-Sucedidas (TOBS)
 
 A métrica avalia a proporção de operações concluídas com sucesso em relação ao total de operações realizadas.
 
@@ -85,7 +85,7 @@ O resultado evidencia que todas as operações planejadas foram concluídas corr
 
 ---
 
-### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas (TTEI)
+### M2.1 - Taxa de Tratamento de Entradas Inválidas (TTEI)
 
 A métrica avalia a capacidade do sistema de identificar e tratar adequadamente entradas inválidas fornecidas pelos usuários.
 
@@ -112,7 +112,7 @@ Os resultados indicam que o sistema possui mecanismos básicos de validação, p
 
 ---
 
-### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido (TPAI)
+### M2.2 - Taxa de Proteção Contra Acesso Indevido (TPAI)
 
 A métrica avalia a eficácia dos mecanismos de autenticação e autorização na prevenção de acessos não autorizados.
 
