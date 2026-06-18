@@ -64,6 +64,13 @@ Os ODS fornecem diretrizes para que governos, instituições e organizações de
 
 Dessa forma, o projeto AGIO (Aplicação de Gestão de Inventário Otimizada) apresenta alinhamento com alguns dos Objetivos de Desenvolvimento Sustentável, especialmente aqueles relacionados à educação de qualidade, ao desenvolvimento de competências profissionais e à promoção da inovação tecnológica. As ODS identificadas como mais aderentes ao contexto do projeto são apresentadas a seguir.
 
+<p align="center"><strong>Imagem 1: Objetivos de Desenvolvimento Sustentável</strong></p>
+
+![Objetivos de Desenvolvimento Sustentável](../imagens/fase1/ods.png)
+
+<p align="center"><em>Fonte: <a href="https://gtagenda2030.org.br/ods/">GT Agenda 2030</a></em></p>
+
+
 ## ODS 4 — Educação de Qualidade
 
 O AGIO possui relação com o ODS 4 por ser um projeto acadêmico desenvolvido na Universidade de Brasília (UnB), proporcionando aos estudantes experiências práticas relacionadas ao desenvolvimento de software, aplicação de modelos de qualidade, colaboração em equipe, versionamento e documentação técnica.
