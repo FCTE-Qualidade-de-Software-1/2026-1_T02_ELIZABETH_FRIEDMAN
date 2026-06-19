@@ -30,9 +30,9 @@ A métrica avalia a proporção de falhas identificadas durante a execução das
 
 | Ação | Quantidade Executada | Falhas Observadas | Observações |
 |:--|:--:|:--:|:--|
-| Login | 10 | 0 | Autenticação executada corretamente com credenciais válidas e rejeitada com credenciais inválidas. |
-| Cadastro de Item | 10 | 0 | Operação executada sem falhas. |
-| Edição de Item | 10 | 0 | Operação executada sem falhas. |
+| Login | 60 | 0 | Autenticação executada corretamente com credenciais válidas e rejeitada com credenciais inválidas. |
+| Cadastro de Item | 16 | 2 | falhas: permite cadastro de quantidade negativa de estoque e não permite  descrição vazia. |
+| Edição de Item | 16 | 1 | falha: permite cadastro de quantidade negativa de estoque. |
 | Remoção de Item | 10 | 0 | Operação executada sem falhas. |
 | Consulta de Inventário | 10 | 0 | Operação executada sem falhas. |
 | Exportação CSV | 10 | 0 | Foi identificado um comportamento inesperado em uma execução. |
@@ -41,10 +41,10 @@ A métrica avalia a proporção de falhas identificadas durante a execução das
 
 **Resultado da Métrica:**
 
-- Número total de operações: 60
-- Número de falhas identificadas: 0
+- Número total de operações: 122
+- Número de falhas identificadas: 3
 
-> TFF = (0 / 60) × 100 = 0%
+> TFF = (3 / 122) × 100 = 2,46%
 
 O resultado demonstra que a incidência de falhas foi baixa durante a execução das funcionalidades avaliadas.
 
@@ -58,9 +58,9 @@ A métrica avalia a proporção de operações concluídas com sucesso em relaç
 
 | Ação | Quantidade Executada | Operações Bem-Sucedidas |
 |:--|:--:|:--:|
-| Login | 10 | 10 |
-| Cadastro de Item | 10 | 10 |
-| Edição de Item | 10 | 10 |
+| Login | 60 | 60 |
+| Cadastro de Item | 16 | 14 |
+| Edição de Item | 16 | 15 |
 | Remoção de Item | 10 | 10 |
 | Consulta de Inventário | 10 | 10 |
 | Exportação CSV | 10 | 10 |
@@ -69,16 +69,22 @@ A métrica avalia a proporção de operações concluídas com sucesso em relaç
 
 **Resultado da Métrica:**
 
-- Operações concluídas com sucesso: 60
-- Total de operações realizadas: 60
+- Operações concluídas com sucesso: 119
+- Total de operações realizadas: 122
 
-> TOBS = (60 / 60) × 100 = 100%
+> TOBS = (119 / 122) × 100 = 97,54%
 
 O resultado evidencia que todas as operações planejadas foram concluídas corretamente durante os testes realizados.
 
 <p align="center"><strong>Imagem 1: Teste da Métrica 1.1 e 1.2</strong></p>
 
 ![Diagrama GQP](../imagens/fase4/teste_confiabilidade.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+<p align="center"><strong>Imagem 2: Teste da Métrica 1.1 e 1.2</strong></p>
+
+![Diagrama GQP](../imagens/fase4/teste2_confiabilidade.png)
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
@@ -161,8 +167,8 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 
 | Métrica | Objetivo | Valor Obtido | Critério Desejado | Resultado da Hipótese |
 |----------|----------|:----------:|:----------:|:----------:|
-| M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 0% | < 2% | **CONFIRMADA** |
-| M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 100% | > 98% | **CONFIRMADA** |
+| M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 2,46% | < 2% | **REFUTADA** |
+| M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 97,54% | > 98% | **REFUTADA** |
 | M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **REFUTADA** |
 | M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **CONFIRMADA** |
 
@@ -174,4 +180,5 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 |:--:|:---------|:------|:--------|:--------|:----:|
 | 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
 | 02 | Criação do documento |  [João Igor](https://github.com/JoaoPC10) | 02/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
+| 03 | adição de fotos de teste e reajuste de quantidade de dados |  [Arthur Guilherme](https://github.com/ArthurGuilher62) | 19/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 19/06/2026 |
 
