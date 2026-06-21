@@ -11,9 +11,40 @@ A avaliação da Adequação Funcional do sistema AGIO foi conduzida com base na
 3. **Execução de Cenários de Teste (Simulação de Uso Real)**: Para avaliar a correção funcional de maneira prática e próxima à realidade, conduzimos testes simulando interações reais com o sistema. Desenhamos dois cenários principais:
    * **Perfil 1 - Administrador de Estoque (Fluxo Principal):** Simulamos a rotina de um funcionário que precisa gerenciar o armazém. O passo a passo envolveu acessar a página de login (`/login/`), inserir usuário e senha, e navegar até o inventário. Lá, simulamos o clique no botão negro "Adicionar Item", preenchendo o formulário do modal (nome, quantidade, categoria, descrição e preço) e salvando. Por fim, testamos a extração de relatórios clicando no ícone de download na tabela de produtos. A expectativa era que tudo ocorresse sem erros, fechando o modal, exibindo uma notificação de sucesso, atualizando a tabela na tela e baixando o arquivo `dashboard.csv` corretamente.
    * **No fluxo do Administrador (Convergente):** Tudo funcionou como esperado. O login processou os dados com sucesso. Ao adicionar o produto, a interface disparou um alerta nativo ("Produto adicionado com sucesso!") e, ao clicar em OK, o modal fechou e a página atualizou os dados em tempo real (via `location.reload()`). A exportação do CSV também ocorreu perfeitamente, gerando um arquivo legível no Excel/Calc.
+
+<p align="center"><strong>Figura 1: Dashboard — Inventário de Estoque</strong></p>
+
+![Dashboard do AGIO](../imagens/fase%204/agio-dashboard.png)
+
+<p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
+
+<p align="center"><strong>Figura 2: Modal de Adição de Novo Produto</strong></p>
+
+![Adição de Item no AGIO](../imagens/fase%204/agio-adicaoItem.png)
+
+<p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
+
+<p align="center"><strong>Figura 3: Tabela Atualizada após Adição</strong></p>
+
+![Tabela Atualizada](../imagens/fase%204/agio-tabelaAtualizada.png)
+
+<p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
+
+<p align="center"><strong>Figura 4: Exportação de Relatório CSV</strong></p>
+
+![Exportação CSV](../imagens/fase%204/agio-exportaCSV.png)
+
+<p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
+
    * **Perfil 2 - Usuário Não Autenticado (Teste de Invasão/Segurança):** Simulamos uma pessoa mal-intencionada tentando acessar os dados da empresa sem ter uma conta. O teste consistiu em abrir uma aba anônima e colar o link de download direto (`http://127.0.0.1:8000/dashboard/export/csv/`). O comportamento esperado era que o sistema bloqueasse imediatamente essa tentativa (erro 401/403) e forçasse o redirecionamento para a tela de login.
    **Análise e Comparação das Saídas (O que observamos na prática):**
    * **No cenário de Segurança (Divergente e Crítico):** O sistema falhou ao validar a sessão. Ao tentar acessar a rota de exportação pela aba anônima, a aplicação não barrou a requisição. Em vez disso, abriu a interface do Django REST Framework (status 200 OK) e expôs abertamente todos os registros do banco de dados na tela (ex: `{"csv_data": "ID,Nome,Descrição,Preço\r\n..."}`). Isso resultou em uma quebra de sigilo da aplicação, evidenciando a falta de proteção nas rotas da API.
+
+<p align="center"><strong>Figura 5: Acesso Não Autenticado — Dados Expostos em Modo Anônimo</strong></p>
+
+![Modo Anônimo - Falha de Segurança](../imagens/fase%204/agio-modoAnonimo.png)
+
+<p align="center"><em>Autor: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
 
 
 ## Medição (Dados Coletados)
@@ -58,14 +89,14 @@ A métrica afere o quão completas estão as funções em relação à especific
   </table>
 </div>
 
-<p align="center"><em>Autores: Yzabella Mirandas </em></p>
+<p align="center"><em>Autores: Yzabella Miranda </em></p>
 
 **Resultado da Métrica:**
 
 - **Funcionalidades Especificadas (FE):** 20
 - **Funcionalidades Implementadas (FI):** 8
 
-> - CF = (8/20) x 100 = 40%
+$$ CF = \frac{8}{20} \times 100 = 40\% $$
 
 ---
 
@@ -101,14 +132,14 @@ A partir desses experimentos controlados de uso normal e de segurança, elaborou
   </table>
 </div>
 
-<p align="center"><em>Autores: Yzabella Mirandas </em></p>
+<p align="center"><em>Autores: Yzabella Miranda </em></p>
 
 **Resultado da Métrica:**
 
 - **Funcionalidades Verificadas (FV):** 8 (considerando as 8 implementadas)
 - **Funcionalidades Corretas (FC):** 7
 
-> - COR = (7/8) x 100 = 87.5%
+$$ COR = \frac{7}{8} \times 100 = 87.5\% $$
 
 ---
 
@@ -121,13 +152,11 @@ A métrica afere a proporção de funcionalidades que contribuem diretamente par
 - **Funcionalidades Totais (FT):** 20 (todas as funcionalidades listadas no Backlog são aderentes ao conceito de um software ERP de gestão de inventário).
 - **Funcionalidades Pertinentes (FP):** 20
 
->  - PF = (20/20) x 100 = 100%
-
----
+$$ PF = \frac{20}{20} \times 100 = 100\% $$
 
 ## Análise e Julgamento
 
-O AGIO se mostrou muito consistente ao demonstrar que a equipe compreendeu exatamente as necessidades de um controle de estoque. O grande viés que compromete a entrega, contudo, é a falta de funções essenciais do backlog e uma vulnerabilidade crítica de segurança na API, que permite o acesso aos dados sem autenticação. Diante desse cenário, o software ainda não tem condições de ir para produção, sendo indispensável que a equipe priorize a proteção dessas rotas e a entrega do fluxo de criação de contas antes do lançamento.
+O AGIO se mostrou muito consistente ao demonstrar que a equipe compreendeu exatamente as necessidades de um controle de estoque. O grande viés que compromete a aplicação, contudo, é a falta de funções essenciais do backlog e uma vulnerabilidade crítica de segurança na API, que permite o acesso aos dados sem autenticação. Diante desse cenário, o software ainda não tem condições de ir para produção, sendo indispensável a priorização da proteção dessas rotas e a entrega do fluxo de criação de contas.
 
 ### Respostas às Questões GQM
 
@@ -181,11 +210,12 @@ O AGIO se mostrou muito consistente ao demonstrar que a equipe compreendeu exata
   </table>
 </div>
 
-<p align="center"><em>Autores: Yzabella Mirandas </em></p>
+<p align="center"><em>Autores: Yzabella Miranda </em></p>
 
 ## Histórico de Versão
 
 | ID | Descrição | Autor | Data | Revisor | Data |
 |:--:|:---------|:------|:--------|:--------|:----:|
 | 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026  |
-| 02 | Atualização do documento com a explicação do procedimento executado, medição e análise | [Yzabella Pimenta](https://github.com/redjsun) | 12/06/2026 |   |  |
+| 02 | Atualização do documento com a explicação do procedimento executado, medição e análise | [Yzabella Pimenta](https://github.com/redjsun) | 12/06/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005)  | 12/06/2026 |
+| 03 | Adição de imagem dos casos de testes | [Yzabella Pimenta](https://github.com/redjsun) | 21/06/2026 | [Tiago Lemes](https://github.com/TiagoTeixeira-2005)  | 22/06/2026 |
