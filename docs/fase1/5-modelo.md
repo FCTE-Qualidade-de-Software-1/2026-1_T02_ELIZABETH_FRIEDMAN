@@ -60,7 +60,7 @@ Refere-se ao grau em que o AGIO entrega corretamente as funcionalidades prevista
 <p align="center"><strong>Tabela 2: Classificação das subcaracterísticas de Adequação Funcional</strong></p>
 
 
-|Subcaracterística de Confiabilidade (SQuaRE)| Impacto | Risco |Justificativa |
+|Subcaracterística de Adequação Funcional (SQuaRE)| Impacto | Risco |Justificativa |
 |--------|--------|--------|--------|
 | **Completude Funcional** | Alto | Alto | Avalia em que medida o conjunto de funções do sistema cobre todas as tarefas especificadas e os objetivos dos usuários. |
 | **Correção Funcional** | Alto | Médio | Avalia se o sistema fornece resultados corretos, com o nível de precisão necessário para cada funcionalidade. |
