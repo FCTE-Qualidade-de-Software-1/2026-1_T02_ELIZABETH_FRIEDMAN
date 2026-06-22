@@ -125,6 +125,24 @@ Essas informações servirão como evidências para apoiar a análise da complet
 
 ## Cronograma de Avaliação
 
+O cronograma abaixo faz parte do planejamento da Fase 3 e define as datas previstas para a execução das atividades de coleta e análise da característica de **Adequação Funcional** durante a [Fase 4](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase4/1-adequacao_funcional/). Nesta etapa, realiza-se apenas o planejamento da agenda de avaliação; a coleta efetiva dos dados, o cálculo das métricas, a comparação com os critérios estabelecidos e o julgamento dos resultados serão realizados posteriormente na Fase 4.
+
+Toda a execução está prevista para ocorrer no período de **06/06/2026 a 12/06/2026**.
+
+<p align="center"><strong>Tabela 2: Cronograma de Execução da Avaliação de Adequação Funcional</strong></p>
+
+| Etapa | Atividades | Métricas | Responsável | Data Realizada |
+|--------|--------|--------|--------|--------|
+| 1 | Preparação do ambiente de avaliação: acesso ao repositório do AGIO, levantamento do backlog do produto e configuração da aplicação para inspeção | — | Yzabella Miranda | 06/06/2026 |
+| 2 | Análise documental do backlog e identificação das funcionalidades especificadas para o sistema | CF | Yzabella Miranda | 06/06/2026 |
+| 3 | Inspeção do código-fonte e da aplicação para verificar a implementação das funcionalidades especificadas | CF | Yzabella Miranda | 07/06/2026 |
+| 4 | Mapeamento das funcionalidades implementadas e cálculo da Completude Funcional (CF) | CF | Yzabella Miranda | 07/06/2026 |
+| 5 | Execução dos cenários de teste do Perfil 1 (Administrador de Estoque), avaliando login, gerenciamento de produtos e exportação CSV | COR | Yzabella Miranda | 10/06/2026 |
+| 6 | Execução dos cenários de teste do Perfil 2 (Usuário Não Autenticado), avaliando autenticação, controle de acesso e proteção das rotas da aplicação | COR | Yzabella Miranda | 10/06/2026 |
+| 7 | Análise dos resultados dos testes, avaliação da Pertinência Funcional (PF), cálculo das métricas e consolidação do relatório final | CF, COR, PF | Yzabella Miranda | 12/06/2026 |
+
+<p align="center"><em>Autor: Yzabella Miranda</em></p>
+
 ---
 
 ### Conclusão
