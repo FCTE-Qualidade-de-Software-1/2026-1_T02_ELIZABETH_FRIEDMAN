@@ -242,7 +242,7 @@ Será considerado bloqueio correto quando:
 
 ## Cronograma de Avaliação
 
-O cronograma abaixo faz parte do planejamento da Fase 3 e define as datas previstas para a execução das atividades de coleta e análise da característica de **Adequação Funcional** durante a [Fase 4](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase4/2-confiabilidade/#m22-taxa-de-protecao-contra-acesso-indevido-tpai). Nesta etapa, realiza-se apenas o planejamento da agenda de avaliação; a coleta efetiva dos dados, o cálculo das métricas, a comparação com os critérios estabelecidos e o julgamento dos resultados serão realizados posteriormente na Fase 4.
+O cronograma abaixo faz parte do planejamento da Fase 3 e define as datas previstas para a execução das atividades de coleta e análise da característica de **Confiabilidade** durante a [Fase 4](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase4/2-confiabilidade/#m22-taxa-de-protecao-contra-acesso-indevido-tpai). Nesta etapa, realiza-se apenas o planejamento da agenda de avaliação; a coleta efetiva dos dados, o cálculo das métricas, a comparação com os critérios estabelecidos e o julgamento dos resultados serão realizados posteriormente na Fase 4.
 
 Toda a execução está prevista para ocorrer no período de **06/06/2026 a 12/06/2026**.
 
