@@ -242,6 +242,24 @@ Será considerado bloqueio correto quando:
 
 ## Cronograma de Avaliação
 
+O cronograma abaixo faz parte do planejamento da Fase 3 e define as datas previstas para a execução das atividades de coleta e análise da característica de **Adequação Funcional** durante a [Fase 4](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase4/2-confiabilidade/#m22-taxa-de-protecao-contra-acesso-indevido-tpai). Nesta etapa, realiza-se apenas o planejamento da agenda de avaliação; a coleta efetiva dos dados, o cálculo das métricas, a comparação com os critérios estabelecidos e o julgamento dos resultados serão realizados posteriormente na Fase 4.
+
+Toda a execução está prevista para ocorrer no período de **06/06/2026 a 12/06/2026**.
+
+<p align="center"><strong>Tabela 2: Cronograma de Execução da Avaliação de Confiabilidade</strong></p>
+
+| Etapa | Atividades | Métricas | Responsável | Data Realizada |
+|--------|--------|--------|--------|--------|
+| 1 | Preparação do ambiente de testes: inicialização do AGIO, configuração do banco de dados e validação do acesso ao sistema | — | Arthur Guilherme e João Igor | 06/06/2026 |
+| 2 | Definição e organização dos cenários de teste para as funcionalidades principais do sistema | TFF, TOBS | Arthur Guilherme | 07/06/2026 |
+| 3 | Execução dos testes de maturidade: login, cadastro, edição, remoção, consulta de inventário e exportação CSV | TFF, TOBS | João Igor | 07/06/2026 |
+| 4 | Registro e análise das falhas observadas e cálculo da Taxa de Falhas Funcionais e da Taxa de Operações Bem-Sucedidas | TFF, TOBS | Arthur Guilherme, João Igor Tiago Lemes | 08/06/2026 |
+| 5 | Execução dos testes de tratamento de entradas inválidas: campos vazios, formatos incorretos, valores inválidos, duplicidades e caracteres especiais | TTEI | Arthur Guilherme e João Igor | 11/06/2026 |
+| 6 | Execução dos testes de proteção contra acesso indevido: acesso sem autenticação, acesso direto por URL, sessão expirada e operações sem permissão | TPAI | Arthur Guilherme e João Igor | 11/06/2026 |
+| 7 | Consolidação dos dados coletados, cálculo das métricas, análise dos resultados e elaboração do relatório final da avaliação | TFF, TOBS, TTEI, TPAI  | Arthur Guilherme, João Igor e Tiago Lemes | 12/06/2026 |
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
 ---
 
 ## Conclusão
