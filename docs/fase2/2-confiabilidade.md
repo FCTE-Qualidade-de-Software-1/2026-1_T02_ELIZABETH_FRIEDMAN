@@ -31,7 +31,15 @@ Com base nas subcaracterísticas de Confiabilidade escolhidas na [Fase 1](https:
 ### Q1. O AGIO executa suas funcionalidades principais sem apresentar falhas durante o uso normal?
 
 **Hipótese (H1):** Espera-se que o AGIO apresente comportamento estável durante operações rotineiras, como login, cadastro, edição, remoção de itens e exportação CSV, registrando poucas falhas durante sua utilização.
-Esta hipótese será testada utilizando as seguintes métricas.
+
+Esta hipótese será testada utilizando as métricas abaixo e será interpretada da seguinte forma:
+
+- Se M1.1 e M1.2 obtiverem Alta Maturidade, a H1 será confirmada com Alta Maturidade
+- Se M1.1 e M1.2 obtiverem Média Maturidade, a H1 será confirmada com Média Maturidade (nível intermediário)
+- Se M1.1 e M1.2 apresentarem classificações distintas (Alta e Média), a H1 será confirmada com Média Maturidade (nível intermediário)
+- Se uma das métricas obtiver Baixa Maturidade e a outra Alta ou Média Maturidade, a H1 será parcialmente confirmada, indicando desempenho inconsistente do sistema
+- Se M1.1 e M1.2 obtiverem Baixa Maturidade, a H1 será refutada, indicando baixa confiabilidade do sistema
+
 #### Métrica 1.1: Taxa de Falhas Funcionais 
 
 > **Fórmula**
@@ -44,9 +52,9 @@ Esta hipótese será testada utilizando as seguintes métricas.
 >
 > **Interpretação**
 > 
-> - **Alta Maturidade (H1 Confirmada):** < 2%
+> - **Alta Maturidade:** < 2%
 > - **Média Maturidade:** 2% – 5%
-> - **Baixa Maturidade (H1 Refutada :** > 5% 
+> - **Baixa Maturidade:** > 5% 
 
 #### Métrica 1.2: Taxa de Operações Bem-Sucedidas 
 
@@ -60,16 +68,22 @@ Esta hipótese será testada utilizando as seguintes métricas.
 >
 > **Interpretação**
 > 
-> - **Alta Maturidade (H1 Confirmada):** > 98%
+> - **Alta Maturidade:** > 98%
 > - **Média Maturidade:** 90% – 98%
-> - **Baixa Maturidade (H1 Refutada :** < 90%
+> - **Baixa Maturidade:** < 90%
 
 ### Q2. O AGIO responde adequadamente a entradas inválidas e situações inesperadas?
 
 **Hipótese (H2):** Espera-se que o sistema trate erros de entrada, tentativas de acesso indevido e operações inválidas sem encerrar sua execução ou comprometer os dados armazenados.
 
-Esta hipótese será testada utilizando as seguintes métricas.
+Esta hipótese será testada utilizando as métricas abaixo e será interpretada da seguinte forma:
 
+- Se M2.1 e M2.2 obtiverem Alta Tolerância a Falhas, a H1 será confirmada com Alta Tolerância a Falhas
+- Se M2.1 e M2.2 obtiverem Média Tolerância a Falhas, a H1 será confirmada com Média Tolerância a Falhas (nível intermediário)
+- Se M2.1 e M2.2 apresentarem classificações distintas (Alta e Média), a H1 será confirmada com Média Tolerância a Falhas (nível intermediário)
+- Se uma das métricas obtiver Baixa Maturidade e a outra Alta ou Média Tolerância a Falhas, a H1 será parcialmente confirmada, indicando desempenho inconsistente do sistema
+- Se M2.1 e M2.2 obtiverem Baixa Tolerância a Falhas, a H1 será refutada, indicando baixa confiabilidade do sistema
+  
 #### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
 > **Fórmula**
@@ -82,9 +96,9 @@ Esta hipótese será testada utilizando as seguintes métricas.
 >
 > **Interpretação**
 > 
-> - **Alta Tolerância a Falhas (H2  Confirmada):** > 95% 
-> - **Média Maturidade:** 80% – 95% 
-> - **Baixa Maturidade (H2  Refutada):** < 80%  
+> - **Alta Tolerância a Falhas:** > 95% 
+> - **Média Tolerância a Falhas:** 80% – 95% 
+> - **Baixa Tolerância a Falhas:** < 80%  
 
 #### Métrica 2.2: Taxa de Proteção Contra Acesso Indevido
 
@@ -98,9 +112,11 @@ Esta hipótese será testada utilizando as seguintes métricas.
 >
 > **Interpretação**
 > 
-> - **Alta Tolerância a Falhas (H2  Confirmada):** > 95% 
-> - **Média Maturidade:** 80% – 95% 
-> - **Baixa Maturidade (H2  Refutada):** < 80%  
+> - **Alta Tolerância a Falhas:** > 95% 
+> - **Média Tolerância a Falhas:** 80% – 95% 
+> - **Baixa Tolerância a Falhas:** < 80%
+
+Dessa forma, se 
 
 ## Modelo GQM
 
