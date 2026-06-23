@@ -175,8 +175,8 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 |----------|----------|:----------:|:----------:|:----------:|
 | M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 2,46% | < 2% | **MÉDIA MATURIDADE** |
 | M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 97,54% | > 98% | **MÉDIA MATURIDADE** |
-| M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **BAIXA MATURIDADE** |
-| M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **ALTA MATURIDADE** |
+| M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **BAIXA TOLERÂNCIA A FALHAS** |
+| M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **ALTA TOLERANCIA A FALHAS** |
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
