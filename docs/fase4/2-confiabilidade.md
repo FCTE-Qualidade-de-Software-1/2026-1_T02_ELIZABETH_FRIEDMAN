@@ -161,7 +161,7 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 
 **Q1. O sistema AGIO executa suas funcionalidades de forma estável e consistente durante sua operação normal?**
 
-**Resposta:** Sim. A Taxa de Falhas Funcionais foi de 2,46%, enquadrando-se no nível de maturidade média (2%–5%), enquanto a Taxa de Operações Bem-Sucedidas foi de 97,54%, também classificada como maturidade média (90%–98%). Dessa forma, o sistema apresenta nível de maturidade intermediário, confirmando a hipótese de alta maturidade (H1).
+**Resposta:** Sim. A Taxa de Falhas Funcionais foi de 2,46%, enquadrando-se no nível de maturidade média (2%–5%), enquanto a Taxa de Operações Bem-Sucedidas foi de 97,54%, também classificada como maturidade média (90%–98%). Dessa forma, o sistema apresenta nível de maturidade intermediário, confirmando a hipótese em nível de maturidade média (H1).
 
 **Q2. O sistema AGIO é capaz de lidar adequadamente com situações de erro e tentativas de uso inadequado?**
 
@@ -185,7 +185,7 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 | Hipóteses | Descrição | Métricas relacionadas | Resultado das Hipóteses |
 |-----------|-----------|:---------------------:|:--------------------:|
 | H1 | Espera-se que o AGIO apresente comportamento estável durante operações rotineiras, como login, cadastro, edição, remoção de itens e exportação CSV, registrando poucas falhas durante sua utilização. Esta hipótese será testada utilizando as seguintes métricas | M1.1, M1.2 | **CONFIRMADA EM NÍVEL DE MATURIDADE MÉDIA** |
-| H2 | Espera-se que o sistema trate erros de entrada, tentativas de acesso indevido e operações inválidas sem encerrar sua execução ou comprometer os dados armazenados | M2.1, M2.2 | **PARCIALMENTE CONFIRMADA** |
+| H2 | Espera-se que o sistema trate erros de entrada, tentativas de acesso indevido e operações inválidas sem encerrar sua execução ou comprometer os dados armazenados | M2.1, M2.2 | **PARCIALMENTE CONFIRMADA** devido ao desempenho inconsistente entre as métricas |
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
