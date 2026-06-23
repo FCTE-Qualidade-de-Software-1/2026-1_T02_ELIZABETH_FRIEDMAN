@@ -78,11 +78,11 @@ Esta hipótese será testada utilizando as métricas abaixo e será interpretada
 
 Esta hipótese será testada utilizando as métricas abaixo e será interpretada da seguinte forma:
 
-- Se M2.1 e M2.2 obtiverem Alta Tolerância a Falhas, a H1 será confirmada com Alta Tolerância a Falhas
-- Se M2.1 e M2.2 obtiverem Média Tolerância a Falhas, a H1 será confirmada com Média Tolerância a Falhas (nível intermediário)
-- Se M2.1 e M2.2 apresentarem classificações distintas (Alta e Média), a H1 será confirmada com Média Tolerância a Falhas (nível intermediário)
+- Se M2.1 e M2.2 obtiverem Alta Tolerância a Falhas, a H2 será confirmada com Alta Tolerância a Falhas
+- Se M2.1 e M2.2 obtiverem Média Tolerância a Falhas, a H2 será confirmada com Média Tolerância a Falhas (nível intermediário)
+- Se M2.1 e M2.2 apresentarem classificações distintas (Alta e Média), a H2 será confirmada com Média Tolerância a Falhas (nível intermediário)
 - Se uma das métricas obtiver Baixa Maturidade e a outra Alta ou Média Tolerância a Falhas, a H2 será parcialmente confirmada, indicando desempenho inconsistente do sistema
-- Se M2.1 e M2.2 obtiverem Baixa Tolerância a Falhas, a H1 será refutada, indicando baixa confiabilidade do sistema
+- Se M2.1 e M2.2 obtiverem Baixa Tolerância a Falhas, a H2 será refutada, indicando baixa confiabilidade do sistema
   
 #### Métrica 2.1: Taxa de Tratamento de Entradas Inválidas
 
