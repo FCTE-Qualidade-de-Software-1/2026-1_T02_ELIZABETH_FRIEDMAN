@@ -4,33 +4,69 @@
 
 A avaliação da Adequação Funcional do sistema AGIO foi conduzida com base na abordagem GQM (Goal-Question-Metric) definida na [Fase 2](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase2/1-adequacao_funcional/) e no plano de coleta estabelecido na [Fase 3](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_ELIZABETH_FRIEDMAN/fase3/1-adequacao_funcional/). O procedimento consistiu em três frentes principais de investigação:
 
-1. **Análise Documental e do Repositório**: Foi realizada a análise de funcionalidades (mapeamento) a partir do documento de backlog presente no repositório do AGIO. Esta etapa teve como foco identificar todas as funcionalidades especificadas para o sistema. 
+1. **Análise Documental e do Repositório**: Foi realizada a análise de funcionalidades (mapeamento) a partir do documento de backlog presente no repositório do AGIO. Esta etapa teve como foco identificar todas as funcionalidades especificadas para o sistema.
 
-2. **Inspeção e Verificação das Funcionalidades**: Consistiu na validação da aplicação e do código-fonte. A partir das funcionalidades do backlog, foi extraído todas as funcionalidades planejadas para o sistema. O intuito dessa etapa foi comprovar a existência dessas funções no sistema, o funcionamento adequado de suas operações sem erros de lógica e a utilidade destas para o contexto do domínio do software.
+<p align="center"><strong>Figura 1: Backlog AGIO - Dashboard</strong></p>
 
-3. **Execução de Cenários de Teste (Simulação de Uso Real)**: Para avaliar a correção funcional de maneira prática e próxima à realidade, conduzimos testes simulando interações reais com o sistema. Desenhamos dois cenários principais:
+![Backlog do projeto AGIO 1](../imagens/fase%204/adequacao1.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+<p align="center"><strong>Figura 2: Backlog AGIO - Composição da Main Page</strong></p>
+
+![Backlog do projeto AGIO 2](../imagens/fase%204/adequacao2.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+<p align="center"><strong>Figura 3: Backlog AGIO - Controle de Usuário</strong></p>
+
+![Backlog do projeto AGIO 3](../imagens/fase%204/adequacao3.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+<p align="center"><strong>Figura 4: Backlog AGIO - Gestão de Fluxo de Inventário</strong></p>
+
+![Backlog do projeto AGIO 4](../imagens/fase%204/adequacao4.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+<p align="center"><strong>Figura 5: Backlog AGIO - Controle de Inventários</strong></p>
+
+![Backlog do projeto AGIO 5](../imagens/fase%204/adequacao5.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+<p align="center"><strong>Figura 6: Backlog AGIO - Marketing Features</strong></p>
+
+![Backlog do projeto AGIO 6](../imagens/fase%204/adequacao6.png)
+
+<p align="center"><em>Fonte: <a href="https://github.com/unb-mds/2024-2-Agio/blob/main/DOCS/backlog.md#1-gerenciamento-de-produtos-dashboard">Repositório do AGIO</a></em></p>
+
+3. **Inspeção e Verificação das Funcionalidades**: Consistiu na validação da aplicação e do código-fonte. A partir das funcionalidades do backlog, foi extraído todas as funcionalidades planejadas para o sistema. O intuito dessa etapa foi comprovar a existência dessas funções no sistema, o funcionamento adequado de suas operações sem erros de lógica e a utilidade destas para o contexto do domínio do software.
+
+4. **Execução de Cenários de Teste (Simulação de Uso Real)**: Para avaliar a correção funcional de maneira prática e próxima à realidade, conduzimos testes simulando interações reais com o sistema. Desenhamos dois cenários principais:
    * **Perfil 1 - Administrador de Estoque (Fluxo Principal):** Simulamos a rotina de um funcionário que precisa gerenciar o armazém. O passo a passo envolveu acessar a página de login (`/login/`), inserir usuário e senha, e navegar até o inventário. Lá, simulamos o clique no botão negro "Adicionar Item", preenchendo o formulário do modal (nome, quantidade, categoria, descrição e preço) e salvando. Por fim, testamos a extração de relatórios clicando no ícone de download na tabela de produtos. A expectativa era que tudo ocorresse sem erros, fechando o modal, exibindo uma notificação de sucesso, atualizando a tabela na tela e baixando o arquivo `dashboard.csv` corretamente.
    * **No fluxo do Administrador (Convergente):** Tudo funcionou como esperado. O login processou os dados com sucesso. Ao adicionar o produto, a interface disparou um alerta nativo ("Produto adicionado com sucesso!") e, ao clicar em OK, o modal fechou e a página atualizou os dados em tempo real (via `location.reload()`). A exportação do CSV também ocorreu perfeitamente, gerando um arquivo legível no Excel/Calc.
 
-<p align="center"><strong>Figura 1: Dashboard — Inventário de Estoque</strong></p>
+<p align="center"><strong>Figura 7: Dashboard — Inventário de Estoque</strong></p>
 
 ![Dashboard do AGIO](../imagens/fase%204/agio-dashboard.png)
 
 <p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
 
-<p align="center"><strong>Figura 2: Modal de Adição de Novo Produto</strong></p>
+<p align="center"><strong>Figura 8: Modal de Adição de Novo Produto</strong></p>
 
 ![Adição de Item no AGIO](../imagens/fase%204/agio-adicaoItem.png)
 
 <p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
 
-<p align="center"><strong>Figura 3: Tabela Atualizada após Adição</strong></p>
+<p align="center"><strong>Figura 9: Tabela Atualizada após Adição</strong></p>
 
 ![Tabela Atualizada](../imagens/fase%204/agio-tabelaAtualizada.png)
 
 <p align="center"><em>Autores: <a href="https://github.com/redjsun">Yzabella Miranda</a></em></p>
 
-<p align="center"><strong>Figura 4: Exportação de Relatório CSV</strong></p>
+<p align="center"><strong>Figura 10: Exportação de Relatório CSV</strong></p>
 
 ![Exportação CSV](../imagens/fase%204/agio-exportaCSV.png)
 
@@ -40,7 +76,7 @@ A avaliação da Adequação Funcional do sistema AGIO foi conduzida com base na
    **Análise e Comparação das Saídas (O que observamos na prática):**
    * **No cenário de Segurança (Divergente e Crítico):** O sistema falhou ao validar a sessão. Ao tentar acessar a rota de exportação pela aba anônima, a aplicação não barrou a requisição. Em vez disso, abriu a interface do Django REST Framework (status 200 OK) e expôs abertamente todos os registros do banco de dados na tela (ex: `{"csv_data": "ID,Nome,Descrição,Preço\r\n..."}`). Isso resultou em uma quebra de sigilo da aplicação, evidenciando a falta de proteção nas rotas da API.
 
-<p align="center"><strong>Figura 5: Acesso Não Autenticado — Dados Expostos em Modo Anônimo</strong></p>
+<p align="center"><strong>Figura 11: Acesso Não Autenticado — Dados Expostos em Modo Anônimo</strong></p>
 
 ![Modo Anônimo - Falha de Segurança](../imagens/fase%204/agio-modoAnonimo.png)
 
