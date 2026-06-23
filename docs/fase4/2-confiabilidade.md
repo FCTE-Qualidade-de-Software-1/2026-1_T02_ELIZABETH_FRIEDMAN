@@ -153,19 +153,19 @@ O sistema apresentou comportamento consistente em todos os cenários avaliados, 
 
 ## Análise e Julgamento
 
-Os resultados obtidos indicam que o AGIO apresenta um bom nível de confiabilidade em seus fluxos principais de operação. As métricas relacionadas à subcaracterística **Maturidade** demonstraram elevada estabilidade operacional, com baixa ocorrência de falhas e elevada taxa de sucesso na execução das funcionalidades avaliadas.
+Os resultados obtidos indicam que o AGIO apresenta um nível intermediário de confiabilidade em seus fluxos principais de operação. As métricas relacionadas à subcaracterística **Maturidade** demonstraram comportamento consistente durante a execução das funcionalidades avaliadas, porém sem atingir o nível de alta maturidade, uma vez que tanto a Taxa de Falhas Funcionais quanto a Taxa de Operações Bem-Sucedidas foram classificadas como de maturidade média. Isso evidencia uma estabilidade operacional satisfatória, ainda que abaixo do nível esperado para confirmação de alta maturidade.
 
-Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** revelou oportunidades de melhoria relacionadas ao tratamento de entradas inválidas. Embora o sistema valide corretamente campos obrigatórios, formatos incorretos e dados duplicados, ainda existem situações em que valores inconsistentes são aceitos sem restrições.
+Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** revelou um desempenho heterogêneo. Enquanto a Taxa de Proteção Contra Acesso Indevido atingiu o nível de alta maturidade, demonstrando eficácia dos mecanismos de autenticação e autorização, a Taxa de Tratamento de Entradas Inválidas apresentou baixo desempenho, ficando abaixo do critério estabelecido. Assim, observa-se que o sistema ainda apresenta limitações no tratamento consistente de entradas inválidas, embora consiga lidar adequadamente com tentativas de acesso indevido.
 
 ### Respostas às Questões GQM
 
 **Q1. O sistema AGIO executa suas funcionalidades de forma estável e consistente durante sua operação normal?**
 
-**Resposta:** Parcialmente. A Taxa de Falhas Funcionais foi de 2,46%, enquadrando-se no nível de maturidade média (2%–5%), enquanto a Taxa de Operações Bem-Sucedidas foi de 97,54%, também classificada como maturidade média (90%–98%). Dessa forma, o sistema apresenta nível de maturidade intermediário, não confirmando a hipótese de alta maturidade (H1).
+**Resposta:** Sim. A Taxa de Falhas Funcionais foi de 2,46%, enquadrando-se no nível de maturidade média (2%–5%), enquanto a Taxa de Operações Bem-Sucedidas foi de 97,54%, também classificada como maturidade média (90%–98%). Dessa forma, o sistema apresenta nível de maturidade intermediário, confirmando a hipótese de alta maturidade (H1).
 
 **Q2. O sistema AGIO é capaz de lidar adequadamente com situações de erro e tentativas de uso inadequado?**
 
-**Resposta:** Parcialmente. Embora a Taxa de Proteção Contra Acesso Indevido tenha alcançado 100%, a Taxa de Tratamento de Entradas Inválidas foi de apenas 60%, valor inferior ao critério definido (> 95%). Portanto, a hipótese relacionada à Tolerância a Falhas é parcialmente confirmada.
+**Resposta:** Parcialmente. Embora a Taxa de Proteção Contra Acesso Indevido tenha alcançado 100%, a Taxa de Tratamento de Entradas Inválidas foi de apenas 60%, valor inferior ao critério definido (> 95%). Portanto, a hipótese relacionada à Tolerância a Falhas (H2) é parcialmente confirmada.
 
 ### Resumo dos Resultados
 
