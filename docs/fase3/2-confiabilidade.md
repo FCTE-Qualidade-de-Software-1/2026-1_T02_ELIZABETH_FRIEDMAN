@@ -100,7 +100,7 @@ Abaixo, estão especificados o ambiente de teste, os instrumentos de medição u
 - **Memória RAM:** 6 GB ou superior
 - **Armazenamento:** 240 GB ou superior
     
-### Pré-requisitos:**
+### Pré-requisitos:
   
   - Ambiente local do AGIO configurado e funcional
   - Banco de dados inicializado
