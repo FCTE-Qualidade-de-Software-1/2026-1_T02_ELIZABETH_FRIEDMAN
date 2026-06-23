@@ -56,7 +56,7 @@ Esta hipótese será testada utilizando a seguinte métrica.
 > **Interpretação**
 >
 > - **Alta Completude Funcional (H1 Confirmada):** > 90%
-> - **Média Completude Funcional:** 70% – 90%
+> - **Média Completude Funcional (H1 Confirmada):** 70% – 90%
 > - **Baixa Completude Funcional (H1 Refutada):** < 70%
 
 ### Q2. As funcionalidades implementadas pelo AGIO produzem resultados corretos durante sua execução?
@@ -83,7 +83,7 @@ Esta hipótese será testada utilizando a seguinte métrica.
 > **Interpretação**
 >
 > - **Alta Correção Funcional (H2 Confirmada):** > 95%
-> - **Média Correção Funcional:** 80% – 95%
+> - **Média Correção Funcional (H2 Confirmada):** 80% – 95%
 > - **Baixa Correção Funcional (H2 Refutada):** < 80%
 
 ### Q3. As funcionalidades implementadas são adequadas para apoiar as atividades de gerenciamento de inventário propostas pelo sistema?
@@ -108,7 +108,7 @@ Esta hipótese será testada utilizando a seguinte métrica.
 > **Interpretação**
 >
 > - **Alta Pertinência Funcional (H3 Confirmada):** > 90%
-> - **Média Pertinência Funcional:** 70% – 90%
+> - **Média Pertinência Funcional (H3 Confirmada):** 70% – 90%
 > - **Baixa Pertinência Funcional (H3 Refutada):** < 70%
 
 ## Modelo GQM
