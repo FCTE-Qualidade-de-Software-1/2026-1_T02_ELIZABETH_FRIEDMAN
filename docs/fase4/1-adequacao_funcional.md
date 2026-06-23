@@ -156,59 +156,30 @@ A métrica afere a proporção de funcionalidades que contribuem diretamente par
 
 ## Análise e Julgamento
 
-O AGIO se mostrou muito consistente ao demonstrar que a equipe compreendeu exatamente as necessidades de um controle de estoque. O grande viés que compromete a aplicação, contudo, é a falta de funções essenciais do backlog e uma vulnerabilidade crítica de segurança na API, que permite o acesso aos dados sem autenticação. Diante desse cenário, o software ainda não tem condições de ir para produção, sendo indispensável a priorização da proteção dessas rotas e a entrega do fluxo de criação de contas.
+O AGIO demonstra alinhamento parcial com os objetivos de um sistema de gerenciamento de estoque. Os resultados indicam que, embora o sistema apresente boa aderência funcional ao domínio proposto, ainda existem lacunas importantes na implementação de funcionalidades essenciais e na robustez da execução das operações.
+
+Além disso, observa-se que o sistema apresenta inconsistências relevantes na camada de execução das funcionalidades e limitações no atendimento completo do escopo definido, o que impacta diretamente sua avaliação global de adequação funcional.
 
 ### Respostas às Questões GQM
 
 **Q1. O AGIO possui todas as funcionalidades necessárias para atender aos objetivos de gerenciamento de inventário propostos pelo projeto?**<br>
-**Resposta:** 40% das funcionalidades especificadas estão integralmente representadas no código avaliado. Como o valor obtido ficou muito abaixo da meta (> 90%), o resultado é inaceitável e não confirma a hipótese H1 (Refutada).
+**Resposta:** Apenas 40% das funcionalidades especificadas estão implementadas no sistema. Como o valor obtido é inferior ao critério estabelecido (< 70%), o resultado é classificado como baixa completude funcional, refutando a hipótese H1.
 
 **Q2. As funcionalidades implementadas pelo AGIO produzem resultados corretos durante sua execução?**<br>
-**Resposta:** 87.5% das operações funcionaram livres de erros lógicos na interface. Porém, a detecção de uma grave brecha de segurança no backend afetou a métrica. O resultado é considerado de nível médio e não confirma totalmente a hipótese H2 (Parcialmente Refutada).
+**Resposta:** 87,5% das funcionalidades apresentaram execução correta, enquadrando-se no nível de média correção funcional (80%–95%). Dessa forma, a hipótese H2 é confirmada em nível intermediário de correção funcional.
 
 **Q3. As funcionalidades implementadas são adequadas para apoiar as atividades de gerenciamento de inventário propostas pelo sistema?**<br>
-**Resposta:** 100% das funcionalidades entregues contribuem diretamente para o domínio de gestão de estoque. O resultado atende plenamente ao critério esperado (> 90%), confirmando de forma absoluta a hipótese H3.
+**Resposta:** 100% das funcionalidades avaliadas são pertinentes ao domínio de gestão de estoque. O resultado atende plenamente ao critério estabelecido (> 90%), confirmando a hipótese H3.
 
 ### Resumo dos Resultados
 
 <p align="center"><strong>Tabela 3: Resumo dos Resultados das Métricas</strong></p>
 
-<div align="center">
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align: left;">Métrica</th>
-        <th style="text-align: left;">Objetivo</th>
-        <th style="text-align: center;">Valor Obtido</th>
-        <th style="text-align: center;">Critério Desejado</th>
-        <th style="text-align: center;">Resultado da Hipótese</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: left;"><strong>M1.1 Completude Funcional</strong></td>
-        <td style="text-align: left;">Medir a taxa de funções implementadas frente às especificadas.</td>
-        <td style="text-align: center;">40%</td>
-        <td style="text-align: center;">&gt; 90%</td>
-        <td style="text-align: center;"><strong>H1 REFUTADA</strong></td>
-      </tr>
-      <tr>
-        <td style="text-align: left;"><strong>M2.1 Correção Funcional</strong></td>
-        <td style="text-align: left;">Medir se as funções estão entregando resultados livres de erros lógicos.</td>
-        <td style="text-align: center;">87.5%</td>
-        <td style="text-align: center;">&gt; 95%</td>
-        <td style="text-align: center;"><strong>H2 MÉDIA</strong><br>(Parcialmente Refutada)</td>
-      </tr>
-      <tr>
-        <td style="text-align: left;"><strong>M3.1 Pertinência Funcional</strong></td>
-        <td style="text-align: left;">Medir a relevância do escopo implementado.</td>
-        <td style="text-align: center;">100%</td>
-        <td style="text-align: center;">&gt; 90%</td>
-        <td style="text-align: center;"><strong>H3 CONFIRMADA</strong></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+| Métrica | Objetivo | Valor Obtido | Critério Desejado (Alta) | Resultado da Hipótese |
+|---------|----------|:------------:|:-----------------:|:--------------------:|
+| M1.1 Taxa de Completude Funcional | Medir a taxa de funções implementadas frente às especificadas. | 40% | > 90% | **H1 REFUTADA** |
+| M2.1 Taxa de Correção Funcional | Medir se as funções estão entregando resultados livres de erros lógicos. | 87.5% | > 95% | **H2 CONFIRMADA EM NÍVEL DE CORREÇÃO MÉDIO** |
+| M3.1 Taxa de Pertinência Funcional | Medir a relevância do escopo implementado. | 100% | > 90% | **H3 CONFIRMADA EM NÍVEL DE PERTINÊNCIA ALTA** |
 
 <p align="center"><em>Autores: Yzabella Miranda </em></p>
 
