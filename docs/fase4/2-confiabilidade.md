@@ -76,18 +76,24 @@ A métrica avalia a proporção de operações concluídas com sucesso em relaç
 
 O resultado evidencia que todas as operações planejadas foram concluídas corretamente durante os testes realizados.
 
-<p align="center"><strong>Imagem 1: Teste da Métrica 1.1 e 1.2</strong></p>
+<p align="center"><strong>Imagem 1: Teste das Métricas 1.1 e 1.2</strong></p>
 
 ![Diagrama GQP](../imagens/fase4/teste_confiabilidade.png)
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
-<p align="center"><strong>Imagem 2: Teste da Métrica 1.1 e 1.2</strong></p>
+<p align="center"><strong>Imagem 2: Teste das Métricas 1.1 e 1.2</strong></p>
 
 ![Diagrama GQP](../imagens/fase4/teste2_confiabilidade.png)
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
+
+<p align="center"><strong>Imagem 3: Teste Manual das Métricas 1.1 e 1.2</strong></p>
+
+![Diagrama GQP](../imagens/fase4/tabelaTeste.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
 ---
 
