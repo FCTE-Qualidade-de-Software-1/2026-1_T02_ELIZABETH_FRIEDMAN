@@ -229,5 +229,5 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 | 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
 | 02 | Criação do documento |  [João Igor](https://github.com/JoaoPC10) | 02/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
 | 03 | adição de fotos de teste e reajuste de quantidade de dados |  [Arthur Guilherme](https://github.com/ArthurGuilher62) | 19/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 19/06/2026 |
-| 04 | Adição do restantes das provas |  [João Igor](https://github.com/JoaoPC10) | 23/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
+| 04 | Adição do restantes das provas |  [João Igor](https://github.com/JoaoPC10) | 23/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 23/06/2026 |
 
