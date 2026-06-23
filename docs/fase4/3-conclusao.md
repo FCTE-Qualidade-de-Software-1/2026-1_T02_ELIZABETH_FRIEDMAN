@@ -2,25 +2,27 @@
 
 ## Discussão dos Resultados
 
-A avaliação do sistema AGIO permitiu analisar duas características fundamentais da qualidade de software: **Adequação Funcional** e **Confiabilidade**. Os resultados evidenciam que o sistema possui uma base operacional funcional e estável para as atividades de gerenciamento de inventário, mas ainda apresenta limitações importantes relacionadas à cobertura dos requisitos planejados e ao tratamento de situações excepcionais.
+A avaliação do sistema AGIO permitiu analisar duas dimensões principais da qualidade de software: **Adequação Funcional** e **Confiabilidade**, com base na aplicação do modelo GQM e nas métricas definidas na fase anterior.
+
+Os resultados indicam que o sistema apresenta uma base funcional consistente para o gerenciamento de inventário, porém ainda possui limitações relevantes relacionadas à cobertura de requisitos e ao tratamento de situações excepcionais.
 
 ### 1. Adequação Funcional
 
 A análise da Adequação Funcional revelou um cenário misto entre as subcaracterísticas avaliadas.
 
-A **Completude Funcional** apresentou o resultado mais crítico, alcançando apenas 40%, uma vez que somente 8 das 20 funcionalidades previstas no backlog foram efetivamente implementadas. Apesar de contemplar os fluxos essenciais do sistema, diversos recursos planejados permanecem ausentes, como sistema de permissões, notificações, relatórios personalizados e controle de múltiplos armazéns.
+A **Completude Funcional** apresentou resultado crítico, com apenas 40% das funcionalidades especificadas implementadas, evidenciando lacunas importantes em relação ao backlog do sistema. Funcionalidades essenciais de apoio ao gerenciamento de inventário ainda não foram contempladas, reduzindo a aderência do sistema ao escopo inicialmente proposto.
 
-A **Correção Funcional** obteve 87,5%, indicando que a maioria das funcionalidades implementadas executa corretamente suas operações. Entretanto, os testes identificaram uma vulnerabilidade crítica de autenticação, permitindo acesso indevido a determinadas rotas da API sem validação adequada de sessão. Essa falha compromete parcialmente a confiabilidade funcional da aplicação.
+A **Correção Funcional** alcançou 87,5%, indicando que a maior parte das funcionalidades implementadas executa corretamente suas operações. Entretanto, foram identificadas inconsistências em alguns fluxos, o que impede o enquadramento no nível de alta correção funcional.
 
-Por outro lado, a **Pertinência Funcional** alcançou 100%, demonstrando que todas as funcionalidades previstas estão alinhadas aos objetivos do domínio de gestão de inventário e agregam valor ao propósito do sistema.
+Por outro lado, a **Pertinência Funcional** atingiu 100%, demonstrando que todas as funcionalidades previstas e implementadas estão alinhadas ao domínio de gestão de inventário e contribuem diretamente para os objetivos do sistema.
 
 ### 2. Confiabilidade
 
 A avaliação da Confiabilidade apresentou resultados distintos entre as subcaracterísticas de **Maturidade** e **Tolerância a Falhas**.
 
-Os testes de **Maturidade** demonstraram elevado grau de estabilidade operacional. A Taxa de Falhas Funcionais (TFF) atingiu 0%, enquanto a Taxa de Operações Bem-Sucedidas (TOBS) alcançou 100%. Os fluxos principais do sistema, incluindo autenticação, cadastro, edição, remoção, consulta de inventário e exportação de relatórios, foram executados com sucesso e sem interrupções significativas.
+Os testes de **Maturidade** indicaram um comportamento estável do sistema, com Taxa de Falhas Funcionais (2,46%) e Taxa de Operações Bem-Sucedidas (97,54%), ambas classificadas como maturidade média. Isso demonstra que o sistema executa suas operações principais de forma consistente, porém sem atingir o nível de alta maturidade.
 
-Entretanto, os resultados de **Tolerância a Falhas** indicaram limitações importantes. Embora a Taxa de Proteção Contra Acesso Indevido (TPAI) tenha alcançado 100%, evidenciando mecanismos eficazes de autenticação e autorização, a Taxa de Tratamento de Entradas Inválidas (TTEI) obteve apenas 60%.
+Em relação à **Tolerância a Falhas**, observou-se desempenho desigual. A Taxa de Proteção Contra Acesso Indevido atingiu 100%, demonstrando eficácia dos mecanismos de autenticação e autorização. Por outro lado, a Taxa de Tratamento de Entradas Inválidas foi de apenas 60%, indicando dificuldades do sistema em lidar adequadamente com entradas inválidas e situações não previstas.
 
 Os testes mostraram que o sistema trata adequadamente campos obrigatórios vazios, formatos incorretos e dados duplicados, porém ainda aceita determinados valores incompatíveis com as regras de negócio e não realiza validações adequadas para alguns caracteres especiais. Isso demonstra que o sistema possui boa estabilidade operacional, mas ainda carece de mecanismos mais robustos para lidar com erros de entrada e situações inesperadas.
 
@@ -28,28 +30,28 @@ Os testes mostraram que o sistema trata adequadamente campos obrigatórios vazio
 
 ## Melhoria Proposta
 
-Com base nos resultados obtidos, as melhorias devem concentrar-se em três frentes principais: ampliação funcional, fortalecimento da validação de dados e aprimoramento da segurança.
+Com base nos resultados obtidos, as melhorias são organizadas em três frentes principais: expansão funcional, aprimoramento da validação de dados e fortalecimento da robustez do sistema.
 
 ### 1. Ampliação da Cobertura Funcional
 
-Implementar as funcionalidades previstas no backlog que ainda não foram entregues, priorizando:
+Implementar funcionalidades ainda não contempladas no sistema, conforme definido no backlog, incluindo:
 
-- Sistema de permissões e níveis de acesso;
-- Sistema de notificações;
-- Relatórios personalizáveis;
-- Controle de múltiplos armazéns;
-- Integrações com serviços externos.
+- Sistema de permissões e níveis de acesso
+- Notificações de eventos
+- Relatórios gerenciais
+- Controle de múltiplos estoques
+- Integração com serviços externos
 
 **Impacto esperado:** aumento da Completude Funcional e maior aderência aos requisitos originalmente definidos para o projeto.
 
 ### 2. Fortalecimento da Validação de Dados
 
-Implementar validações mais rigorosas para entradas fornecidas pelos usuários, incluindo:
+Aprimorar os mecanismos de validação de entradas do sistema, incluindo:
 
-- Restrições para valores incompatíveis com as regras de negócio;
-- Validação de caracteres especiais;
-- Sanitização de entradas;
-- Mensagens de erro mais detalhadas e orientativas.
+- Restrições para valores incompatíveis com as regras de negócio
+- Validação de caracteres especiais
+- Sanitização de dados de entrada
+- Mensagens de erro mais claras para o usuário
 
 **Impacto esperado:** aumento da Taxa de Tratamento de Entradas Inválidas (TTEI) e melhoria da Tolerância a Falhas do sistema.
 
@@ -63,7 +65,7 @@ Também é recomendada a implementação de testes automatizados de segurança e
 
 ### 4. Automatização dos Testes de Qualidade
 
-Incorporar testes automatizados funcionais, de validação e de segurança ao fluxo de desenvolvimento.
+Incorporar testes automatizados no ciclo de desenvolvimento, incluindo testes funcionais e de validação.
 
 **Impacto esperado:** detecção precoce de falhas, redução de regressões e manutenção contínua da confiabilidade e qualidade funcional do sistema.
 
@@ -71,13 +73,13 @@ Incorporar testes automatizados funcionais, de validação e de segurança ao fl
 
 ## Conclusão
 
-A avaliação realizada demonstra que o AGIO apresenta uma base sólida para operações de gerenciamento de inventário, combinando elevada estabilidade operacional com funcionalidades relevantes para o domínio de aplicação.
+A avaliação do AGIO demonstra que o sistema possui uma base funcional adequada para gerenciamento de inventário, com destaque para sua estabilidade operacional e pertinência ao domínio.
 
-Sob a perspectiva da **Confiabilidade**, os resultados foram positivos, especialmente em relação à Maturidade do sistema, que apresentou baixíssima incidência de falhas e elevado índice de sucesso operacional. Contudo, as limitações observadas no tratamento de entradas inválidas indicam que ainda existem oportunidades de evolução na Tolerância a Falhas.
+Sob a perspectiva da Confiabilidade, o sistema apresenta desempenho intermediário, com maturidade adequada, porém ainda limitado no tratamento de entradas inválidas.
 
-Sob a perspectiva da **Adequação Funcional**, verificou-se que as funcionalidades implementadas são pertinentes e, em sua maioria, corretas. Entretanto, a baixa cobertura dos requisitos originalmente definidos e a existência de vulnerabilidades de autenticação impedem que o sistema seja considerado plenamente aderente às expectativas estabelecidas para o projeto.
+Sob a perspectiva da Adequação Funcional, observa-se forte alinhamento ao domínio, mas com lacunas significativas na implementação de funcionalidades essenciais.
 
-De forma geral, o AGIO demonstra potencial para atender adequadamente às necessidades de gestão de inventário, mas ainda requer investimentos em expansão funcional, validação de dados e fortalecimento dos mecanismos de segurança. A execução deste processo de avaliação permitiu identificar, de forma objetiva e mensurável, os principais pontos fortes e as limitações atuais do sistema, fornecendo direcionamentos claros para sua evolução nas próximas versões.
+De forma geral, o AGIO encontra-se em um estágio intermediário de maturidade, necessitando de evolução principalmente em cobertura funcional e robustez do tratamento de erros para alcançar um nível mais elevado de qualidade.
 
 ## Histórico de Versão
 
