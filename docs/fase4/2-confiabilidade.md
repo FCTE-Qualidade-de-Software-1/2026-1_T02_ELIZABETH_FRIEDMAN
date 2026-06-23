@@ -161,7 +161,7 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 
 **Q1. O sistema AGIO executa suas funcionalidades de forma estável e consistente durante sua operação normal?**
 
-**Resposta:** Sim. A Taxa de Falhas Funcionais foi de 0%, atendendo ao critério estabelecido (< 2%), enquanto a Taxa de Operações Bem-Sucedidas atingiu 100%, superando o valor esperado (> 98%). Dessa forma, a hipótese relacionada à Maturidade do sistema é confirmada.
+**Resposta:** Parcialmente. A Taxa de Falhas Funcionais foi de 2,46%, enquadrando-se no nível de maturidade média (2%–5%), enquanto a Taxa de Operações Bem-Sucedidas foi de 97,54%, também classificada como maturidade média (90%–98%). Dessa forma, o sistema apresenta nível de maturidade intermediário, não confirmando a hipótese de alta maturidade (H1).
 
 **Q2. O sistema AGIO é capaz de lidar adequadamente com situações de erro e tentativas de uso inadequado?**
 
@@ -171,12 +171,21 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 
 <p align="center"><strong>Tabela 5: Resumo dos Resultados das Métricas</strong></p>
 
-| Métrica | Objetivo | Valor Obtido | Critério Desejado | Resultado da Hipótese |
+| Métrica | Objetivo | Valor Obtido | Critério Desejado | Resultado da Métrica |
 |----------|----------|:----------:|:----------:|:----------:|
-| M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 2,46% | < 2% | **REFUTADA** |
-| M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 97,54% | > 98% | **REFUTADA** |
-| M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **REFUTADA** |
-| M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **CONFIRMADA** |
+| M1.1 Taxa de Falhas Funcionais | Avaliar a incidência de falhas durante a execução das operações. | 2,46% | < 2% | **MÉDIA MATURIDADE** |
+| M1.2 Taxa de Operações Bem-Sucedidas | Avaliar a estabilidade operacional do sistema. | 97,54% | > 98% | **MÉDIA MATURIDADE** |
+| M2.1 Taxa de Tratamento de Entradas Inválidas | Avaliar a capacidade de tratamento de erros de entrada. | 60% | > 95% | **BAIXA MATURIDADE** |
+| M2.2 Taxa de Proteção Contra Acesso Indevido | Avaliar a eficácia dos mecanismos de autenticação e autorização. | 100% | > 95% | **ALTA MATURIDADE** |
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+<p align="center"><strong>Tabela 6: Resumo dos Resultados das Hipóteses</strong></p>
+
+| Hipóteses | Descrição | Métricas relacionadas | Resultado das Hipóteses |
+|-----------|-----------|:---------------------:|:--------------------:|
+| H1 | Espera-se que o AGIO apresente comportamento estável durante operações rotineiras, como login, cadastro, edição, remoção de itens e exportação CSV, registrando poucas falhas durante sua utilização. Esta hipótese será testada utilizando as seguintes métricas | M1.1, M1.2 | **CONFIRMADA EM NÍVEL DE MATURIDADE MÉDIA** |
+| H2 | Espera-se que o sistema trate erros de entrada, tentativas de acesso indevido e operações inválidas sem encerrar sua execução ou comprometer os dados armazenados | M2.1, M2.2 | **PARCIALMENTE CONFIRMADA** |
 
 <p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
 
