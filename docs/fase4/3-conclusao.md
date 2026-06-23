@@ -73,13 +73,13 @@ Incorporar testes automatizados no ciclo de desenvolvimento, incluindo testes fu
 
 ## Conclusão
 
-A avaliação do AGIO demonstra que o sistema possui uma base funcional adequada para gerenciamento de inventário, com destaque para sua estabilidade operacional e pertinência ao domínio.
+A avaliação realizada demonstra que o AGIO possui uma base funcional relevante para o gerenciamento de inventário, apresentando funcionalidades alinhadas ao domínio da aplicação e desempenho satisfatório na execução de suas operações principais.
 
-Sob a perspectiva da Confiabilidade, o sistema apresenta desempenho intermediário, com maturidade adequada, porém ainda limitado no tratamento de entradas inválidas.
+Sob a perspectiva da Confiabilidade, os resultados indicaram um nível intermediário de maturidade, com baixa incidência de falhas funcionais e elevada taxa de operações bem-sucedidas. Além disso, o sistema demonstrou eficácia na proteção contra acessos indevidos. Entretanto, as limitações observadas no tratamento de entradas inválidas evidenciam oportunidades de melhoria na subcaracterística de Tolerância a Falhas, especialmente no que se refere à validação de dados fornecidos pelos usuários.
 
-Sob a perspectiva da Adequação Funcional, observa-se forte alinhamento ao domínio, mas com lacunas significativas na implementação de funcionalidades essenciais.
+Sob a perspectiva da Adequação Funcional, verificou-se que as funcionalidades implementadas apresentam alta pertinência ao contexto de gerenciamento de inventário e nível intermediário de correção funcional. Contudo, a baixa taxa de completude funcional demonstra que uma parcela significativa das funcionalidades previstas ainda não foi implementada, reduzindo a aderência do sistema ao escopo originalmente definido.
 
-De forma geral, o AGIO encontra-se em um estágio intermediário de maturidade, necessitando de evolução principalmente em cobertura funcional e robustez do tratamento de erros para alcançar um nível mais elevado de qualidade.
+De forma geral, o AGIO demonstra potencial para atender às necessidades de gestão de inventário, apresentando estabilidade operacional e funcionalidades adequadas ao seu propósito. No entanto, a ampliação da cobertura funcional e o aprimoramento dos mecanismos de validação de entradas constituem pontos fundamentais para a evolução da qualidade do sistema. A aplicação da abordagem GQM permitiu identificar de maneira objetiva os principais pontos fortes e as limitações da aplicação, fornecendo subsídios para o planejamento de melhorias e para o desenvolvimento de versões futuras mais completas e robustas.
 
 ## Histórico de Versão
 
