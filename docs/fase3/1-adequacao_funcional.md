@@ -64,7 +64,7 @@ A tabela abaixo foi elaborada com base nos critérios estabelecidos na [Fase 2](
 
 <p align="center"><strong>Tabela 1: Critérios de Aceitação</strong></p>
 
-| Métrica | Critério Desejado |
+| Métrica | Critério Desejado (Alta Completude/Correção/Pertinência) |
 |----------|----------|
 | M1 - Taxa de Completude Funcional | ≥ 90% |
 | M2 - Taxa de Correção Funcional | ≥ 95% |
