@@ -122,6 +122,25 @@ A métrica avalia a capacidade do sistema de identificar e tratar adequadamente 
 
 Os resultados indicam que o sistema possui mecanismos básicos de validação, porém apresenta limitações relacionadas ao tratamento de valores inválidos e caracteres especiais.
 
+<p align="center"><strong>Imagem 4: Teste da Métrica 2.1 </strong></p>
+
+![Diagrama GQP](../imagens/fase4/teste_produto_duplicado.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+<p align="center"><strong>Imagem 5: Teste da Métrica 2.1 </strong></p>
+
+![Diagrama GQP](../imagens/fase4/teste_valor_vazio.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+
+<p align="center"><strong>Imagem 6: Teste da Métrica 2.1 </strong></p>
+
+![Diagrama GQP](../imagens/fase4/tabelaTeste.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
 ---
 
 ### M2.2 - Taxa de Proteção Contra Acesso Indevido (TPAI)
@@ -148,6 +167,20 @@ A métrica avalia a eficácia dos mecanismos de autenticação e autorização n
 > TPAI = (50 / 50) × 100 = 100%
 
 O sistema apresentou comportamento consistente em todos os cenários avaliados, bloqueando corretamente acessos não autorizados.
+
+<p align="center"><strong>Imagem 7: Teste da Métrica 2.2 </strong></p>
+
+![Diagrama GQP](../imagens/fase4/teste_acesso_negado.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+<p align="center"><strong>Imagem 8: Teste da Métrica 2.2 </strong></p>
+
+![Diagrama GQP](../imagens/fase4/teste_redireciona_login.png)
+
+<p align="center"><em>Autores: Arthur Guilherme, João Igor e Tiago Lemes</em></p>
+
+
 
 ---
 
@@ -196,4 +229,5 @@ Por outro lado, a avaliação da subcaracterística **Tolerância a Falhas** rev
 | 01 | Criação do documento | [Tiago Lemes](https://github.com/TiagoTeixeira-2005) | 02/06/2026 |   [João Igor](https://github.com/JoaoPC10)| 12/06/2026 |
 | 02 | Criação do documento |  [João Igor](https://github.com/JoaoPC10) | 02/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
 | 03 | adição de fotos de teste e reajuste de quantidade de dados |  [Arthur Guilherme](https://github.com/ArthurGuilher62) | 19/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 19/06/2026 |
+| 04 | Adição do restantes das provas |  [João Igor](https://github.com/JoaoPC10) | 23/06/2026 |   [Tiago Lemes](https://github.com/TiagoTeixeira-2005)| 12/06/2026 |
 
